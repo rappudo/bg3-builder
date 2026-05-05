@@ -1,0 +1,1574 @@
+{
+  "barbarian": {
+    "name": "Barbarian",
+    "levels": {
+      "1": {
+        "grants": [
+          "shield_proficiency",
+          "simple_weapons_proficiency",
+          "martial_weapons_proficiency",
+          "rage",
+          "unarmoured_defence"
+        ],
+        "choices": []
+      },
+      "2": {
+        "grants": ["reckless_attack", "danger_sense"],
+        "choices": []
+      },
+      "3": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "barbarian_subclasses"
+          }
+        ]
+      },
+      "4": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "5": {
+        "grants": ["extra_attack", "fast_movement"],
+        "choices": []
+      },
+      "6": {
+        "grants": [],
+        "choices": []
+      },
+      "7": {
+        "grants": ["feral_instinct"],
+        "choices": []
+      },
+      "8": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "9": {
+        "grants": ["brutal_critical"],
+        "choices": []
+      },
+      "10": {
+        "grants": [],
+        "choices": []
+      },
+      "11": {
+        "grants": ["relentless_rage"],
+        "choices": []
+      },
+      "12": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      }
+    },
+    "starting_class_bonus": {
+      "grants": [
+        "saving_throw_strength",
+        "saving_throw_constitution",
+        "light_armor_proficiency",
+        "medium_armor_proficiency"
+      ],
+      "choices": [
+        {
+          "pick": 2,
+          "from_list": "barbarian_skill_options"
+        }
+      ]
+    }
+  },
+  "bard": {
+    "name": "Bard",
+    "levels": {
+      "1": {
+        "grants": ["light_armor_proficiency", "musical_instrument_proficiency"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "bard_skill_options"
+          },
+          {
+            "pick": 4,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 1
+            }
+          },
+          {
+            "pick": 2,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 0
+            }
+          }
+        ]
+      },
+      "2": {
+        "grants": ["song_of_rest", "jack_of_all_trades"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 1
+            }
+          }
+        ]
+      },
+      "3": {
+        "grants": ["expertise"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "bard_subclasses"
+          },
+          {
+            "pick": 1,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      },
+      "4": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          },
+          {
+            "pick": 1,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 2
+            }
+          },
+          {
+            "pick": 1,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 0
+            }
+          }
+        ]
+      },
+      "5": {
+        "grants": ["font_of_inspiration", "improved_bardic_inspiration"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 3
+            }
+          }
+        ]
+      },
+      "6": {
+        "grants": ["countercharm"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 3
+            }
+          }
+        ]
+      },
+      "7": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 4
+            }
+          }
+        ]
+      },
+      "8": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          },
+          {
+            "pick": 1,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 4
+            }
+          }
+        ]
+      },
+      "9": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 5
+            }
+          }
+        ]
+      },
+      "10": {
+        "grants": [
+          "improved_bardic_inspiration",
+          "magical_secrets",
+          "expertise"
+        ],
+        "choices": [
+          {
+            "pick": 2,
+            "from_list": "magical_secrets_spells",
+            "filter": {
+              "spell_level_max": 5
+            }
+          },
+          {
+            "pick": 1,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 0
+            }
+          },
+          {
+            "pick": 1,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 5
+            }
+          }
+        ]
+      },
+      "11": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 6
+            }
+          }
+        ]
+      },
+      "12": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          },
+          {
+            "pick": 1,
+            "from_list": "spells_bard",
+            "filter": {
+              "spell_level": 6
+            }
+          }
+        ]
+      }
+    },
+    "starting_class_bonus": {
+      "grants": [
+        "saving_throw_dexterity",
+        "saving_throw_charisma",
+        "simple_weapons_proficiency",
+        "hand_crossbows_proficiency",
+        "longswords_proficiency",
+        "rapiers_proficiency",
+        "short_sword_proficiency"
+      ],
+      "choices": [
+        {
+          "pick": 2,
+          "from_list": "bard_skill_options"
+        }
+      ]
+    }
+  },
+  "cleric": {
+    "name": "Cleric",
+    "levels": {
+      "1": {
+        "grants": [
+          "light_armor_proficiency",
+          "medium_armor_proficiency",
+          "shield_proficiency",
+          "flails_proficiency",
+          "morningstars_proficiency"
+        ],
+        "grants_pool": [
+          { "from_list": "spells_cleric", "filter": { "spell_level": 1 } }
+        ],
+        "choices": [
+          { "pick": 1, "from_list": "cleric_subclasses" },
+          {
+            "pick": 3,
+            "from_list": "spells_cleric",
+            "filter": { "spell_level": 0 }
+          },
+          {
+            "pick": 2,
+            "from_list": "cleric_skill_options"
+          }
+        ]
+      },
+      "2": {
+        "grants": ["turn_undead"],
+        "choices": []
+      },
+      "3": {
+        "grants": [],
+        "grants_pool": [
+          { "from_list": "spells_cleric", "filter": { "spell_level": 2 } }
+        ],
+        "choices": []
+      },
+      "4": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          },
+          {
+            "pick": 1,
+            "from_list": "spells_cleric",
+            "filter": { "spell_level": 0 }
+          }
+        ]
+      },
+      "5": {
+        "grants": ["destroy_undead"],
+        "grants_pool": [
+          { "from_list": "spells_cleric", "filter": { "spell_level": 3 } }
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [],
+        "choices": []
+      },
+      "7": {
+        "grants": [],
+        "grants_pool": [
+          { "from_list": "spells_cleric", "filter": { "spell_level": 4 } }
+        ],
+        "choices": []
+      },
+      "8": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "9": {
+        "grants": [],
+        "grants_pool": [
+          { "from_list": "spells_cleric", "filter": { "spell_level": 5 } }
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": ["divine_intervention"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_cleric",
+            "filter": { "spell_level": 0 }
+          }
+        ]
+      },
+      "11": {
+        "grants": [],
+        "grants_pool": [
+          { "from_list": "spells_cleric", "filter": { "spell_level": 6 } }
+        ],
+        "choices": []
+      },
+      "12": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      }
+    },
+    "starting_class_bonus": {
+      "grants": [
+        "saving_throw_wisdom",
+        "saving_throw_charisma",
+        "simple_weapons_proficiency"
+      ],
+      "choices": [
+        {
+          "pick": 2,
+          "from_list": "cleric_skill_options"
+        }
+      ]
+    }
+  },
+  "druid": {
+    "name": "Druid",
+    "levels": {
+      "1": {
+        "grants": [
+          "light_armor_proficiency",
+          "medium_armor_proficiency",
+          "shield_proficiency",
+          "_TODO_class_features_at_this_level"
+        ],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-1 spells",
+            "pick": "?",
+            "from_list": "spells_druid",
+            "filter": {
+              "spell_level": 1
+            }
+          },
+          {
+            "_TODO_cantrip_picks": "starting cantrips (count varies by class)",
+            "pick": "?",
+            "from_list": "spells_druid",
+            "filter": {
+              "spell_level": 0
+            }
+          }
+        ]
+      },
+      "2": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "druid_subclasses"
+          }
+        ]
+      },
+      "3": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-2 spells",
+            "pick": "?",
+            "from_list": "spells_druid",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      },
+      "4": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "5": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-3 spells",
+            "pick": "?",
+            "from_list": "spells_druid",
+            "filter": {
+              "spell_level": 3
+            }
+          }
+        ]
+      },
+      "6": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "7": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-4 spells",
+            "pick": "?",
+            "from_list": "spells_druid",
+            "filter": {
+              "spell_level": 4
+            }
+          }
+        ]
+      },
+      "8": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "9": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-5 spells",
+            "pick": "?",
+            "from_list": "spells_druid",
+            "filter": {
+              "spell_level": 5
+            }
+          }
+        ]
+      },
+      "10": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "11": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-6 spells",
+            "pick": "?",
+            "from_list": "spells_druid",
+            "filter": {
+              "spell_level": 6
+            }
+          }
+        ]
+      },
+      "12": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      }
+    },
+    "starting_class_bonus": {
+      "grants": [
+        "saving_throw_intelligence",
+        "saving_throw_wisdom",
+        "clubs_proficiency",
+        "daggers_proficiency",
+        "javelins_proficiency",
+        "maces_proficiency",
+        "quarterstaves_proficiency",
+        "scimitars_proficiency",
+        "sickles_proficiency",
+        "spears_proficiency"
+      ],
+      "choices": [
+        {
+          "pick": 2,
+          "from_list": "druid_skill_options",
+          "_note": "starting class picks 2 total; the multiclass dip already adds 0, so this adds the remaining 2"
+        }
+      ]
+    }
+  },
+  "fighter": {
+    "name": "Fighter",
+    "levels": {
+      "1": {
+        "grants": [
+          "light_armor_proficiency",
+          "medium_armor_proficiency",
+          "shield_proficiency",
+          "simple_weapons_proficiency",
+          "martial_weapons_proficiency",
+          "_TODO_class_features_at_this_level"
+        ],
+        "choices": []
+      },
+      "2": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "3": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "fighter_subclasses"
+          }
+        ]
+      },
+      "4": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "5": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "6": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "7": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "8": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "9": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "10": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "11": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "12": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      }
+    },
+    "starting_class_bonus": {
+      "grants": [
+        "saving_throw_strength",
+        "saving_throw_constitution",
+        "heavy_armor_proficiency"
+      ],
+      "choices": [
+        {
+          "pick": 2,
+          "from_list": "fighter_skill_options",
+          "_note": "starting class picks 2 total; the multiclass dip already adds 0, so this adds the remaining 2"
+        }
+      ]
+    }
+  },
+  "monk": {
+    "name": "Monk",
+    "levels": {
+      "1": {
+        "grants": [
+          "simple_weapons_proficiency",
+          "short_sword_proficiency",
+          "_TODO_class_features_at_this_level"
+        ],
+        "choices": []
+      },
+      "2": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "3": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "monk_subclasses"
+          }
+        ]
+      },
+      "4": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "5": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "6": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "7": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "8": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "9": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "10": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "11": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "12": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      }
+    },
+    "starting_class_bonus": {
+      "grants": ["saving_throw_strength", "saving_throw_dexterity"],
+      "choices": [
+        {
+          "pick": 2,
+          "from_list": "monk_skill_options",
+          "_note": "starting class picks 2 total; the multiclass dip already adds 0, so this adds the remaining 2"
+        }
+      ]
+    }
+  },
+  "paladin": {
+    "name": "Paladin",
+    "levels": {
+      "1": {
+        "grants": [
+          "light_armor_proficiency",
+          "medium_armor_proficiency",
+          "shield_proficiency",
+          "simple_weapons_proficiency",
+          "martial_weapons_proficiency",
+          "_TODO_class_features_at_this_level"
+        ],
+        "choices": []
+      },
+      "2": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-1 spells",
+            "pick": "?",
+            "from_list": "spells_paladin",
+            "filter": {
+              "spell_level": 1
+            }
+          }
+        ]
+      },
+      "3": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "paladin_subclasses"
+          }
+        ]
+      },
+      "4": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "5": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-2 spells",
+            "pick": "?",
+            "from_list": "spells_paladin",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      },
+      "6": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "7": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "8": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "9": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-3 spells",
+            "pick": "?",
+            "from_list": "spells_paladin",
+            "filter": {
+              "spell_level": 3
+            }
+          }
+        ]
+      },
+      "10": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "11": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "12": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      }
+    },
+    "starting_class_bonus": {
+      "grants": [
+        "saving_throw_wisdom",
+        "saving_throw_charisma",
+        "heavy_armor_proficiency"
+      ],
+      "choices": [
+        {
+          "pick": 2,
+          "from_list": "paladin_skill_options",
+          "_note": "starting class picks 2 total; the multiclass dip already adds 0, so this adds the remaining 2"
+        }
+      ]
+    }
+  },
+  "ranger": {
+    "name": "Ranger",
+    "levels": {
+      "1": {
+        "grants": [
+          "light_armor_proficiency",
+          "medium_armor_proficiency",
+          "shield_proficiency",
+          "simple_weapons_proficiency",
+          "martial_weapons_proficiency",
+          "_TODO_class_features_at_this_level"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "ranger_skill_options"
+          }
+        ]
+      },
+      "2": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-1 spells",
+            "pick": "?",
+            "from_list": "spells_ranger",
+            "filter": {
+              "spell_level": 1
+            }
+          }
+        ]
+      },
+      "3": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "ranger_subclasses"
+          }
+        ]
+      },
+      "4": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "5": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-2 spells",
+            "pick": "?",
+            "from_list": "spells_ranger",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      },
+      "6": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "7": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "8": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "9": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-3 spells",
+            "pick": "?",
+            "from_list": "spells_ranger",
+            "filter": {
+              "spell_level": 3
+            }
+          }
+        ]
+      },
+      "10": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "11": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "12": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      }
+    },
+    "starting_class_bonus": {
+      "grants": ["saving_throw_strength", "saving_throw_dexterity"],
+      "choices": [
+        {
+          "pick": 2,
+          "from_list": "ranger_skill_options",
+          "_note": "starting class picks 3 total; the multiclass dip already adds 1, so this adds the remaining 2"
+        }
+      ]
+    }
+  },
+  "rogue": {
+    "name": "Rogue",
+    "levels": {
+      "1": {
+        "grants": [
+          "light_armor_proficiency",
+          "_TODO_class_features_at_this_level"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "rogue_skill_options"
+          }
+        ]
+      },
+      "2": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "3": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "rogue_subclasses"
+          }
+        ]
+      },
+      "4": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "5": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "6": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "7": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "8": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "9": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "10": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "11": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "12": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      }
+    },
+    "starting_class_bonus": {
+      "grants": [
+        "saving_throw_dexterity",
+        "saving_throw_intelligence",
+        "simple_weapons_proficiency",
+        "hand_crossbows_proficiency",
+        "longswords_proficiency",
+        "rapiers_proficiency",
+        "short_sword_proficiency"
+      ],
+      "choices": [
+        {
+          "pick": 3,
+          "from_list": "rogue_skill_options",
+          "_note": "starting class picks 4 total; the multiclass dip already adds 1, so this adds the remaining 3"
+        }
+      ]
+    }
+  },
+  "sorcerer": {
+    "name": "Sorcerer",
+    "levels": {
+      "1": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "sorcerer_subclasses"
+          },
+          {
+            "_TODO_spell_picks": "first access to level-1 spells",
+            "pick": "?",
+            "from_list": "spells_sorcerer",
+            "filter": {
+              "spell_level": 1
+            }
+          },
+          {
+            "_TODO_cantrip_picks": "starting cantrips (count varies by class)",
+            "pick": "?",
+            "from_list": "spells_sorcerer",
+            "filter": {
+              "spell_level": 0
+            }
+          }
+        ]
+      },
+      "2": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "3": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-2 spells",
+            "pick": "?",
+            "from_list": "spells_sorcerer",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      },
+      "4": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "5": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-3 spells",
+            "pick": "?",
+            "from_list": "spells_sorcerer",
+            "filter": {
+              "spell_level": 3
+            }
+          }
+        ]
+      },
+      "6": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "7": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-4 spells",
+            "pick": "?",
+            "from_list": "spells_sorcerer",
+            "filter": {
+              "spell_level": 4
+            }
+          }
+        ]
+      },
+      "8": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "9": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-5 spells",
+            "pick": "?",
+            "from_list": "spells_sorcerer",
+            "filter": {
+              "spell_level": 5
+            }
+          }
+        ]
+      },
+      "10": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "11": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-6 spells",
+            "pick": "?",
+            "from_list": "spells_sorcerer",
+            "filter": {
+              "spell_level": 6
+            }
+          }
+        ]
+      },
+      "12": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      }
+    },
+    "starting_class_bonus": {
+      "grants": [
+        "saving_throw_constitution",
+        "saving_throw_charisma",
+        "daggers_proficiency",
+        "quarterstaves_proficiency",
+        "light_crossbows_proficiency"
+      ],
+      "choices": [
+        {
+          "pick": 2,
+          "from_list": "sorcerer_skill_options",
+          "_note": "starting class picks 2 total; the multiclass dip already adds 0, so this adds the remaining 2"
+        }
+      ]
+    }
+  },
+  "warlock": {
+    "name": "Warlock",
+    "levels": {
+      "1": {
+        "grants": [
+          "light_armor_proficiency",
+          "simple_weapons_proficiency",
+          "_TODO_class_features_at_this_level"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "warlock_subclasses"
+          },
+          {
+            "_TODO_spell_picks": "first access to level-1 spells",
+            "pick": "?",
+            "from_list": "spells_warlock",
+            "filter": {
+              "spell_level": 1
+            }
+          },
+          {
+            "_TODO_cantrip_picks": "starting cantrips (count varies by class)",
+            "pick": "?",
+            "from_list": "spells_warlock",
+            "filter": {
+              "spell_level": 0
+            }
+          }
+        ]
+      },
+      "2": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "3": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-2 spells",
+            "pick": "?",
+            "from_list": "spells_warlock",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      },
+      "4": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "5": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-3 spells",
+            "pick": "?",
+            "from_list": "spells_warlock",
+            "filter": {
+              "spell_level": 3
+            }
+          }
+        ]
+      },
+      "6": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "7": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-4 spells",
+            "pick": "?",
+            "from_list": "spells_warlock",
+            "filter": {
+              "spell_level": 4
+            }
+          }
+        ]
+      },
+      "8": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "9": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-5 spells",
+            "pick": "?",
+            "from_list": "spells_warlock",
+            "filter": {
+              "spell_level": 5
+            }
+          }
+        ]
+      },
+      "10": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "11": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "12": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      }
+    },
+    "starting_class_bonus": {
+      "grants": ["saving_throw_wisdom", "saving_throw_charisma"],
+      "choices": [
+        {
+          "pick": 2,
+          "from_list": "warlock_skill_options",
+          "_note": "starting class picks 2 total; the multiclass dip already adds 0, so this adds the remaining 2"
+        }
+      ]
+    }
+  },
+  "wizard": {
+    "name": "Wizard",
+    "levels": {
+      "1": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-1 spells",
+            "pick": "?",
+            "from_list": "spells_wizard",
+            "filter": {
+              "spell_level": 1
+            }
+          },
+          {
+            "_TODO_cantrip_picks": "starting cantrips (count varies by class)",
+            "pick": "?",
+            "from_list": "spells_wizard",
+            "filter": {
+              "spell_level": 0
+            }
+          }
+        ]
+      },
+      "2": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "wizard_subclasses"
+          }
+        ]
+      },
+      "3": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-2 spells",
+            "pick": "?",
+            "from_list": "spells_wizard",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      },
+      "4": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "5": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-3 spells",
+            "pick": "?",
+            "from_list": "spells_wizard",
+            "filter": {
+              "spell_level": 3
+            }
+          }
+        ]
+      },
+      "6": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "7": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-4 spells",
+            "pick": "?",
+            "from_list": "spells_wizard",
+            "filter": {
+              "spell_level": 4
+            }
+          }
+        ]
+      },
+      "8": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      },
+      "9": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-5 spells",
+            "pick": "?",
+            "from_list": "spells_wizard",
+            "filter": {
+              "spell_level": 5
+            }
+          }
+        ]
+      },
+      "10": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": []
+      },
+      "11": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "_TODO_spell_picks": "first access to level-6 spells",
+            "pick": "?",
+            "from_list": "spells_wizard",
+            "filter": {
+              "spell_level": 6
+            }
+          }
+        ]
+      },
+      "12": {
+        "grants": ["_TODO_class_features_at_this_level"],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "feats"
+          }
+        ]
+      }
+    },
+    "starting_class_bonus": {
+      "grants": [
+        "saving_throw_intelligence",
+        "saving_throw_wisdom",
+        "daggers_proficiency",
+        "quarterstaves_proficiency",
+        "light_crossbows_proficiency"
+      ],
+      "choices": [
+        {
+          "pick": 2,
+          "from_list": "wizard_skill_options",
+          "_note": "starting class picks 2 total; the multiclass dip already adds 0, so this adds the remaining 2"
+        }
+      ]
+    }
+  }
+}

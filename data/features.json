@@ -1,0 +1,4756 @@
+{
+  "_comment": "Every acquirable thing in the game. The id (key) is what you reference everywhere else. Tags drive the tag-search function.",
+  "acid_splash": {
+    "name": "Acid Splash",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "conjuration",
+    "tags": ["damage", "acid", "area", "ranged"],
+    "classes": ["sorcerer", "wizard", "arcane_trickster", "eldritch_knight"]
+  },
+  "blade_ward": {
+    "name": "Blade Ward",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "abjuration",
+    "tags": ["defense", "damage_reduction", "self"],
+    "classes": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "warlock",
+      "wizard",
+      "arcane_trickster",
+      "eldritch_knight"
+    ]
+  },
+  "bone_chill": {
+    "name": "Bone Chill",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "necromancy",
+    "tags": ["damage", "necrotic", "ranged", "debuff", "single_target"],
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard",
+      "arcane_trickster",
+      "eldritch_knight"
+    ]
+  },
+  "booming_blade": {
+    "name": "Booming Blade",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "evocation",
+    "tags": ["damage", "thunder", "melee", "control", "single_target"],
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard",
+      "arcane_trickster",
+      "eldritch_knight"
+    ]
+  },
+  "bursting_sinew": {
+    "name": "Bursting Sinew",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "necromancy",
+    "tags": ["damage", "piercing", "area"],
+    "classes": [
+      "cleric",
+      "sorcerer",
+      "wizard",
+      "arcane_trickster",
+      "eldritch_knight"
+    ]
+  },
+  "dancing_lights": {
+    "name": "Dancing Lights",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "evocation",
+    "tags": ["light", "utility", "concentration"],
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard",
+      "arcane_trickster",
+      "eldritch_knight"
+    ]
+  },
+  "eldritch_blast": {
+    "name": "Eldritch Blast",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "evocation",
+    "tags": ["damage", "force", "ranged", "single_target"],
+    "classes": ["warlock"]
+  },
+  "fire_bolt": {
+    "name": "Fire Bolt",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "evocation",
+    "tags": ["damage", "fire", "ranged", "single_target"],
+    "classes": ["sorcerer", "wizard", "arcane_trickster", "eldritch_knight"]
+  },
+  "friends": {
+    "name": "friends",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "enchantment",
+    "tags": ["dialogue", "concentration", "buff", "self"],
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard",
+      "arcane_trickster",
+      "eldritch_knight"
+    ]
+  },
+  "guidance": {
+    "name": "Guidance",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "divination",
+    "tags": ["buff", "ally", "concentration"],
+    "classes": ["cleric", "druid"]
+  },
+  "light": {
+    "name": "Light",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "evocation",
+    "tags": ["light", "utility"],
+    "classes": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "wizard",
+      "arcane_trickster",
+      "eldritch_knight"
+    ]
+  },
+  "mage_hand": {
+    "name": "Mage Hand",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "conjuration",
+    "tags": ["summon", "utility"],
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard",
+      "arcane_trickster",
+      "eldritch_knight"
+    ]
+  },
+  "minor_illusion": {
+    "name": "Minor Illusion",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "illusion",
+    "tags": ["control", "utility"],
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard",
+      "arcane_trickster",
+      "eldritch_knight"
+    ]
+  },
+  "poison_spray": {
+    "name": "Poison Spray",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "conjuration",
+    "tags": ["damage", "poison", "ranged", "single_target"],
+    "classes": [
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard",
+      "arcane_trickster",
+      "eldritch_knight"
+    ]
+  },
+  "produce_flame": {
+    "name": "Produce Flame",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "conjuration",
+    "tags": ["damage", "fire", "ranged", "light"],
+    "classes": ["cleric", "druid"]
+  },
+  "ray_of_frost": {
+    "name": "Ray of Frost",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "evocation",
+    "tags": ["damage", "cold", "ranged", "debuff", "single_target"],
+    "classes": ["sorcerer", "wizard", "arcane_trickster", "eldritch_knight"]
+  },
+  "resistance": {
+    "name": "Resistance",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "abjuration",
+    "tags": ["buff", "ally", "concentration", "save_throw"],
+    "classes": ["cleric", "druid"]
+  },
+  "sacred_flame": {
+    "name": "Sacred Flame",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "evocation",
+    "tags": ["damage", "radiant", "ranged", "single_target"],
+    "classes": ["cleric"]
+  },
+  "shillelagh": {
+    "name": "Shillelagh",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "transmutation",
+    "tags": ["buff", "self", "melee"],
+    "classes": ["druid"]
+  },
+  "shocking_grasp": {
+    "name": "Shocking Grasp",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "evocation",
+    "tags": ["damage", "lightning", "melee", "debuff", "single_target"],
+    "classes": ["sorcerer", "wizard", "arcane_trickster", "eldritch_knight"]
+  },
+  "thaumaturgy": {
+    "name": "Thaumaturgy",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "transmutation",
+    "tags": ["dialogue", "buff", "self"],
+    "classes": ["cleric"]
+  },
+  "thorn_whip": {
+    "name": "Thorn Whip",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "transmutation",
+    "tags": ["damage", "piercing", "ranged", "movement", "single_target"],
+    "classes": ["druid"]
+  },
+  "toll_the_dead": {
+    "name": "Toll the Dead",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "necromancy",
+    "tags": ["damage", "necrotic", "ranged", "single_target"],
+    "classes": [
+      "cleric",
+      "warlock",
+      "wizard",
+      "arcane_trickster",
+      "eldritch_knight"
+    ]
+  },
+  "true_strike": {
+    "name": "True Strike",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "divination",
+    "tags": ["buff", "self", "concentration", "advantage"],
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard",
+      "arcane_trickster",
+      "eldritch_knight"
+    ]
+  },
+  "vicious_mockery": {
+    "name": "Vicious Mockery",
+    "type": "spell",
+    "spell_level": 0,
+    "school": "enchantment",
+    "tags": ["damage", "psychic", "ranged", "debuff", "single_target"],
+    "classes": ["bard"]
+  },
+  "animal_friendship": {
+    "name": "Animal Friendship",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "enchantment",
+    "tags": ["control", "concentration", "single_target"],
+    "classes": ["bard", "druid", "ranger"]
+  },
+  "armour_of_agathys": {
+    "name": "Armour of Agathys",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "abjuration",
+    "tags": ["defense", "temporary_life", "self", "damage", "cold"],
+    "classes": ["warlock"]
+  },
+  "arms_of_hadar": {
+    "name": "Arms of Hadar",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "conjuration",
+    "tags": ["damage", "necrotic", "area", "control"],
+    "classes": ["warlock"]
+  },
+  "bane": {
+    "name": "Bane",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "enchantment",
+    "tags": ["debuff", "concentration", "area"],
+    "classes": ["bard", "cleric"]
+  },
+  "bless": {
+    "name": "Bless",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "enchantment",
+    "tags": ["buff", "ally", "concentration", "area"],
+    "classes": ["cleric", "paladin"]
+  },
+  "burning_hands": {
+    "name": "Burning Hands",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": ["damage", "fire", "area"],
+    "classes": ["sorcerer", "wizard", "eldritch_knight"]
+  },
+  "charm_person": {
+    "name": "Charm Person",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "enchantment",
+    "tags": ["control", "concentration", "single_target", "dialogue"],
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard",
+      "arcane_trickster"
+    ]
+  },
+  "chromatic_orb": {
+    "name": "Chromatic Orb",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": [
+      "damage",
+      "thunder",
+      "acid",
+      "cold",
+      "fire",
+      "lightning",
+      "poison",
+      "ranged",
+      "single_target"
+    ],
+    "classes": ["sorcerer", "wizard", "eldritch_knight"]
+  },
+  "colour_spray": {
+    "name": "Colour Spray",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "illusion",
+    "tags": ["control", "area"],
+    "classes": ["sorcerer", "wizard", "arcane_trickster"]
+  },
+  "command": {
+    "name": "Command",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "enchantment",
+    "tags": ["control", "single_target"],
+    "classes": ["cleric", "paladin"]
+  },
+  "compelled_duel": {
+    "name": "Compelled Duel",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "enchantment",
+    "tags": ["control", "concentration", "single_target"],
+    "classes": ["paladin"]
+  },
+  "create_or_destroy_water": {
+    "name": "Create or Destroy Water",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "transmutation",
+    "tags": ["area", "surface"],
+    "classes": ["cleric", "druid"]
+  },
+  "cure_wounds": {
+    "name": "Cure Wounds",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": ["healing", "single_target", "melee"],
+    "classes": ["bard", "cleric", "druid", "paladin", "ranger"]
+  },
+  "disguise_self": {
+    "name": "Disguise Self",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "illusion",
+    "tags": ["buff", "self", "dialogue", "ritual"],
+    "classes": ["bard", "sorcerer", "wizard", "arcane_trickster"]
+  },
+  "dissonant_whispers": {
+    "name": "Dissonant Whispers",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "enchantment",
+    "tags": ["damage", "psychic", "control", "single_target"],
+    "classes": ["bard"]
+  },
+  "divine_favour": {
+    "name": "Divine Favour",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": ["buff", "self", "concentration", "damage", "radiant"],
+    "classes": ["paladin"]
+  },
+  "enhance_leap": {
+    "name": "Enhance Leap",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "transmutation",
+    "tags": ["buff", "movement", "ritual", "self"],
+    "classes": ["druid", "ranger", "sorcerer", "wizard"]
+  },
+  "ensnaring_strike": {
+    "name": "Ensnaring Strike",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "conjuration",
+    "tags": ["damage", "piercing", "control", "concentration", "single_target"],
+    "classes": ["ranger"]
+  },
+  "entangle": {
+    "name": "Entangle",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "conjuration",
+    "tags": ["control", "concentration", "area", "surface", "debuff"],
+    "classes": ["druid"]
+  },
+  "expeditious_retreat": {
+    "name": "Expeditious Retreat",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "transmutation",
+    "tags": ["buff", "self", "movement", "concentration", "action_economy"],
+    "classes": ["sorcerer", "warlock", "wizard"]
+  },
+  "faerie_fire": {
+    "name": "Faerie Fire",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": ["debuff", "concentration", "area", "advantage"],
+    "classes": ["bard", "druid"]
+  },
+  "false_life": {
+    "name": "False Life",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "necromancy",
+    "tags": ["buff", "self", "temporary_life", "defense"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "feather_fall": {
+    "name": "Feather Fall",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "transmutation",
+    "tags": ["buff", "movement", "ritual", "defense", "ally"],
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  "find_familiar": {
+    "name": "Find Familiar",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "conjuration",
+    "tags": ["summon", "ritual", "utility"],
+    "classes": ["wizard"]
+  },
+  "fog_cloud": {
+    "name": "Fog Cloud",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "conjuration",
+    "tags": ["area", "control", "concentration"],
+    "classes": ["druid", "ranger", "sorcerer", "wizard"]
+  },
+  "goodberry": {
+    "name": "Goodberry",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "transmutation",
+    "tags": ["healing", "utility"],
+    "classes": ["druid", "ranger"]
+  },
+  "grease": {
+    "name": "Grease",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "conjuration",
+    "tags": ["control", "area", "surface", "debuff"],
+    "classes": ["wizard"]
+  },
+  "guiding_bolt": {
+    "name": "Guiding Bolt",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": ["damage", "radiant", "ranged", "advantage", "single_target"],
+    "classes": ["cleric"]
+  },
+  "hail_of_thorns": {
+    "name": "Hail of Thorns",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "conjuration",
+    "tags": ["damage", "piercing", "area"],
+    "classes": ["ranger"]
+  },
+  "healing_word": {
+    "name": "Healing Word",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": ["healing", "ranged", "single_target"],
+    "classes": ["bard", "cleric", "druid"]
+  },
+  "hellish_rebuke": {
+    "name": "Hellish Rebuke",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": ["damage", "fire", "reaction", "single_target"],
+    "classes": ["warlock"]
+  },
+  "heroism": {
+    "name": "Heroism",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "enchantment",
+    "tags": ["buff", "ally", "temporary_life", "concentration"],
+    "classes": ["bard", "paladin"]
+  },
+  "hex": {
+    "name": "Hex",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "enchantment",
+    "tags": ["debuff", "damage", "necrotic", "concentration", "single_target"],
+    "classes": ["warlock"]
+  },
+  "hunters_mark": {
+    "name": "Hunter's Mark",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "divination",
+    "tags": ["debuff", "damage", "concentration", "single_target"],
+    "classes": ["ranger"]
+  },
+  "ice_knife": {
+    "name": "Ice Knife",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "conjuration",
+    "tags": ["damage", "cold", "piercing", "area", "ranged"],
+    "classes": ["druid", "sorcerer", "wizard"]
+  },
+  "inflict_wounds": {
+    "name": "Inflict Wounds",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "necromancy",
+    "tags": ["damage", "necrotic", "melee", "single_target"],
+    "classes": ["cleric"]
+  },
+  "longstrider": {
+    "name": "Longstrider",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "transmutation",
+    "tags": ["movement", "ritual", "buff", "ally"],
+    "classes": ["bard", "druid", "ranger", "wizard"]
+  },
+  "mage_armour": {
+    "name": "Mage Armour",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "abjuration",
+    "tags": ["defense", "ac_bonus", "self", "buff"],
+    "classes": ["sorcerer", "wizard", "eldritch_knight"]
+  },
+  "magic_missile": {
+    "name": "Magic Missile",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": ["damage", "force", "ranged", "single_target"],
+    "classes": ["sorcerer", "wizard", "eldritch_knight"]
+  },
+  "protection_from_evil_and_good": {
+    "name": "Protection from Evil and Good",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "abjuration",
+    "tags": ["buff", "concentration", "defense", "single_target"],
+    "classes": ["cleric", "paladin", "warlock", "wizard", "eldritch_knight"]
+  },
+  "ray_of_sickness": {
+    "name": "Ray of Sickness",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "necromancy",
+    "tags": ["damage", "poison", "debuff", "ranged", "single_target"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "sanctuary": {
+    "name": "Sanctuary",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "abjuration",
+    "tags": ["buff", "defense", "ally"],
+    "classes": ["cleric"]
+  },
+  "searing_smite": {
+    "name": "Searing Smite",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": ["damage", "fire", "melee", "concentration"],
+    "classes": ["paladin"]
+  },
+  "shield": {
+    "name": "Shield",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "abjuration",
+    "tags": ["buff", "defense", "concentration", "ally"],
+    "classes": ["sorcerer", "wizard", "eldritch_knight"]
+  },
+  "shield_of_faith": {
+    "name": "Shield of Faith",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "abjuration",
+    "tags": ["buff", "ac_bonus", "defense", "concentration", "ally"],
+    "classes": ["cleric", "paladin"]
+  },
+  "sleep": {
+    "name": "Sleep",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "enchantment",
+    "tags": ["control", "area"],
+    "classes": ["bard", "sorcerer", "wizard", "arcane_trickster"]
+  },
+  "speak_with_animals": {
+    "name": "Speak with Animals",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "divination",
+    "tags": ["dialogue", "ritual", "utility", "self"],
+    "classes": ["bard", "druid", "ranger"]
+  },
+  "tashas_hideous_laughter": {
+    "name": "Tasha's Hideous Laughter",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "enchantment",
+    "tags": ["control", "concentration", "single_target"],
+    "classes": ["bard", "wizard", "arcane_trickster"]
+  },
+  "thunderous_smite": {
+    "name": "Thunderous Smite",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": ["damage", "thunder", "melee", "control"],
+    "classes": ["paladin"]
+  },
+  "thunderwave": {
+    "name": "Thunderwave",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": ["damage", "thunder", "area", "control"],
+    "classes": ["bard", "druid", "sorcerer", "wizard", "eldritch_knight"]
+  },
+  "witch_bolt": {
+    "name": "Witch Bolt",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": ["damage", "lightning", "concentration", "ranged", "single_target"],
+    "classes": ["sorcerer", "warlock", "wizard", "eldritch_knight"]
+  },
+  "wrathful_smite": {
+    "name": "Wrathful Smite",
+    "type": "spell",
+    "spell_level": 1,
+    "school": "evocation",
+    "tags": ["damage", "psychic", "melee", "control", "concentration"],
+    "classes": ["paladin"]
+  },
+  "aid": {
+    "name": "Aid",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "abjuration",
+    "tags": ["buff", "ally", "temporary_life", "max_health", "area"],
+    "classes": ["cleric", "paladin"]
+  },
+  "arcane_lock": {
+    "name": "Arcane Lock",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "abjuration",
+    "tags": ["utility"],
+    "classes": ["wizard", "eldritch_knight"]
+  },
+  "barkskin": {
+    "name": "Barkskin",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "transmutation",
+    "tags": ["buff", "ac_bonus", "concentration", "defense"],
+    "classes": ["druid", "ranger"]
+  },
+  "blindness": {
+    "name": "Blindness",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "necromancy",
+    "tags": ["control", "debuff", "single_target"],
+    "classes": ["bard", "cleric", "sorcerer", "wizard"]
+  },
+  "blur": {
+    "name": "Blur",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "illusion",
+    "tags": ["defense", "self", "concentration", "buff"],
+    "classes": ["sorcerer", "wizard", "arcane_trickster"]
+  },
+  "branding_smite": {
+    "name": "Branding Smite",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "evocation",
+    "tags": ["damage", "radiant", "concentration", "advantage"],
+    "classes": ["paladin"]
+  },
+  "calm_emotions": {
+    "name": "Calm Emotions",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "enchantment",
+    "tags": ["control", "area", "concentration", "debuff"],
+    "classes": ["bard", "cleric"]
+  },
+  "cloud_of_daggers": {
+    "name": "Cloud of Daggers",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "conjuration",
+    "tags": ["damage", "slashing", "area", "concentration"],
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  "crown_of_madness": {
+    "name": "Crown of Madness",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "enchantment",
+    "tags": ["control", "concentration", "single_target", "debuff"],
+    "classes": ["bard", "sorcerer", "warlock", "wizard", "arcane_trickster"]
+  },
+  "darkness": {
+    "name": "Darkness",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "evocation",
+    "tags": ["area", "control", "concentration"],
+    "classes": ["sorcerer", "warlock", "wizard", "eldritch_knight"]
+  },
+  "darkvision": {
+    "name": "Darkvision",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "transmutation",
+    "tags": ["buff", "utility", "self"],
+    "classes": ["druid", "ranger", "sorcerer", "wizard"]
+  },
+  "detect_thoughts": {
+    "name": "Detect Thoughts",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "divination",
+    "tags": ["dialogue", "ritual", "concentration", "utility"],
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  "enhance_ability": {
+    "name": "Enhance Ability",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "transmutation",
+    "tags": ["buff", "concentration", "ally"],
+    "classes": ["bard", "cleric", "druid", "sorcerer"]
+  },
+  "enlarge_reduce": {
+    "name": "Enlarge/Reduce",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "transmutation",
+    "tags": ["buff", "concentration", "single_target"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "enthrall": {
+    "name": "Enthrall",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "enchantment",
+    "tags": ["debuff", "area", "concentration"],
+    "classes": ["bard", "warlock"]
+  },
+  "flame_blade": {
+    "name": "Flame Blade",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "evocation",
+    "tags": ["summon", "damage", "fire", "concentration"],
+    "classes": ["druid"]
+  },
+  "flaming_sphere": {
+    "name": "Flaming Sphere",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "conjuration",
+    "tags": ["summon", "damage", "fire", "area", "concentration"],
+    "classes": ["druid", "wizard"]
+  },
+  "gust_of_wind": {
+    "name": "Gust of Wind",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "evocation",
+    "tags": ["area", "control", "concentration", "movement"],
+    "classes": ["druid", "sorcerer", "wizard", "eldritch_knight"]
+  },
+  "heat_metal": {
+    "name": "Heat Metal",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "transmutation",
+    "tags": ["debuff", "damage", "fire", "concentration", "single_target"],
+    "classes": ["bard", "druid"]
+  },
+  "hold_person": {
+    "name": "Hold Person",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "enchantment",
+    "tags": ["control", "concentration", "single_target"],
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard",
+      "arcane_trickster"
+    ]
+  },
+  "invisibility": {
+    "name": "Invisibility",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "illusion",
+    "tags": ["buff", "concentration", "self"],
+    "classes": ["bard", "sorcerer", "warlock", "wizard", "arcane_trickster"]
+  },
+  "knock": {
+    "name": "Knock",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "transmutation",
+    "tags": ["utility"],
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  "lesser_restoration": {
+    "name": "Lesser Restoration",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "abjuration",
+    "tags": ["healing", "support", "single_target"],
+    "classes": ["bard", "cleric", "druid", "paladin", "ranger"]
+  },
+  "magic_weapon": {
+    "name": "Magic Weapon",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "transmutation",
+    "tags": ["buff", "damage", "concentration"],
+    "classes": ["paladin", "wizard"]
+  },
+  "melfs_acid_arrow": {
+    "name": "Melf's Acid Arrow",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "evocation",
+    "tags": ["damage", "acid", "ranged", "surface", "single_target"],
+    "classes": ["wizard", "eldritch_knight"]
+  },
+  "mirror_image": {
+    "name": "Mirror Image",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "illusion",
+    "tags": ["defense", "self", "buff"],
+    "classes": ["sorcerer", "warlock", "wizard", "arcane_trickster"]
+  },
+  "misty_step": {
+    "name": "Misty Step",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "conjuration",
+    "tags": ["movement", "self"],
+    "classes": ["sorcerer", "warlock", "wizard"]
+  },
+  "moonbeam": {
+    "name": "Moonbeam",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "evocation",
+    "tags": ["damage", "radiant", "area", "concentration"],
+    "classes": ["druid"]
+  },
+  "pass_without_trace": {
+    "name": "Pass Without Trace",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "abjuration",
+    "tags": ["buff", "concentration", "ally"],
+    "classes": ["druid", "ranger"]
+  },
+  "phantasmal_force": {
+    "name": "Phantasmal Force",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "illusion",
+    "tags": ["damage", "psychic", "concentration", "single_target"],
+    "classes": ["bard", "sorcerer", "wizard", "arcane_trickster"]
+  },
+  "prayer_of_healing": {
+    "name": "Prayer of Healing",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "evocation",
+    "tags": ["healing", "support", "area"],
+    "classes": ["cleric"]
+  },
+  "protection_from_poison": {
+    "name": "Protection from Poison",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "abjuration",
+    "tags": ["support", "defense", "single_target", "ally"],
+    "classes": ["cleric", "druid", "paladin", "ranger"]
+  },
+  "ray_of_enfeeblement": {
+    "name": "Ray of Enfeeblement",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "necromancy",
+    "tags": ["debuff", "concentration", "single_target", "ranged"],
+    "classes": ["warlock", "wizard"]
+  },
+  "scorching_ray": {
+    "name": "Scorching Ray",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "evocation",
+    "tags": ["damage", "fire", "ranged", "single_target"],
+    "classes": ["sorcerer", "wizard", "eldritch_knight"]
+  },
+  "see_invisibility": {
+    "name": "See Invisibility",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "divination",
+    "tags": ["buff", "utility", "self"],
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  "shadow_blade": {
+    "name": "Shadow Blade",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "illusion",
+    "tags": ["damage", "psychic", "summon"],
+    "classes": ["sorcerer", "warlock", "wizard"]
+  },
+  "shatter": {
+    "name": "Shatter",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "evocation",
+    "tags": ["damage", "thunder", "area"],
+    "classes": ["bard", "sorcerer", "warlock", "wizard", "eldritch_knight"]
+  },
+  "silence": {
+    "name": "Silence",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "illusion",
+    "tags": ["debuff", "area", "ritual", "concentration", "control"],
+    "classes": ["bard", "cleric", "ranger"]
+  },
+  "spike_growth": {
+    "name": "Spike Growth",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "transmutation",
+    "tags": [
+      "concentration",
+      "area",
+      "damage",
+      "piercing",
+      "surface",
+      "control"
+    ],
+    "classes": ["druid", "ranger"]
+  },
+  "spiritual_weapon": {
+    "name": "Spiritual Weapon",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "evocation",
+    "tags": ["summon", "damage", "force"],
+    "classes": ["cleric"]
+  },
+  "warding_bond": {
+    "name": "Warding Bond",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "abjuration",
+    "tags": ["support", "defense", "damage_reduction", "ally"],
+    "classes": ["cleric"]
+  },
+  "web": {
+    "name": "Web",
+    "type": "spell",
+    "spell_level": 2,
+    "school": "conjuration",
+    "tags": ["area", "surface", "control", "concentration"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "animate_dead": {
+    "name": "Animate Dead",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "necromancy",
+    "tags": ["summon", "utility"],
+    "classes": ["cleric", "wizard"]
+  },
+  "beacon_of_hope": {
+    "name": "Beacon of Hope",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "abjuration",
+    "tags": ["support", "buff", "ally", "area", "concentration"],
+    "classes": ["cleric"]
+  },
+  "bestow_curse": {
+    "name": "Bestow Curse",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "necromancy",
+    "tags": ["debuff", "concentration", "control", "single_target"],
+    "classes": ["bard", "cleric", "wizard"]
+  },
+  "blinding_smite": {
+    "name": "Blinding Smite",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "evocation",
+    "tags": ["damage", "melee", "radiant", "control"],
+    "classes": ["paladin"]
+  },
+  "blink": {
+    "name": "Blink",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "transmutation",
+    "tags": ["movement", "defense", "self", "concentration"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "call_lightning": {
+    "name": "Call Lightning",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "conjuration",
+    "tags": ["damage", "lightning", "area", "concentration", "summon"],
+    "classes": ["druid"]
+  },
+  "conjure_barrage": {
+    "name": "Conjure Barrage",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "conjuration",
+    "tags": ["damage", "area"],
+    "classes": ["ranger"]
+  },
+  "counterspell": {
+    "name": "Counterspell",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "abjuration",
+    "tags": ["debuff", "defense", "reaction", "control"],
+    "classes": ["sorcerer", "warlock", "wizard"]
+  },
+  "crusaders_mantle": {
+    "name": "Crusader's Mantle",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "evocation",
+    "tags": ["buff", "damage", "radiant", "concentration", "area", "ally"],
+    "classes": ["paladin"]
+  },
+  "daylight": {
+    "name": "Daylight",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "evocation",
+    "tags": ["light", "area", "debuff"],
+    "classes": ["cleric", "druid", "paladin", "ranger"]
+  },
+  "elemental_weapon": {
+    "name": "Elemental Weapon",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "transmutation",
+    "tags": [
+      "damage",
+      "buff",
+      "cold",
+      "thunder",
+      "acid",
+      "lightning",
+      "fire",
+      "concentration"
+    ],
+    "classes": ["paladin"]
+  },
+  "fear": {
+    "name": "Fear",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "illusion",
+    "tags": ["area", "control", "concentration"],
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  "feign_death": {
+    "name": "Feign Death",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "necromancy",
+    "tags": ["self", "buff", "defense", "ritual"],
+    "classes": ["bard", "cleric", "druid", "wizard"]
+  },
+  "fireball": {
+    "name": "Fireball",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "evocation",
+    "tags": ["damage", "fire", "area"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "gaseous_form": {
+    "name": "Gaseous Form",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "transmutation",
+    "tags": ["movement", "self", "buff", "concentration", "defense"],
+    "classes": ["sorcerer", "warlock", "wizard"]
+  },
+  "glyph_of_warding": {
+    "name": "Glyph of Warding",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "abjuration",
+    "tags": [
+      "damage",
+      "control",
+      "area",
+      "surface",
+      "cold",
+      "acid",
+      "fire",
+      "lightning",
+      "thunder"
+    ],
+    "classes": ["bard", "cleric", "wizard"]
+  },
+  "grant_flight": {
+    "name": "Grant Flight",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "transmutation",
+    "tags": ["movement", "buff", "concentration", "ally"],
+    "classes": ["sorcerer", "warlock", "wizard"]
+  },
+  "haste": {
+    "name": "Haste",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "transmutation",
+    "tags": ["buff", "concentration", "action_economy", "ally"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "hunger_of_hadar": {
+    "name": "Hunger of Hadar",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "conjuration",
+    "tags": [
+      "debuff",
+      "area",
+      "damage",
+      "cold",
+      "acid",
+      "concentration",
+      "control"
+    ],
+    "classes": ["warlock"]
+  },
+  "hypnotic_pattern": {
+    "name": "Hypnotic Pattern",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "illusion",
+    "tags": ["control", "area", "concentration"],
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  "lightning_arrow": {
+    "name": "Lightning Arrow",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "transmutation",
+    "tags": ["area", "damage", "lightning"],
+    "classes": ["ranger"]
+  },
+  "lightning_bolt": {
+    "name": "Lightning Bolt",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "evocation",
+    "tags": ["area", "damage", "lightning"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "mass_healing_word": {
+    "name": "Mass Healing Word",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "evocation",
+    "tags": ["healing", "area", "support"],
+    "classes": ["cleric"]
+  },
+  "plant_growth": {
+    "name": "Plant Growth",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "transmutation",
+    "tags": ["area", "control", "surface"],
+    "classes": ["bard", "druid", "ranger"]
+  },
+  "protection_from_energy": {
+    "name": "Protection from Energy",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "abjuration",
+    "tags": ["buff", "damage_reduction", "concentration", "defense", "ally"],
+    "classes": ["cleric", "druid", "ranger", "sorcerer", "wizard"]
+  },
+  "remove_curse": {
+    "name": "Remove Curse",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "abjuration",
+    "tags": ["support", "single_target"],
+    "classes": ["cleric", "paladin", "warlock", "wizard"]
+  },
+  "revivify": {
+    "name": "Revivify",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "necromancy",
+    "tags": ["support", "healing"],
+    "classes": ["cleric", "paladin"]
+  },
+  "sleet_storm": {
+    "name": "Sleet Storm",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "conjuration",
+    "tags": ["area", "surface", "control", "concentration"],
+    "classes": ["druid", "sorcerer", "wizard"]
+  },
+  "slow": {
+    "name": "Slow",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "transmutation",
+    "tags": ["area", "control", "concentration", "debuff"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "speak_with_dead": {
+    "name": "Speak with Dead",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "necromancy",
+    "tags": ["dialogue", "ritual", "utility"],
+    "classes": ["bard", "cleric"]
+  },
+  "spirit_guardians": {
+    "name": "Spirit Guardians",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "conjuration",
+    "tags": [
+      "area",
+      "concentration",
+      "radiant",
+      "necrotic",
+      "damage",
+      "self",
+      "control"
+    ],
+    "classes": ["cleric"]
+  },
+  "stinking_cloud": {
+    "name": "Stinking Cloud",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "conjuration",
+    "tags": ["area", "control", "concentration"],
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  "vampiric_touch": {
+    "name": "Vampiric Touch",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "necromancy",
+    "tags": ["healing", "damage", "necrotic", "concentration", "melee", "self"],
+    "classes": ["warlock", "wizard"]
+  },
+  "warden_of_vitality": {
+    "name": "Warden of Vitality",
+    "type": "spell",
+    "spell_level": 3,
+    "school": "evocation",
+    "tags": ["support", "healing", "concentration", "ally"],
+    "classes": ["paladin"]
+  },
+  "banishment": {
+    "name": "Banishment",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "abjuration",
+    "tags": ["control", "concentration", "single_target"],
+    "classes": ["cleric", "sorcerer", "warlock", "wizard"]
+  },
+  "blight": {
+    "name": "Blight",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "necromancy",
+    "tags": ["damage", "necrotic", "single_target"],
+    "classes": ["druid", "sorcerer", "warlock", "wizard"]
+  },
+  "confusion": {
+    "name": "Confusion",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "enchantment",
+    "tags": ["control", "concentration", "area"],
+    "classes": ["bard", "druid", "sorcerer", "wizard"]
+  },
+  "conjure_minor_elemental": {
+    "name": "Conjure Minor Elemental",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "conjuration",
+    "tags": ["summon", "damage", "fire", "cold", "bludgeoning"],
+    "classes": ["druid", "wizard"]
+  },
+  "conjure_woodland_being": {
+    "name": "Conjure Woodland Being",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "conjuration",
+    "tags": ["summon", "damage", "bludgeoning", "area", "surface", "control"],
+    "classes": ["druid"]
+  },
+  "death_ward": {
+    "name": "Death Ward",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "abjuration",
+    "tags": ["buff", "support", "ally", "defense"],
+    "classes": ["cleric"]
+  },
+  "dimension_door": {
+    "name": "Dimension Door",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "conjuration",
+    "tags": ["movement", "self"],
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  "dominate_beast": {
+    "name": "Dominate Beast",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "enchantment",
+    "tags": ["control", "concentration", "single_target"],
+    "classes": ["druid", "sorcerer"]
+  },
+  "evards_black_tentacles": {
+    "name": "Evard's Black Tentacles",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "conjuration",
+    "tags": ["area", "control", "damage", "bludgeoning", "concentration"],
+    "classes": ["wizard"]
+  },
+  "fire_shield": {
+    "name": "Fire Shield",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "evocation",
+    "tags": ["self", "defense", "damage_reduction", "fire", "damage"],
+    "classes": ["wizard"]
+  },
+  "freedom_of_movement": {
+    "name": "Freedom of Movement",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "abjuration",
+    "tags": ["movement", "buff", "support", "ally"],
+    "classes": ["bard", "cleric", "druid"]
+  },
+  "grasping_vine": {
+    "name": "Grasping Vine",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "conjuration",
+    "tags": ["summon", "control", "movement"],
+    "classes": ["druid"]
+  },
+  "greater_invisibility": {
+    "name": "Greater Invisibility",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "illusion",
+    "tags": ["buff", "self", "concentration"],
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  "guardian_of_faith": {
+    "name": "Guardian of Faith",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "conjuration",
+    "tags": ["summon", "damage", "radiant"],
+    "classes": ["cleric"]
+  },
+  "ice_storm": {
+    "name": "Ice Storm",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "evocation",
+    "tags": ["area", "damage", "bludgeoning", "cold", "surface"],
+    "classes": ["druid", "sorcerer", "wizard"]
+  },
+  "otilukes_resilient_sphere": {
+    "name": "Otiluke's Resilient Sphere",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "evocation",
+    "tags": ["control", "defense", "concentration", "single_target"],
+    "classes": ["wizard"]
+  },
+  "phantasmal_killer": {
+    "name": "Phantasmal Killer",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "illusion",
+    "tags": ["damage", "psychic", "control", "concentration", "single_target"],
+    "classes": ["wizard"]
+  },
+  "polymorph": {
+    "name": "Polymorph",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "transmutation",
+    "tags": ["concentration", "control", "single_target"],
+    "classes": ["bard", "druid", "sorcerer", "wizard"]
+  },
+  "stoneskin": {
+    "name": "Stoneskin",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "abjuration",
+    "tags": ["concentration", "defense", "damage_reduction", "buff", "ally"],
+    "classes": ["druid", "sorcerer", "wizard"]
+  },
+  "wall_of_fire": {
+    "name": "Wall of Fire",
+    "type": "spell",
+    "spell_level": 4,
+    "school": "evocation",
+    "tags": ["area", "damage", "fire", "concentration", "control", "surface"],
+    "classes": ["druid", "sorcerer", "wizard"]
+  },
+  "banishing_smite": {
+    "name": "Banishing Smite",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "abjuration",
+    "tags": [
+      "damage",
+      "force",
+      "melee",
+      "control",
+      "concentration",
+      "single_target"
+    ],
+    "classes": ["magical_secrets", "hexblade"]
+  },
+  "cloudkill": {
+    "name": "Cloudkill",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "conjuration",
+    "tags": ["area", "poison", "damage", "concentration", "control"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "cone_of_cold": {
+    "name": "Cone of Cold",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "evocation",
+    "tags": ["area", "damage", "cold"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "conjure_elemental": {
+    "name": "Conjure Elemental",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "conjuration",
+    "tags": [
+      "summon",
+      "damage",
+      "thunder",
+      "bludgeoning",
+      "fire",
+      "cold",
+      "concentration"
+    ],
+    "classes": ["druid", "wizard"]
+  },
+  "contagion": {
+    "name": "Contagion",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "necromancy",
+    "tags": ["debuff", "single_target", "concentration"],
+    "classes": ["cleric", "druid"]
+  },
+  "dispel_evil_and_good": {
+    "name": "Dispel Evil and Good",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "abjuration",
+    "tags": ["support", "buff", "ally", "concentration"],
+    "classes": ["cleric"]
+  },
+  "dominate_person": {
+    "name": "Dominate Person",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "enchantment",
+    "tags": ["control", "concentration", "single_target"],
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  "flame_strike": {
+    "name": "Flame Strike",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "evocation",
+    "tags": ["damage", "area", "radiant", "fire"],
+    "classes": ["cleric"]
+  },
+  "greater_restoration": {
+    "name": "Greater Restoration",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "abjuration",
+    "tags": ["support", "healing", "single_target"],
+    "classes": ["bard", "cleric", "druid"]
+  },
+  "hold_monster": {
+    "name": "Hold Monster",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "enchantment",
+    "tags": ["control", "concentration", "single_target"],
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  "insect_plague": {
+    "name": "Insect Plague",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "conjuration",
+    "tags": ["area", "damage", "piercing", "debuff", "concentration"],
+    "classes": ["cleric", "druid", "sorcerer"]
+  },
+  "mass_cure_wounds": {
+    "name": "Mass Cure Wounds",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "evocation",
+    "tags": ["support", "area", "healing"],
+    "classes": ["bard", "cleric", "druid"]
+  },
+  "planar_binding": {
+    "name": "Planar Binding",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "abjuration",
+    "tags": ["concentration", "control"],
+    "classes": ["bard", "cleric", "druid", "wizard"]
+  },
+  "seeming": {
+    "name": "Seeming",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "illusion",
+    "tags": ["buff", "area", "dialogue", "ally"],
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  "telekinesis": {
+    "name": "Telekinesis",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "transmutation",
+    "tags": ["control", "concentration", "single_target"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "wall_of_stone": {
+    "name": "Wall of Stone",
+    "type": "spell",
+    "spell_level": 5,
+    "school": "evocation",
+    "tags": ["surface", "area", "concentration", "control"],
+    "classes": ["druid", "sorcerer", "wizard"]
+  },
+  "arcane_gate": {
+    "name": "Arcane Gate",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "conjuration",
+    "tags": ["concentration", "movement", "utility"],
+    "classes": ["sorcerer", "warlock", "wizard"]
+  },
+  "blade_barrier": {
+    "name": "Blade Barrier",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "evocation",
+    "tags": ["damage", "area", "slashing", "concentration", "control"],
+    "classes": ["cleric"]
+  },
+  "chain_lightning": {
+    "name": "Chain Lightning",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "evocation",
+    "tags": ["damage", "area", "lightning"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "circle_of_death": {
+    "name": "Circle of Death",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "necromancy",
+    "tags": ["damage", "area", "necrotic"],
+    "classes": ["sorcerer", "warlock", "wizard"]
+  },
+  "create_undead": {
+    "name": "Create Undead",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "necromancy",
+    "tags": ["summon"],
+    "classes": ["cleric", "warlock", "wizard"]
+  },
+  "disintegrate": {
+    "name": "Disintegrate",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "transmutation",
+    "tags": ["damage", "force", "single_target"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "eyebite": {
+    "name": "Eyebite",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "necromancy",
+    "tags": ["debuff", "concentration", "control", "single_target"],
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  "flesh_to_stone": {
+    "name": "Flesh to Stone",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "transmutation",
+    "tags": ["debuff", "control", "concentration", "single_target"],
+    "classes": ["warlock", "wizard"]
+  },
+  "globe_of_invulnerability": {
+    "name": "Globe of Invulnerability",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "abjuration",
+    "tags": ["area", "damage_reduction", "support", "concentration", "defense"],
+    "classes": ["sorcerer", "wizard"]
+  },
+  "harm": {
+    "name": "Harm",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "necromancy",
+    "tags": ["damage", "necrotic", "single_target"],
+    "classes": ["cleric"]
+  },
+  "heal": {
+    "name": "Heal",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "evocation",
+    "tags": ["healing", "support", "single_target"],
+    "classes": ["cleric", "druid"]
+  },
+  "heroes_feast": {
+    "name": "Heroes' Feast",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "conjuration",
+    "tags": ["buff", "support", "area", "ally"],
+    "classes": ["cleric", "druid"]
+  },
+  "otilukes_freezing_sphere": {
+    "name": "Otiluke's Freezing Sphere",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "evocation",
+    "tags": ["area", "cold", "damage"],
+    "classes": ["wizard"]
+  },
+  "ottos_irresistible_dance": {
+    "name": "Otto's Irresistible Dance",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "enchantment",
+    "tags": ["debuff", "concentration", "control", "single_target"],
+    "classes": ["bard", "wizard"]
+  },
+  "planar_ally": {
+    "name": "Planar Ally",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "conjuration",
+    "tags": ["summon", "damage", "area"],
+    "classes": ["cleric"]
+  },
+  "sunbeam": {
+    "name": "Sunbeam",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "evocation",
+    "tags": ["area", "damage", "radiant", "concentration", "control"],
+    "classes": ["druid", "sorcerer", "wizard"]
+  },
+  "wall_of_ice": {
+    "name": "Wall of Ice",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "evocation",
+    "tags": ["area", "cold", "damage", "control", "concentration", "surface"],
+    "classes": ["wizard"]
+  },
+  "wall_of_thorns": {
+    "name": "Wall of Thorns",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "evocation",
+    "tags": [
+      "area",
+      "damage",
+      "control",
+      "concentration",
+      "surface",
+      "piercing"
+    ],
+    "classes": ["druid"]
+  },
+  "wind_walk": {
+    "name": "Wind Walk",
+    "type": "spell",
+    "spell_level": 6,
+    "school": "transmutation",
+    "tags": ["movement", "buff", "support", "ally"],
+    "classes": ["druid"]
+  },
+  "rage": {
+    "name": "Rage",
+    "type": "class_feature",
+    "tags": ["damage", "defense", "buff", "self", "damage_reduction"]
+  },
+  "unarmored_defense": {
+    "name": "Unarmored Defense",
+    "type": "class_feature",
+    "tags": ["defense", "ac_bonus"]
+  },
+  "reckless_attack": {
+    "name": "Reckless Attack",
+    "type": "class_feature",
+    "tags": ["damage", "advantage"]
+  },
+  "danger_sense": {
+    "name": "Danger Sense",
+    "type": "class_feature",
+    "tags": ["defense", "save_throw"]
+  },
+  "extra_attack": {
+    "name": "Extra Attack",
+    "type": "class_feature",
+    "tags": ["damage", "action_economy"]
+  },
+  "fast_movement": {
+    "name": "Fast Movement",
+    "type": "class_feature",
+    "tags": ["movement"]
+  },
+  "feral_instinct": {
+    "name": "Feral Instinct",
+    "type": "class_feature",
+    "tags": ["defense", "initiative"]
+  },
+  "brutal_critical": {
+    "name": "Brutal Critical",
+    "type": "class_feature",
+    "tags": ["damage", "critical"]
+  },
+  "relentless_rage": {
+    "name": "Relentless Rage",
+    "type": "class_feature",
+    "tags": ["defense", "self"]
+  },
+  "song_of_rest": {
+    "name": "Song of Rest",
+    "type": "class_feature",
+    "tags": ["healing", "support", "utility"]
+  },
+  "jack_of_all_trades": {
+    "name": "Jack of All Trades",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "font_of_inspiration": {
+    "name": "Font of Inspiration",
+    "type": "class_feature",
+    "tags": ["utility", "support"]
+  },
+  "countercharm": {
+    "name": "Countercharm",
+    "type": "class_feature",
+    "tags": ["support", "defense", "ally"]
+  },
+  "turn_undead": {
+    "name": "Turn Undead",
+    "type": "class_feature",
+    "tags": ["control", "debuff", "area"]
+  },
+  "destroy_undead": {
+    "name": "Destroy Undead",
+    "type": "class_feature",
+    "tags": ["damage", "radiant", "control"]
+  },
+  "divine_intervention": {
+    "name": "Divine Intervention",
+    "type": "class_feature",
+    "tags": ["damage", "radiant", "healing", "utility"]
+  },
+  "second_wind": {
+    "name": "Second Wind",
+    "type": "class_feature",
+    "tags": ["healing", "self"]
+  },
+  "action_surge": {
+    "name": "Action Surge",
+    "type": "class_feature",
+    "tags": ["action_economy"]
+  },
+  "indomitable": {
+    "name": "Indomitable",
+    "type": "class_feature",
+    "tags": ["defense", "save_throw"]
+  },
+  "improved_extra_attack": {
+    "name": "Improved Extra Attack",
+    "type": "class_feature",
+    "tags": ["action_economy", "damage"]
+  },
+  "martial_arts_dextrous_attacks": {
+    "name": "Martial Arts: Dextrous Attacks",
+    "type": "class_feature",
+    "tags": ["damage", "buff"]
+  },
+  "martial_arts_deft_strikes": {
+    "name": "Martial Arts: Deft Strikes",
+    "type": "class_feature",
+    "tags": ["damage"]
+  },
+  "martial_arts_bonus_unarmed_strike": {
+    "name": "Martial Arts: Bonus Unarmed Strike",
+    "type": "class_feature",
+    "tags": ["damage", "action_economy"]
+  },
+  "unarmoured_defense": {
+    "name": "Unarmoured Defense",
+    "type": "class_feature",
+    "tags": ["defense", "ac_bonus"]
+  },
+  "flurry_of_blows": {
+    "name": "Flurry of Blows",
+    "type": "class_feature",
+    "tags": ["damage", "action_economy"]
+  },
+  "unarmoured_movement": {
+    "name": "Unarmoured Movement",
+    "type": "class_feature",
+    "tags": ["movement"]
+  },
+  "patient_defence": {
+    "name": "Patient Defence",
+    "type": "class_feature",
+    "tags": ["defense", "self"]
+  },
+  "step_of_the_wind_dash": {
+    "name": "Step of the Wind: Dash",
+    "type": "class_feature",
+    "tags": ["movement", "action_economy", "self"]
+  },
+  "step_of_the_wind_disengage": {
+    "name": "Step of the Wind: Disengage",
+    "type": "class_feature",
+    "tags": ["movement", "action_economy", "defense", "self"]
+  },
+  "deflect_missiles": {
+    "name": "Deflect Missiles",
+    "type": "class_feature",
+    "tags": ["defense", "reaction"]
+  },
+  "slow_fall": {
+    "name": "Slow Fall",
+    "type": "class_feature",
+    "tags": ["defense", "movement", "reaction"]
+  },
+  "stunning_strike_melee": {
+    "name": "Stunning Strike (Melee)",
+    "type": "class_feature",
+    "tags": ["damage", "control"]
+  },
+  "stunning_strike_unarmed": {
+    "name": "Stunning Strike (Unarmed)",
+    "type": "class_feature",
+    "tags": ["damage", "control"]
+  },
+  "improved_unarmoured_movement": {
+    "name": "Improved Unarmoured Movement",
+    "type": "class_feature",
+    "tags": ["movement"]
+  },
+  "ki_empowered_strikes": {
+    "name": "Ki Empowered Strikes",
+    "type": "class_feature",
+    "tags": ["damage"]
+  },
+  "evasion": {
+    "name": "Evasion",
+    "type": "class_feature",
+    "tags": ["defense", "save_throw"]
+  },
+  "stillness_of_mind": {
+    "name": "Stillness of Mind",
+    "type": "class_feature",
+    "tags": ["defense", "support", "self"]
+  },
+  "advanced_unarmoured_movement": {
+    "name": "Advanced Unarmoured Movement",
+    "type": "class_feature",
+    "tags": ["movement"]
+  },
+  "purity_of_body": {
+    "name": "Purity of Body",
+    "type": "class_feature",
+    "tags": ["defense"]
+  },
+  "divine_sense": {
+    "name": "Divine Sense",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "lay_on_hands": {
+    "name": "Lay On Hands",
+    "type": "class_feature",
+    "tags": ["healing", "support"]
+  },
+  "divine_smite": {
+    "name": "Divine Smite",
+    "type": "class_feature",
+    "tags": ["damage", "radiant"]
+  },
+  "divine_health": {
+    "name": "Divine Health",
+    "type": "class_feature",
+    "tags": ["defense"]
+  },
+  "aura_of_protection": {
+    "name": "Aura of Protection",
+    "type": "class_feature",
+    "tags": ["defense", "save_throw", "support", "area", "ally"]
+  },
+  "aura_of_courage": {
+    "name": "Aura of Courage",
+    "type": "class_feature",
+    "tags": ["defense", "support", "area", "ally"]
+  },
+  "improved_divine_smite": {
+    "name": "Improved Divine Smite",
+    "type": "class_feature",
+    "tags": ["damage", "radiant"]
+  },
+  "bounty_hunter": {
+    "name": "Bounty Hunter",
+    "type": "class_feature",
+    "tags": ["dialogue", "utility", "control", "debuff"]
+  },
+  "keeper_of_the_veil": {
+    "name": "Keeper of the Veil",
+    "type": "class_feature",
+    "tags": ["dialogue", "utility", "damage"]
+  },
+  "mage_breaker": {
+    "name": "Mage Breaker",
+    "type": "class_feature",
+    "tags": ["dialogue", "utility", "damage", "debuff"]
+  },
+  "ranger_knight": {
+    "name": "Ranger Knight",
+    "type": "class_feature",
+    "tags": ["dialogue", "utility", "defense", "save_throw"]
+  },
+  "sanctified_stalker": {
+    "name": "Sanctified Stalker",
+    "type": "class_feature",
+    "tags": ["dialogue", "utility", "damage", "advantage"]
+  },
+  "beast_tamer": {
+    "name": "Beast Tamer",
+    "type": "class_feature",
+    "tags": ["dialogue", "utility", "summon"]
+  },
+  "urban_tracker": {
+    "name": "Urban Tracker",
+    "type": "class_feature",
+    "tags": ["dialogue", "utility", "movement"]
+  },
+  "wasteland_wanderer_cold": {
+    "name": "Wasteland Wanderer: Cold",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "cold"]
+  },
+  "wasteland_wanderer_fire": {
+    "name": "Wasteland Wanderer: Fire",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "fire"]
+  },
+  "wasteland_wanderer_poison": {
+    "name": "Wasteland Wanderer: Poison",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "poison"]
+  },
+  "lands_stride_difficult_terrain": {
+    "name": "Land's Stride Difficult Terrain",
+    "type": "class_feature",
+    "tags": ["movement", "buff", "self"]
+  },
+  "lands_stride_plants": {
+    "name": "Land's Stride Plants",
+    "type": "class_feature",
+    "tags": ["movement", "defense", "self"]
+  },
+  "hide_in_plain_sight": {
+    "name": "Hide in Plain Sight",
+    "type": "class_feature",
+    "tags": ["utility", "movement"]
+  },
+  "sneak_attack_melee": {
+    "name": "Sneak Attack (Melee)",
+    "type": "class_feature",
+    "tags": ["damage", "melee", "single_target"]
+  },
+  "sneak_attack_ranged": {
+    "name": "Sneak Attack (Ranged)",
+    "type": "class_feature",
+    "tags": ["damage", "ranged", "single_target"]
+  },
+  "cunning_action_dash": {
+    "name": "Cunning Action: Dash",
+    "type": "class_feature",
+    "tags": ["movement", "action_economy", "self"]
+  },
+  "cunning_action_disengage": {
+    "name": "Cunning Action: Disengage",
+    "type": "class_feature",
+    "tags": ["defense", "movement", "action_economy", "self"]
+  },
+  "cunning_action_hide": {
+    "name": "Cunning Action: Hide",
+    "type": "class_feature",
+    "tags": ["utility", "action_economy", "self"]
+  },
+  "uncanny_dodge": {
+    "name": "Uncanny Dodge",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "reaction"]
+  },
+  "reliable_talent": {
+    "name": "Reliable Talent",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "careful_spell": {
+    "name": "Careful Spell",
+    "type": "class_feature",
+    "tags": ["support", "ally"]
+  },
+  "distant_spell": {
+    "name": "Distant Spell",
+    "type": "class_feature",
+    "tags": ["ranged", "buff"]
+  },
+  "extended_spell": {
+    "name": "Extended Spell",
+    "type": "class_feature",
+    "tags": ["buff"]
+  },
+  "twinned_spell": {
+    "name": "Twinned Spell",
+    "type": "class_feature",
+    "tags": ["buff", "single_target"]
+  },
+  "heightened_spell": {
+    "name": "Heightened Spell",
+    "type": "class_feature",
+    "tags": ["debuff"]
+  },
+  "quickened_spell": {
+    "name": "Quickened Spell",
+    "type": "class_feature",
+    "tags": ["action_economy"]
+  },
+  "double_spell": {
+    "name": "Double Spell",
+    "type": "class_feature",
+    "tags": ["buff", "area"]
+  },
+  "agonising_blast": {
+    "name": "Agonising Blast",
+    "type": "class_feature",
+    "tags": ["damage", "ranged"]
+  },
+  "armour_of_shadows": {
+    "name": "Armour of Shadows",
+    "type": "class_feature",
+    "tags": ["defense", "ac_bonus", "self", "buff"]
+  },
+  "beast_speech": {
+    "name": "Beast Speech",
+    "type": "class_feature",
+    "tags": ["dialogue", "utility"]
+  },
+  "beguiling_influence": {
+    "name": "Beguiling Influence",
+    "type": "class_feature",
+    "tags": ["dialogue", "utility"]
+  },
+  "devils_sight": {
+    "name": "Devil's Sight",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "fiendish_vigour": {
+    "name": "Fiendish Vigour",
+    "type": "class_feature",
+    "tags": ["buff", "self", "temporary_life"]
+  },
+  "mask_of_many_faces": {
+    "name": "Mask of Many Faces",
+    "type": "class_feature",
+    "tags": ["dialogue", "utility", "self"]
+  },
+  "one_with_shadows": {
+    "name": "One With Shadows",
+    "type": "class_feature",
+    "tags": ["utility", "defense", "self"]
+  },
+  "repelling_blast": {
+    "name": "Repelling Blast",
+    "type": "class_feature",
+    "tags": ["control", "damage", "ranged"]
+  },
+  "thief_of_five_fates": {
+    "name": "Thief of Five Fates",
+    "type": "class_feature",
+    "tags": ["debuff", "concentration", "area"]
+  },
+  "pact_of_the_blade": {
+    "name": "Pact of the Blade",
+    "type": "class_feature",
+    "tags": ["summon", "melee", "damage", "weapons"]
+  },
+  "pact_of_the_chain": {
+    "name": "Pact of the Chain",
+    "type": "class_feature",
+    "tags": ["summon"]
+  },
+  "pact_of_the_tome": {
+    "name": "Pact of the Tome",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "sign_of_the_ill_omen": {
+    "name": "Sign of the Ill Omen",
+    "type": "class_feature",
+    "tags": ["debuff", "concentration"]
+  },
+  "mire_the_mind": {
+    "name": "Mire the Mind",
+    "type": "class_feature",
+    "tags": ["control", "debuff", "concentration", "area"]
+  },
+  "deepened_pact": {
+    "name": "Deepened Pact",
+    "type": "class_feature",
+    "tags": ["buff"]
+  },
+  "book_of_ancient_secrets": {
+    "name": "Book of Ancient Secrets",
+    "type": "class_feature",
+    "tags": ["utility", "ritual"]
+  },
+  "dreadful_word": {
+    "name": "Dreadful Word",
+    "type": "class_feature",
+    "tags": ["control", "debuff", "psychic", "concentration"]
+  },
+  "sculptor_of_flesh": {
+    "name": "Sculptor of Flesh",
+    "type": "class_feature",
+    "tags": ["control", "concentration", "single_target"]
+  },
+  "minions_of_chaos": {
+    "name": "Minions of Chaos",
+    "type": "class_feature",
+    "tags": ["summon", "concentration"]
+  },
+  "otherworldly_leap": {
+    "name": "Otherworldly Leap",
+    "type": "class_feature",
+    "tags": ["movement", "self", "ritual"]
+  },
+  "whispers_of_the_grave": {
+    "name": "Whispers of the Grave",
+    "type": "class_feature",
+    "tags": ["dialogue", "ritual"]
+  },
+  "life_drinker": {
+    "name": "Life Drinker",
+    "type": "class_feature",
+    "tags": ["damage", "necrotic"]
+  },
+  "arcane_recovery": {
+    "name": "Arcane Recovery",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "rage_becomes_frenzy": {
+    "name": "Rage Becomes Frenzy",
+    "type": "class_feature",
+    "tags": ["buff", "self"]
+  },
+  "frenzy": {
+    "name": "Frenzy",
+    "type": "class_feature",
+    "tags": ["damage", "action_economy"]
+  },
+  "frenzied_strike": {
+    "name": "Frenzied Strike",
+    "type": "class_feature",
+    "tags": ["damage", "action_economy"]
+  },
+  "enraged_throw": {
+    "name": "Enraged Throw",
+    "type": "class_feature",
+    "tags": ["damage", "control"]
+  },
+  "mindless_rage": {
+    "name": "Mindless Rage",
+    "type": "class_feature",
+    "tags": ["defense", "self"]
+  },
+  "intimidating_presence": {
+    "name": "Intimidating Presence",
+    "type": "class_feature",
+    "tags": ["control", "debuff", "single_target", "dialogue"]
+  },
+  "giants_rage": {
+    "name": "Giant's Rage",
+    "type": "class_feature",
+    "tags": ["damage", "buff", "self"]
+  },
+  "vapraks_greed": {
+    "name": "Vaprak's Greed",
+    "type": "class_feature",
+    "tags": ["damage", "buff"]
+  },
+  "boot_of_the_giants": {
+    "name": "Boot of the Giants",
+    "type": "class_feature",
+    "tags": ["buff", "damage"]
+  },
+  "elemental_cleaver": {
+    "name": "Elemental Cleaver",
+    "type": "class_feature",
+    "tags": ["damage", "buff"]
+  },
+  "mighty_impel": {
+    "name": "Mighty Impel",
+    "type": "class_feature",
+    "tags": ["damage", "control"]
+  },
+  "rage_wild_magic": {
+    "name": "Rage: Wild Magic",
+    "type": "class_feature",
+    "tags": ["buff", "utility", "self"]
+  },
+  "weapon_infusion": {
+    "name": "Weapon Infusion",
+    "type": "class_feature",
+    "tags": ["damage", "buff"]
+  },
+  "magic_retribution": {
+    "name": "Magic Retribution",
+    "type": "class_feature",
+    "tags": ["damage", "reaction"]
+  },
+  "protective_lights": {
+    "name": "Protective Lights",
+    "type": "class_feature",
+    "tags": ["defense", "ac_bonus", "area", "ally", "buff"]
+  },
+  "intangible_spirit": {
+    "name": "Intangible Spirit",
+    "type": "class_feature",
+    "tags": ["defense", "self", "damage_reduction"]
+  },
+  "bolt_of_light": {
+    "name": "Bolt of Light",
+    "type": "class_feature",
+    "tags": ["damage", "radiant", "ranged"]
+  },
+  "vine_growth": {
+    "name": "Vine Growth",
+    "type": "class_feature",
+    "tags": ["control", "area", "surface"]
+  },
+  "teleport": {
+    "name": "Teleport",
+    "type": "class_feature",
+    "tags": ["movement", "self"]
+  },
+  "dark_tendrils": {
+    "name": "Dark Tendrils",
+    "type": "class_feature",
+    "tags": ["control", "area", "damage"]
+  },
+  "magic_awareness": {
+    "name": "Magic Awareness",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "bolstering_magic_boon": {
+    "name": "Bolstering Magic: Boon",
+    "type": "class_feature",
+    "tags": ["buff", "ally", "support"]
+  },
+  "bolstering_magic_level_1_spell_slot": {
+    "name": "Bolstering Magic: Level 1 Spell Slot",
+    "type": "class_feature",
+    "tags": ["support", "ally", "utility"]
+  },
+  "bolstering_magic_level_2_spell_slot": {
+    "name": "Bolstering Magic: Level 2 Spell Slot",
+    "type": "class_feature",
+    "tags": ["support", "ally", "utility"]
+  },
+  "bolstering_magic_level_3_spell_slot": {
+    "name": "Bolstering Magic: Level 3 Spell Slot",
+    "type": "class_feature",
+    "tags": ["support", "ally", "utility"]
+  },
+  "unstable_backlash": {
+    "name": "Unstable Backlash",
+    "type": "class_feature",
+    "tags": ["damage", "reaction"]
+  },
+  "bear_heart": {
+    "name": "Bear Heart",
+    "type": "class_feature",
+    "tags": ["buff", "self"]
+  },
+  "eagle_heart": {
+    "name": "Eagle Heart",
+    "type": "class_feature",
+    "tags": ["buff", "self"]
+  },
+  "elk_heart": {
+    "name": "Elk Heart",
+    "type": "class_feature",
+    "tags": ["buff", "self"]
+  },
+  "tiger_heart": {
+    "name": "Tiger Heart",
+    "type": "class_feature",
+    "tags": ["buff", "self"]
+  },
+  "wolf_heart": {
+    "name": "Wolf Heart",
+    "type": "class_feature",
+    "tags": ["buff", "self"]
+  },
+  "rage_bear_heart": {
+    "name": "Rage: Bear Heart",
+    "type": "class_feature",
+    "tags": ["defense", "self", "damage_reduction"]
+  },
+  "unrelenting_ferocity": {
+    "name": "Unrelenting Ferocity",
+    "type": "class_feature",
+    "tags": ["defense", "self", "max_health"]
+  },
+  "rage_eagle_heart": {
+    "name": "Rage: Eagle Heart",
+    "type": "class_feature",
+    "tags": ["movement", "action_economy", "self"]
+  },
+  "diving_strike": {
+    "name": "Diving Strike",
+    "type": "class_feature",
+    "tags": ["damage", "melee", "movement"]
+  },
+  "rage_elk_heart": {
+    "name": "Rage: Elk Heart",
+    "type": "class_feature",
+    "tags": ["movement", "self"]
+  },
+  "primal_stampede": {
+    "name": "Primal Stampede",
+    "type": "class_feature",
+    "tags": ["control", "damage", "area"]
+  },
+  "rage_tiger_heart": {
+    "name": "Rage: Tiger Heart",
+    "type": "class_feature",
+    "tags": ["movement", "self"]
+  },
+  "tigers_bloodlust": {
+    "name": "Tiger's Bloodlust",
+    "type": "class_feature",
+    "tags": ["damage", "action_economy"]
+  },
+  "rage_wolf_heart": {
+    "name": "Rage: Wolf Heart",
+    "type": "class_feature",
+    "tags": ["buff", "ally", "area", "advantage"]
+  },
+  "inciting_howl": {
+    "name": "Inciting Howl",
+    "type": "class_feature",
+    "tags": ["buff", "ally", "area"]
+  },
+  "bear": {
+    "name": "Bear",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "chimpanzee": {
+    "name": "Chimpanzee",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "crocodile": {
+    "name": "Crocodile",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "eagle": {
+    "name": "Eagle",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "elk": {
+    "name": "Elk",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "honey_badger": {
+    "name": "Honey Badger",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "stallion": {
+    "name": "Stallion",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "tiger": {
+    "name": "Tiger",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "wolf": {
+    "name": "Wolf",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "wolverine": {
+    "name": "Wolverine",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "lands_stride_advantage": {
+    "name": "Land's Stride Advantage",
+    "type": "class_feature",
+    "tags": ["defense", "save_throw", "self"]
+  },
+  "mantle_of_inspiration": {
+    "name": "Mantle of Inspiration",
+    "type": "class_feature",
+    "tags": ["temporary_life", "support", "ally", "area", "movement"]
+  },
+  "mantle_of_majesty_command": {
+    "name": "Mantle of Majesty: Command",
+    "type": "class_feature",
+    "tags": ["control", "single_target"]
+  },
+  "cutting_words": {
+    "name": "Cutting Words",
+    "type": "class_feature",
+    "tags": ["debuff", "reaction", "support"]
+  },
+  "magical_secrets": {
+    "name": "Magical Secrets",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "defensive_flourish": {
+    "name": "Defensive Flourish",
+    "type": "class_feature",
+    "tags": ["defense", "ac_bonus", "damage", "melee"]
+  },
+  "slashing_flourish": {
+    "name": "Slashing Flourish",
+    "type": "class_feature",
+    "tags": ["damage", "area", "melee"]
+  },
+  "mobile_flourish": {
+    "name": "Mobile Flourish",
+    "type": "class_feature",
+    "tags": ["control", "damage", "melee"]
+  },
+  "combat_inspiration": {
+    "name": "Combat Inspiration",
+    "type": "class_feature",
+    "tags": ["support", "ally", "buff"]
+  },
+  "reaper": {
+    "name": "Reaper",
+    "type": "class_feature",
+    "tags": ["damage", "necrotic"]
+  },
+  "channel_divinity_touch_of_death": {
+    "name": "Channel Divinity: Touch of Death",
+    "type": "class_feature",
+    "tags": ["damage", "necrotic", "melee"]
+  },
+  "touch_of_death": {
+    "name": "Touch of Death",
+    "type": "class_feature",
+    "tags": ["damage", "necrotic", "melee"]
+  },
+  "inescapable_destruction": {
+    "name": "Inescapable Destruction",
+    "type": "class_feature",
+    "tags": ["damage", "necrotic"]
+  },
+  "divine_strike_necrotic": {
+    "name": "Divine Strike: Necrotic",
+    "type": "class_feature",
+    "tags": ["damage", "necrotic"]
+  },
+  "blessing_of_knowledge": {
+    "name": "Blessing of Knowledge",
+    "type": "class_feature",
+    "tags": ["utility", "dialogue"]
+  },
+  "knowledge_of_the_ages": {
+    "name": "Knowledge of the Ages",
+    "type": "class_feature",
+    "tags": ["utility", "dialogue"]
+  },
+  "read_thoughts": {
+    "name": "Read Thoughts",
+    "type": "class_feature",
+    "tags": ["dialogue", "utility", "concentration", "control"]
+  },
+  "potent_spellcasting": {
+    "name": "Potent Spellcasting",
+    "type": "class_feature",
+    "tags": ["damage", "buff"]
+  },
+  "disciple_of_life": {
+    "name": "Disciple of Life",
+    "type": "class_feature",
+    "tags": ["healing", "buff"]
+  },
+  "preserve_life": {
+    "name": "Preserve Life",
+    "type": "class_feature",
+    "tags": ["healing", "area", "support"]
+  },
+  "blessed_healer": {
+    "name": "Blessed Healer",
+    "type": "class_feature",
+    "tags": ["healing", "self"]
+  },
+  "divine_strike_radiant": {
+    "name": "Divine Strike: Radiant",
+    "type": "class_feature",
+    "tags": ["damage", "radiant"]
+  },
+  "warding_flare": {
+    "name": "Warding Flare",
+    "type": "class_feature",
+    "tags": ["defense", "debuff", "reaction"]
+  },
+  "radiance_of_the_dawn": {
+    "name": "Radiance of the Dawn",
+    "type": "class_feature",
+    "tags": ["damage", "radiant", "area"]
+  },
+  "improved_warding_flare": {
+    "name": "Improved Warding Flare",
+    "type": "class_feature",
+    "tags": ["defense", "debuff", "reaction"]
+  },
+  "destructive_wave": {
+    "name": "Destructive Wave",
+    "type": "class_feature",
+    "tags": ["damage", "radiant", "area", "control"]
+  },
+  "acolyte_of_nature": {
+    "name": "Acolyte of Nature",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "charm_animals_and_plants": {
+    "name": "Charm Animals and Plants",
+    "type": "class_feature",
+    "tags": ["control", "area"]
+  },
+  "dampen_elements": {
+    "name": "Dampen Elements",
+    "type": "class_feature",
+    "tags": ["support", "defense", "ally", "damage_reduction", "reaction"]
+  },
+  "divine_strike_elemental_fury": {
+    "name": "Divine Strike: Elemental Fury",
+    "type": "class_feature",
+    "tags": ["damage", "fire", "cold", "lightning"]
+  },
+  "wrath_of_the_storm": {
+    "name": "Wrath of the Storm",
+    "type": "class_feature",
+    "tags": ["damage", "reaction"]
+  },
+  "wrath_of_the_storm_lightning": {
+    "name": "Wrath of the Storm: Lightning",
+    "type": "class_feature",
+    "tags": ["damage", "lightning", "reaction"]
+  },
+  "wrath_of_the_storm_thunder": {
+    "name": "Wrath of the Storm: Thunder",
+    "type": "class_feature",
+    "tags": ["damage", "thunder", "reaction"]
+  },
+  "destructive_wrath": {
+    "name": "Destructive Wrath",
+    "type": "class_feature",
+    "tags": ["damage", "buff"]
+  },
+  "thunderbolt_strike": {
+    "name": "Thunderbolt Strike",
+    "type": "class_feature",
+    "tags": ["control", "damage", "lightning"]
+  },
+  "divine_strike_thunder": {
+    "name": "Divine Strike: Thunder",
+    "type": "class_feature",
+    "tags": ["damage", "thunder"]
+  },
+  "blessing_of_the_trickster": {
+    "name": "Blessing of the Trickster",
+    "type": "class_feature",
+    "tags": ["utility", "ally", "advantage"]
+  },
+  "invoke_duplicity": {
+    "name": "Invoke Duplicity",
+    "type": "class_feature",
+    "tags": ["summon", "control", "concentration"]
+  },
+  "channel_divinity_cloak_of_shadows": {
+    "name": "Channel Divinity: Cloak of Shadows",
+    "type": "class_feature",
+    "tags": ["utility", "self"]
+  },
+  "divine_strike_poison": {
+    "name": "Divine Strike: Poison",
+    "type": "class_feature",
+    "tags": ["damage", "poison"]
+  },
+  "war_priest": {
+    "name": "War Priest",
+    "type": "class_feature",
+    "tags": ["action_economy", "damage"]
+  },
+  "guided_strike": {
+    "name": "Guided Strike",
+    "type": "class_feature",
+    "tags": ["buff", "damage"]
+  },
+  "war_gods_blessing": {
+    "name": "War Gods' Blessing",
+    "type": "class_feature",
+    "tags": ["support", "ally", "buff", "reaction"]
+  },
+  "divine_strike_weapon": {
+    "name": "Divine Strike: Weapon",
+    "type": "class_feature",
+    "tags": ["damage"]
+  },
+  "natural_recovery": {
+    "name": "Natural Recovery",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "arctic": {
+    "name": "Arctic",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "coast": {
+    "name": "Coast",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "desert": {
+    "name": "Desert",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "forest": {
+    "name": "Forest",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "grassland": {
+    "name": "Grassland",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "mountain": {
+    "name": "Mountain",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "swamp": {
+    "name": "Swamp",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "underdark": {
+    "name": "Underdark",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "natures_ward": {
+    "name": "Nature's Ward",
+    "type": "class_feature",
+    "tags": ["defense", "save_throw"]
+  },
+  "lunar_mend": {
+    "name": "Lunar Mend",
+    "type": "class_feature",
+    "tags": ["healing", "self"]
+  },
+  "combat_wild_shape": {
+    "name": "Combat Wild Shape",
+    "type": "class_feature",
+    "tags": ["action_economy", "self"]
+  },
+  "wild_shape_bear": {
+    "name": "Wild Shape: Bear",
+    "type": "class_feature",
+    "tags": ["buff", "self", "max_health"]
+  },
+  "wild_shape_dire_raven": {
+    "name": "Wild Shape: Dire Raven",
+    "type": "class_feature",
+    "tags": ["buff", "self", "movement"]
+  },
+  "primal_strike": {
+    "name": "Primal Strike",
+    "type": "class_feature",
+    "tags": ["damage"]
+  },
+  "wild_shape_sabre_toothed_tiger": {
+    "name": "Wild Shape: Sabre-Toothed Tiger",
+    "type": "class_feature",
+    "tags": ["buff", "self", "damage"]
+  },
+  "wild_shape_air_myrmidon": {
+    "name": "Wild Shape: Air Myrmidon",
+    "type": "class_feature",
+    "tags": ["buff", "self", "damage", "lightning"]
+  },
+  "wild_shape_earth_myrmidon": {
+    "name": "Wild Shape: Earth Myrmidon",
+    "type": "class_feature",
+    "tags": ["buff", "self", "damage", "bludgeoning"]
+  },
+  "wild_shape_fire_myrmidon": {
+    "name": "Wild Shape: Fire Myrmidon",
+    "type": "class_feature",
+    "tags": ["buff", "self", "damage", "fire"]
+  },
+  "wild_shape_water_myrmidon": {
+    "name": "Wild Shape: Water Myrmidon",
+    "type": "class_feature",
+    "tags": ["buff", "self", "damage", "cold"]
+  },
+  "wild_shape_badger": {
+    "name": "Wild Shape: Badger",
+    "type": "class_feature",
+    "tags": ["buff", "self"]
+  },
+  "wild_shape_cat": {
+    "name": "Wild Shape: Cat",
+    "type": "class_feature",
+    "tags": ["buff", "self", "movement"]
+  },
+  "wild_shape_spider": {
+    "name": "Wild Shape: Spider",
+    "type": "class_feature",
+    "tags": ["buff", "self", "movement"]
+  },
+  "wild_shape_wolf": {
+    "name": "Wild Shape: Wolf",
+    "type": "class_feature",
+    "tags": ["buff", "self", "movement"]
+  },
+  "wild_shape_improvement": {
+    "name": "Wild Shape Improvement",
+    "type": "class_feature",
+    "tags": ["buff", "self"]
+  },
+  "wild_shape_deep_rothe": {
+    "name": "Wild Shape: Deep Rothé",
+    "type": "class_feature",
+    "tags": ["buff", "self", "max_health"]
+  },
+  "wild_strike": {
+    "name": "Wild Strike",
+    "type": "class_feature",
+    "tags": ["damage", "action_economy"]
+  },
+  "wild_shape_panther": {
+    "name": "Wild Shape: Panther",
+    "type": "class_feature",
+    "tags": ["buff", "self", "movement"]
+  },
+  "wild_shape_owlbear": {
+    "name": "Wild Shape: Owlbear",
+    "type": "class_feature",
+    "tags": ["buff", "self", "max_health", "damage"]
+  },
+  "wild_shape_dilophosaurus": {
+    "name": "Wild Shape: Dilophosaurus",
+    "type": "class_feature",
+    "tags": ["buff", "self", "damage"]
+  },
+  "improved_wild_strike": {
+    "name": "Improved Wild Strike",
+    "type": "class_feature",
+    "tags": ["damage", "action_economy"]
+  },
+  "halo_of_spores": {
+    "name": "Halo of Spores",
+    "type": "class_feature",
+    "tags": ["damage", "necrotic", "reaction", "area"]
+  },
+  "symbiotic_entity": {
+    "name": "Symbiotic Entity",
+    "type": "class_feature",
+    "tags": ["temporary_life", "damage", "necrotic", "self", "buff"]
+  },
+  "fungal_infestation": {
+    "name": "Fungal Infestation",
+    "type": "class_feature",
+    "tags": ["summon", "reaction"]
+  },
+  "spreading_spores": {
+    "name": "Spreading Spores",
+    "type": "class_feature",
+    "tags": ["damage", "area", "necrotic", "concentration"]
+  },
+  "starry_form": {
+    "name": "Starry Form",
+    "type": "class_feature",
+    "tags": ["buff", "self"]
+  },
+  "starry_form_archer": {
+    "name": "Starry Form: Archer",
+    "type": "class_feature",
+    "tags": ["damage", "radiant", "ranged"]
+  },
+  "starry_form_chalice": {
+    "name": "Starry Form: Chalice",
+    "type": "class_feature",
+    "tags": ["healing", "area", "ally"]
+  },
+  "starry_form_dragon": {
+    "name": "Starry Form: Dragon",
+    "type": "class_feature",
+    "tags": ["buff", "self", "concentration"]
+  },
+  "star_map_guiding_bolt": {
+    "name": "Star Map: Guiding Bolt",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "dazzling_breath": {
+    "name": "Dazzling Breath",
+    "type": "class_feature",
+    "tags": ["control", "debuff", "area"]
+  },
+  "chalice_healing": {
+    "name": "Chalice Healing",
+    "type": "class_feature",
+    "tags": ["healing", "ally"]
+  },
+  "luminous_arrow": {
+    "name": "Luminous Arrow",
+    "type": "class_feature",
+    "tags": ["damage", "radiant", "ranged"]
+  },
+  "cosmic_omen": {
+    "name": "Cosmic Omen",
+    "type": "class_feature",
+    "tags": ["support", "buff", "debuff"]
+  },
+  "twinkling_constellations": {
+    "name": "Twinkling Constellations",
+    "type": "class_feature",
+    "tags": ["buff"]
+  },
+  "curving_shot": {
+    "name": "Curving Shot",
+    "type": "class_feature",
+    "tags": ["damage", "ranged", "buff"]
+  },
+  "magic_arrow": {
+    "name": "Magic Arrow",
+    "type": "class_feature",
+    "tags": ["damage", "ranged", "buff"]
+  },
+  "arcane_shot_banishing_arrow": {
+    "name": "Arcane Shot: Banishing Arrow",
+    "type": "class_feature",
+    "tags": ["damage", "force", "control", "ranged"]
+  },
+  "arcane_shot_beguiling_arrow": {
+    "name": "Arcane Shot: Beguiling Arrow",
+    "type": "class_feature",
+    "tags": ["damage", "psychic", "control", "ranged"]
+  },
+  "arcane_shot_bursting_arrow": {
+    "name": "Arcane Shot: Bursting Arrow",
+    "type": "class_feature",
+    "tags": ["damage", "force", "area", "ranged"]
+  },
+  "arcane_shot_enfeebling_arrow": {
+    "name": "Arcane Shot: Enfeebling Arrow",
+    "type": "class_feature",
+    "tags": ["damage", "necrotic", "debuff", "ranged"]
+  },
+  "arcane_shot_grasping_arrow": {
+    "name": "Arcane Shot: Grasping Arrow",
+    "type": "class_feature",
+    "tags": ["damage", "poison", "control", "ranged"]
+  },
+  "arcane_shot_piercing_arrow": {
+    "name": "Arcane Shot: Piercing Arrow",
+    "type": "class_feature",
+    "tags": ["damage", "piercing", "area", "ranged"]
+  },
+  "arcane_shot_seeking_arrow": {
+    "name": "Arcane Shot: Seeking Arrow",
+    "type": "class_feature",
+    "tags": ["damage", "force", "ranged", "single_target"]
+  },
+  "arcane_shot_shadow_arrow": {
+    "name": "Arcane Shot: Shadow Arrow",
+    "type": "class_feature",
+    "tags": ["damage", "psychic", "debuff", "ranged"]
+  },
+  "improved_combat_superiority": {
+    "name": "Improved Combat Superiority",
+    "type": "class_feature",
+    "tags": ["damage", "buff"]
+  },
+  "commanders_strike": {
+    "name": "Commander's Strike",
+    "type": "class_feature",
+    "tags": ["support", "ally", "action_economy"]
+  },
+  "disarming_strike": {
+    "name": "Disarming Strike",
+    "type": "class_feature",
+    "tags": ["debuff", "control", "damage"]
+  },
+  "distracting_strike": {
+    "name": "Distracting Strike",
+    "type": "class_feature",
+    "tags": ["support", "ally", "advantage", "damage"]
+  },
+  "evasive_footwork": {
+    "name": "Evasive Footwork",
+    "type": "class_feature",
+    "tags": ["defense", "ac_bonus"]
+  },
+  "feinting_attack": {
+    "name": "Feinting Attack",
+    "type": "class_feature",
+    "tags": ["buff", "advantage", "damage"]
+  },
+  "goading_attack": {
+    "name": "Goading Attack",
+    "type": "class_feature",
+    "tags": ["control", "debuff", "damage"]
+  },
+  "manoeuvring_attack": {
+    "name": "Manoeuvring Attack",
+    "type": "class_feature",
+    "tags": ["support", "ally", "movement", "damage"]
+  },
+  "precision_attack": {
+    "name": "Precision Attack",
+    "type": "class_feature",
+    "tags": ["buff", "damage"]
+  },
+  "pushing_attack": {
+    "name": "Pushing Attack",
+    "type": "class_feature",
+    "tags": ["control", "damage"]
+  },
+  "rally": {
+    "name": "Rally",
+    "type": "class_feature",
+    "tags": ["support", "ally", "temporary_life"]
+  },
+  "riposte": {
+    "name": "Riposte",
+    "type": "class_feature",
+    "tags": ["damage", "reaction"]
+  },
+  "sweeping_attack": {
+    "name": "Sweeping Attack",
+    "type": "class_feature",
+    "tags": ["damage", "area"]
+  },
+  "trip_attack": {
+    "name": "Trip Attack",
+    "type": "class_feature",
+    "tags": ["control", "damage"]
+  },
+  "improved_critical_hit": {
+    "name": "Improved Critical Hit",
+    "type": "class_feature",
+    "tags": ["critical", "damage"]
+  },
+  "remarkable_athlete_jump": {
+    "name": "Remarkable Athlete: Jump",
+    "type": "class_feature",
+    "tags": ["movement", "self"]
+  },
+  "remarkable_athlete_proficiency": {
+    "name": "Remarkable Athlete: Proficiency",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "weapon_bond": {
+    "name": "Weapon Bond",
+    "type": "class_feature",
+    "tags": ["equipment", "weapons", "defense"]
+  },
+  "war_magic": {
+    "name": "War Magic",
+    "type": "class_feature",
+    "tags": ["action_economy", "damage"]
+  },
+  "eldritch_strike": {
+    "name": "Eldritch Strike",
+    "type": "class_feature",
+    "tags": ["debuff"]
+  },
+  "cheeky_tipple": {
+    "name": "Cheeky Tipple",
+    "type": "class_feature",
+    "tags": ["action_economy", "healing"]
+  },
+  "drunken_performance": {
+    "name": "Drunken Performance",
+    "type": "class_feature",
+    "tags": ["dialogue", "buff"]
+  },
+  "drunken_technique": {
+    "name": "Drunken Technique",
+    "type": "class_feature",
+    "tags": ["movement", "action_economy", "defense"]
+  },
+  "intoxicating_strike": {
+    "name": "Intoxicating Strike",
+    "type": "class_feature",
+    "tags": ["debuff", "damage", "poison"]
+  },
+  "life_of_the_party": {
+    "name": "Life of the Party",
+    "type": "class_feature",
+    "tags": ["dialogue", "buff", "support"]
+  },
+  "leap_to_your_feet": {
+    "name": "Leap to Your Feet",
+    "type": "class_feature",
+    "tags": ["action_economy", "movement", "self"]
+  },
+  "redirect_attack": {
+    "name": "Redirect Attack",
+    "type": "class_feature",
+    "tags": ["reaction", "defense"]
+  },
+  "sobering_realisation": {
+    "name": "Sobering Realisation",
+    "type": "class_feature",
+    "tags": ["healing", "self"]
+  },
+  "drunkards_luck": {
+    "name": "Drunkard's Luck",
+    "type": "class_feature",
+    "tags": ["defense", "save_throw", "self"]
+  },
+  "blade_of_rime": {
+    "name": "Blade of Rime",
+    "type": "class_feature",
+    "tags": ["damage", "cold", "melee", "control"]
+  },
+  "chill_of_the_mountain": {
+    "name": "Chill of the Mountain",
+    "type": "class_feature",
+    "tags": ["damage", "cold", "ranged", "single_target"]
+  },
+  "fangs_of_the_fire_snake": {
+    "name": "Fangs of the Fire Snake",
+    "type": "class_feature",
+    "tags": ["damage", "fire", "melee"]
+  },
+  "fist_of_the_four_thunders": {
+    "name": "Fist of the Four Thunders",
+    "type": "class_feature",
+    "tags": ["damage", "thunder", "area", "control"]
+  },
+  "fist_of_unbroken_air": {
+    "name": "Fist of Unbroken Air",
+    "type": "class_feature",
+    "tags": ["control", "damage", "thunder"]
+  },
+  "rush_of_the_gale_spirits": {
+    "name": "Rush of the Gale Spirits",
+    "type": "class_feature",
+    "tags": ["control", "area", "movement"]
+  },
+  "shaping_of_the_ice": {
+    "name": "Shaping of the Ice",
+    "type": "class_feature",
+    "tags": ["surface", "control", "area"]
+  },
+  "sphere_of_elemental_balance": {
+    "name": "Sphere of Elemental Balance",
+    "type": "class_feature",
+    "tags": ["damage", "area"]
+  },
+  "sweeping_cinder_strike": {
+    "name": "Sweeping Cinder Strike",
+    "type": "class_feature",
+    "tags": ["damage", "fire", "area"]
+  },
+  "touch_of_the_storm": {
+    "name": "Touch of the Storm",
+    "type": "class_feature",
+    "tags": ["damage", "lightning", "melee", "debuff"]
+  },
+  "water_whip": {
+    "name": "Water Whip",
+    "type": "class_feature",
+    "tags": ["damage", "control", "ranged"]
+  },
+  "harmony_of_fire_and_water": {
+    "name": "Harmony of Fire and Water",
+    "type": "class_feature",
+    "tags": ["healing"]
+  },
+  "clench_of_the_north_wind": {
+    "name": "Clench of the North Wind",
+    "type": "class_feature",
+    "tags": ["control", "concentration", "single_target"]
+  },
+  "embrace_of_the_inferno": {
+    "name": "Embrace of the Inferno",
+    "type": "class_feature",
+    "tags": ["damage", "fire", "area"]
+  },
+  "gong_of_the_summit": {
+    "name": "Gong of the Summit",
+    "type": "class_feature",
+    "tags": ["damage", "thunder", "area"]
+  },
+  "improved_elemental_casting": {
+    "name": "Improved Elemental Casting",
+    "type": "class_feature",
+    "tags": ["buff"]
+  },
+  "flames_of_the_phoenix": {
+    "name": "Flames of the Phoenix",
+    "type": "class_feature",
+    "tags": ["damage", "fire", "area"]
+  },
+  "mist_stance": {
+    "name": "Mist Stance",
+    "type": "class_feature",
+    "tags": ["movement", "defense", "self"]
+  },
+  "ride_the_wind": {
+    "name": "Ride the Wind",
+    "type": "class_feature",
+    "tags": ["movement", "self", "concentration"]
+  },
+  "flurry_of_blows_topple": {
+    "name": "Flurry of Blows: Topple",
+    "type": "class_feature",
+    "tags": ["control", "damage"]
+  },
+  "flurry_of_blows_stagger": {
+    "name": "Flurry of Blows: Stagger",
+    "type": "class_feature",
+    "tags": ["control", "debuff", "damage"]
+  },
+  "flurry_of_blows_push": {
+    "name": "Flurry of Blows: Push",
+    "type": "class_feature",
+    "tags": ["control", "damage"]
+  },
+  "manifestation_of_body": {
+    "name": "Manifestation of Body",
+    "type": "class_feature",
+    "tags": ["buff", "self"]
+  },
+  "manifestation_of_mind": {
+    "name": "Manifestation of Mind",
+    "type": "class_feature",
+    "tags": ["buff", "self"]
+  },
+  "manifestation_of_soul": {
+    "name": "Manifestation of Soul",
+    "type": "class_feature",
+    "tags": ["buff", "self"]
+  },
+  "wholeness_of_body": {
+    "name": "Wholeness of Body",
+    "type": "class_feature",
+    "tags": ["healing", "self"]
+  },
+  "ki_resonation_punch": {
+    "name": "Ki Resonation: Punch",
+    "type": "class_feature",
+    "tags": ["damage", "force"]
+  },
+  "ki_resonation_punch_bonus_action": {
+    "name": "Ki Resonation: Punch (Bonus Action)",
+    "type": "class_feature",
+    "tags": ["damage", "force", "action_economy"]
+  },
+  "ki_resonation_blast": {
+    "name": "Ki Resonation: Blast",
+    "type": "class_feature",
+    "tags": ["damage", "force", "area"]
+  },
+  "tranquility": {
+    "name": "Tranquility",
+    "type": "class_feature",
+    "tags": ["defense", "self"]
+  },
+  "shadow_arts_hide": {
+    "name": "Shadow Arts: Hide",
+    "type": "class_feature",
+    "tags": ["utility", "self"]
+  },
+  "shadow_arts_pass_without_trace": {
+    "name": "Shadow Arts: Pass Without Trace",
+    "type": "class_feature",
+    "tags": ["buff", "ally", "concentration"]
+  },
+  "shadow_arts_darkness": {
+    "name": "Shadow Arts: Darkness",
+    "type": "class_feature",
+    "tags": ["area", "control", "concentration"]
+  },
+  "shadow_arts_darkvision": {
+    "name": "Shadow Arts: Darkvision",
+    "type": "class_feature",
+    "tags": ["utility", "self"]
+  },
+  "shadow_arts_silence": {
+    "name": "Shadow Arts: Silence",
+    "type": "class_feature",
+    "tags": ["control", "area", "concentration"]
+  },
+  "cloak_of_shadows": {
+    "name": "Cloak of Shadows",
+    "type": "class_feature",
+    "tags": ["utility", "self"]
+  },
+  "shadow_step": {
+    "name": "Shadow Step",
+    "type": "class_feature",
+    "tags": ["movement", "self", "buff"]
+  },
+  "shadow_strike": {
+    "name": "Shadow Strike",
+    "type": "class_feature",
+    "tags": ["damage", "action_economy", "advantage"]
+  },
+  "shadow_strike_unarmed": {
+    "name": "Shadow Strike: Unarmed",
+    "type": "class_feature",
+    "tags": ["damage", "action_economy", "advantage"]
+  },
+  "oath_of_devotion_tenets": {
+    "name": "Oath of Devotion Tenets",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "holy_rebuke": {
+    "name": "Holy Rebuke",
+    "type": "class_feature",
+    "tags": ["damage", "radiant", "reaction"]
+  },
+  "sacred_weapon": {
+    "name": "Sacred Weapon",
+    "type": "class_feature",
+    "tags": ["buff", "self", "damage", "concentration"]
+  },
+  "turn_the_unholy": {
+    "name": "Turn the Unholy",
+    "type": "class_feature",
+    "tags": ["control", "debuff", "area"]
+  },
+  "aura_of_devotion": {
+    "name": "Aura of Devotion",
+    "type": "class_feature",
+    "tags": ["defense", "area", "ally"]
+  },
+  "oath_of_the_ancients_tenets": {
+    "name": "Oath of the Ancients Tenets",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "healing_radiance": {
+    "name": "Healing Radiance",
+    "type": "class_feature",
+    "tags": ["healing", "area", "ally"]
+  },
+  "natures_wrath": {
+    "name": "Nature's Wrath",
+    "type": "class_feature",
+    "tags": ["control", "single_target"]
+  },
+  "turn_the_faithless": {
+    "name": "Turn the Faithless",
+    "type": "class_feature",
+    "tags": ["control", "debuff", "area"]
+  },
+  "aura_of_warding": {
+    "name": "Aura of Warding",
+    "type": "class_feature",
+    "tags": ["defense", "area", "ally", "damage_reduction"]
+  },
+  "oath_of_the_crown_tenets": {
+    "name": "Oath of the Crown Tenets",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "righteous_clarity": {
+    "name": "Righteous Clarity",
+    "type": "class_feature",
+    "tags": ["buff", "self", "damage"]
+  },
+  "champion_challenge": {
+    "name": "Champion Challenge",
+    "type": "class_feature",
+    "tags": ["control", "area"]
+  },
+  "turn_the_tide": {
+    "name": "Turn the Tide",
+    "type": "class_feature",
+    "tags": ["healing", "area", "ally"]
+  },
+  "divine_allegiance": {
+    "name": "Divine Allegiance",
+    "type": "class_feature",
+    "tags": ["defense", "ally", "reaction", "damage_reduction"]
+  },
+  "oath_of_vengeance_tenets": {
+    "name": "Oath of Vengeance Tenets",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "inquisitors_might": {
+    "name": "Inquisitor's Might",
+    "type": "class_feature",
+    "tags": ["damage", "thunder", "concentration"]
+  },
+  "abjure_enemy": {
+    "name": "Abjure Enemy",
+    "type": "class_feature",
+    "tags": ["control", "single_target"]
+  },
+  "vow_of_enmity": {
+    "name": "Vow of Enmity",
+    "type": "class_feature",
+    "tags": ["buff", "advantage", "single_target"]
+  },
+  "relentless_avenger": {
+    "name": "Relentless Avenger",
+    "type": "class_feature",
+    "tags": ["movement", "reaction"]
+  },
+  "spiteful_suffering": {
+    "name": "Spiteful Suffering",
+    "type": "class_feature",
+    "tags": ["damage", "necrotic", "concentration"]
+  },
+  "control_undead": {
+    "name": "Control Undead",
+    "type": "class_feature",
+    "tags": ["control"]
+  },
+  "dreadful_aspect": {
+    "name": "Dreadful Aspect",
+    "type": "class_feature",
+    "tags": ["control", "area", "debuff"]
+  },
+  "aura_of_hate": {
+    "name": "Aura of Hate",
+    "type": "class_feature",
+    "tags": ["damage", "area", "ally", "buff"]
+  },
+  "rangers_companion": {
+    "name": "Ranger's Companion",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "bear_companion": {
+    "name": "Bear Companion",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "goading_roar": {
+    "name": "Goading Roar",
+    "type": "class_feature",
+    "tags": ["control", "debuff", "area"]
+  },
+  "claws": {
+    "name": "Claws",
+    "type": "class_feature",
+    "tags": ["damage", "melee"]
+  },
+  "boar_companion": {
+    "name": "Boar Companion",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "tusk_attack": {
+    "name": "Tusk Attack",
+    "type": "class_feature",
+    "tags": ["damage", "melee"]
+  },
+  "boar_charge": {
+    "name": "Boar Charge",
+    "type": "class_feature",
+    "tags": ["damage", "movement", "control"]
+  },
+  "dire_raven_companion": {
+    "name": "Dire Raven Companion",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "beak_attack": {
+    "name": "Beak Attack",
+    "type": "class_feature",
+    "tags": ["damage", "melee"]
+  },
+  "rend_vision": {
+    "name": "Rend Vision",
+    "type": "class_feature",
+    "tags": ["control", "debuff", "single_target"]
+  },
+  "fly": {
+    "name": "Fly",
+    "type": "class_feature",
+    "tags": ["movement"]
+  },
+  "wolf_companion": {
+    "name": "Wolf Companion",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "bite": {
+    "name": "Bite",
+    "type": "class_feature",
+    "tags": ["damage", "melee"]
+  },
+  "lunging_bite": {
+    "name": "Lunging Bite",
+    "type": "class_feature",
+    "tags": ["damage", "melee"]
+  },
+  "pack_tactics": {
+    "name": "Pack Tactics",
+    "type": "class_feature",
+    "tags": ["advantage"]
+  },
+  "wolf_spider_companion": {
+    "name": "Wolf Spider Companion",
+    "type": "class_feature",
+    "tags": ["summon", "ally"]
+  },
+  "venomous_bite": {
+    "name": "Venomous Bite",
+    "type": "class_feature",
+    "tags": ["damage", "poison", "melee"]
+  },
+  "web_walker": {
+    "name": "Web Walker",
+    "type": "class_feature",
+    "tags": ["movement", "defense"]
+  },
+  "companions_bond": {
+    "name": "Companion's Bond",
+    "type": "class_feature",
+    "tags": ["healing", "support", "ally"]
+  },
+  "honeyed_paws": {
+    "name": "Honeyed Paws",
+    "type": "class_feature",
+    "tags": ["control", "debuff"]
+  },
+  "bad_omen": {
+    "name": "Bad Omen",
+    "type": "class_feature",
+    "tags": ["debuff", "single_target"]
+  },
+  "infectious_bite": {
+    "name": "Infectious Bite",
+    "type": "class_feature",
+    "tags": ["damage", "debuff", "melee"]
+  },
+  "cocoon": {
+    "name": "Cocoon",
+    "type": "class_feature",
+    "tags": ["control", "single_target"]
+  },
+  "exceptional_training": {
+    "name": "Exceptional Training",
+    "type": "class_feature",
+    "tags": ["buff", "ally"]
+  },
+  "bestial_fury": {
+    "name": "Bestial Fury",
+    "type": "class_feature",
+    "tags": ["damage", "action_economy", "ally"]
+  },
+  "ursine_reinforcements": {
+    "name": "Ursine Reinforcements",
+    "type": "class_feature",
+    "tags": ["summon", "area"]
+  },
+  "kick_up_muck": {
+    "name": "Kick Up Muck",
+    "type": "class_feature",
+    "tags": ["control", "debuff", "area"]
+  },
+  "on_black_wings": {
+    "name": "On Black Wings",
+    "type": "class_feature",
+    "tags": ["movement"]
+  },
+  "raven_sight": {
+    "name": "Raven Sight",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "lupine_slash": {
+    "name": "Lupine Slash",
+    "type": "class_feature",
+    "tags": ["damage", "melee"]
+  },
+  "bursting_brood": {
+    "name": "Bursting Brood",
+    "type": "class_feature",
+    "tags": ["summon", "damage", "area"]
+  },
+  "eight_legged_waltz": {
+    "name": "Eight Legged Waltz",
+    "type": "class_feature",
+    "tags": ["movement", "defense"]
+  },
+  "umbral_shroud": {
+    "name": "Umbral Shroud",
+    "type": "class_feature",
+    "tags": ["utility", "movement", "self"]
+  },
+  "superior_darkvision": {
+    "name": "Superior Darkvision",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "dread_ambusher": {
+    "name": "Dread Ambusher",
+    "type": "class_feature",
+    "tags": ["initiative", "damage", "action_economy"]
+  },
+  "dread_ambusher_melee": {
+    "name": "Dread Ambusher (Melee)",
+    "type": "class_feature",
+    "tags": ["damage", "melee", "action_economy"]
+  },
+  "dread_ambusher_ranged": {
+    "name": "Dread Ambusher (Ranged)",
+    "type": "class_feature",
+    "tags": ["damage", "ranged", "action_economy"]
+  },
+  "dread_ambusher_hide": {
+    "name": "Dread Ambusher: Hide",
+    "type": "class_feature",
+    "tags": ["movement", "utility", "action_economy"]
+  },
+  "iron_mind": {
+    "name": "Iron Mind",
+    "type": "class_feature",
+    "tags": ["defense", "save_throw"]
+  },
+  "stalkers_flurry": {
+    "name": "Stalker's Flurry",
+    "type": "class_feature",
+    "tags": ["damage", "action_economy"]
+  },
+  "colossus_slayer": {
+    "name": "Colossus Slayer",
+    "type": "class_feature",
+    "tags": ["damage"]
+  },
+  "giant_killer": {
+    "name": "Giant Killer",
+    "type": "class_feature",
+    "tags": ["damage", "reaction"]
+  },
+  "horde_breaker": {
+    "name": "Horde Breaker",
+    "type": "class_feature",
+    "tags": ["damage", "action_economy"]
+  },
+  "escape_the_horde": {
+    "name": "Escape the Horde",
+    "type": "class_feature",
+    "tags": ["defense", "movement", "action_economy"]
+  },
+  "steel_will": {
+    "name": "Steel Will",
+    "type": "class_feature",
+    "tags": ["defense", "save_throw"]
+  },
+  "multiattack_defence": {
+    "name": "Multiattack Defence",
+    "type": "class_feature",
+    "tags": ["defense", "ac_bonus", "reaction"]
+  },
+  "volley": {
+    "name": "Volley",
+    "type": "class_feature",
+    "tags": ["damage", "area", "ranged"]
+  },
+  "whirlwind_attack": {
+    "name": "Whirlwind Attack",
+    "type": "class_feature",
+    "tags": ["damage", "area", "melee"]
+  },
+  "preys_scent": {
+    "name": "Prey's Scent",
+    "type": "class_feature",
+    "tags": ["buff", "ally", "advantage"]
+  },
+  "cloud_of_jellyfish": {
+    "name": "Cloud of Jellyfish",
+    "type": "class_feature",
+    "tags": ["damage", "area", "poison", "control"]
+  },
+  "flurry_of_moths": {
+    "name": "Flurry of Moths",
+    "type": "class_feature",
+    "tags": ["debuff", "area", "control"]
+  },
+  "legion_of_bees": {
+    "name": "Legion of Bees",
+    "type": "class_feature",
+    "tags": ["damage", "area"]
+  },
+  "writhing_tide": {
+    "name": "Writhing Tide",
+    "type": "class_feature",
+    "tags": ["control", "area"]
+  },
+  "mighty_swarm": {
+    "name": "Mighty Swarm",
+    "type": "class_feature",
+    "tags": ["buff"]
+  },
+  "mage_hand_legerdemain": {
+    "name": "Mage Hand Legerdemain",
+    "type": "class_feature",
+    "tags": ["summon", "utility"]
+  },
+  "magical_ambush": {
+    "name": "Magical Ambush",
+    "type": "class_feature",
+    "tags": ["debuff"]
+  },
+  "assassins_alacrity": {
+    "name": "Assassin's Alacrity",
+    "type": "class_feature",
+    "tags": ["initiative"]
+  },
+  "assassinate_ambush": {
+    "name": "Assassinate: Ambush",
+    "type": "class_feature",
+    "tags": ["damage", "critical", "advantage"]
+  },
+  "assassinate_initiative": {
+    "name": "Assassin's Initiative",
+    "type": "class_feature",
+    "tags": ["damage", "critical", "advantage", "initiative"]
+  },
+  "infiltration_expertise": {
+    "name": "Infiltration Expertise",
+    "type": "class_feature",
+    "tags": ["utility", "dialogue"]
+  },
+  "fancy_footwork": {
+    "name": "Fancy Footwork",
+    "type": "class_feature",
+    "tags": ["defense", "movement"]
+  },
+  "rakish_audacity": {
+    "name": "Rakish Audacity",
+    "type": "class_feature",
+    "tags": ["initiative", "damage"]
+  },
+  "rakish_sneak_attack": {
+    "name": "Rakish Sneak Attack",
+    "type": "class_feature",
+    "tags": ["damage"]
+  },
+  "dirty_trick_flick_o_the_wrist": {
+    "name": "Dirty Trick: Flick o' the Wrist",
+    "type": "class_feature",
+    "tags": ["debuff", "control"]
+  },
+  "dirty_trick_sand_toss": {
+    "name": "Dirty Trick: Sand Toss",
+    "type": "class_feature",
+    "tags": ["debuff", "control", "area"]
+  },
+  "dirty_trick_vicious_mockery": {
+    "name": "Dirty Trick: Vicious Mockery",
+    "type": "class_feature",
+    "tags": ["damage", "psychic", "debuff", "single_target"]
+  },
+  "panache": {
+    "name": "Panache",
+    "type": "class_feature",
+    "tags": ["control", "dialogue", "single_target"]
+  },
+  "fast_hands": {
+    "name": "Fast Hands",
+    "type": "class_feature",
+    "tags": ["action_economy", "utility"]
+  },
+  "second_story_work": {
+    "name": "Second Story Work",
+    "type": "class_feature",
+    "tags": ["movement", "utility"]
+  },
+  "supreme_sneak": {
+    "name": "Supreme Sneak",
+    "type": "class_feature",
+    "tags": ["utility", "movement", "advantage"]
+  },
+  "draconic_resilience": {
+    "name": "Draconic Resilience",
+    "type": "class_feature",
+    "tags": ["max_health", "ac_bonus", "defense"]
+  },
+  "draconic_ancestry_red": {
+    "name": "Draconic Ancestry (Red)",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "fire", "dialogue"]
+  },
+  "draconic_ancestry_black": {
+    "name": "Draconic Ancestry (Black)",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "acid", "dialogue"]
+  },
+  "draconic_ancestry_blue": {
+    "name": "Draconic Ancestry (Blue)",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "lightning", "dialogue"]
+  },
+  "draconic_ancestry_white": {
+    "name": "Draconic Ancestry (White)",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "cold", "dialogue"]
+  },
+  "draconic_ancestry_green": {
+    "name": "Draconic Ancestry (Green)",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "poison", "dialogue"]
+  },
+  "draconic_ancestry_gold": {
+    "name": "Draconic Ancestry (Gold)",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "fire", "dialogue"]
+  },
+  "draconic_ancestry_silver": {
+    "name": "Draconic Ancestry (Silver)",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "cold", "dialogue"]
+  },
+  "draconic_ancestry_bronze": {
+    "name": "Draconic Ancestry (Bronze)",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "lightning", "dialogue"]
+  },
+  "draconic_ancestry_copper": {
+    "name": "Draconic Ancestry (Copper)",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "acid", "dialogue"]
+  },
+  "draconic_ancestry_brass": {
+    "name": "Draconic Ancestry (Brass)",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "fire", "dialogue"]
+  },
+  "elemental_affinity_damage": {
+    "name": "Elemental Affinity (Damage)",
+    "type": "class_feature",
+    "tags": ["damage", "buff"]
+  },
+  "elemental_affinity_resistance": {
+    "name": "Elemental Affinity (Resistance)",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction"]
+  },
+  "eyes_of_the_dark": {
+    "name": "Eyes of the Dark",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "strength_of_the_grave": {
+    "name": "Strength of the Grave",
+    "type": "class_feature",
+    "tags": ["defense", "self"]
+  },
+  "eyes_of_the_dark_darkness": {
+    "name": "Eyes of the Dark: Darkness",
+    "type": "class_feature",
+    "tags": ["area", "control"]
+  },
+  "hound_of_ill_omen": {
+    "name": "Hound of Ill Omen",
+    "type": "class_feature",
+    "tags": ["summon", "debuff", "single_target"]
+  },
+  "shadow_walk": {
+    "name": "Shadow Walk",
+    "type": "class_feature",
+    "tags": ["movement", "self"]
+  },
+  "tempestuous_magic": {
+    "name": "Tempestuous Magic",
+    "type": "class_feature",
+    "tags": ["movement", "self", "action_economy"]
+  },
+  "heart_of_the_storm": {
+    "name": "Heart of the Storm",
+    "type": "class_feature",
+    "tags": ["damage", "area"]
+  },
+  "heart_of_the_storm_lightning": {
+    "name": "Heart of the Storm: Lightning",
+    "type": "class_feature",
+    "tags": ["damage", "lightning", "area"]
+  },
+  "heart_of_the_storm_thunder": {
+    "name": "Heart of the Storm: Thunder",
+    "type": "class_feature",
+    "tags": ["damage", "thunder", "area"]
+  },
+  "heart_of_the_storm_resistance": {
+    "name": "Heart of the Storm: Resistance",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "lightning", "thunder"]
+  },
+  "storms_fury": {
+    "name": "Storm's Fury",
+    "type": "class_feature",
+    "tags": ["damage", "lightning", "reaction", "control"]
+  },
+  "wild_magic": {
+    "name": "Wild Magic",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "tides_of_chaos": {
+    "name": "Tides of Chaos",
+    "type": "class_feature",
+    "tags": ["buff", "advantage", "self"]
+  },
+  "bend_luck": {
+    "name": "Bend Luck",
+    "type": "class_feature",
+    "tags": ["support", "debuff", "reaction"]
+  },
+  "controlled_chaos": {
+    "name": "Controlled Chaos",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "fey_presence": {
+    "name": "Fey Presence",
+    "type": "class_feature",
+    "tags": ["control", "area"]
+  },
+  "misty_escape": {
+    "name": "Misty Escape",
+    "type": "class_feature",
+    "tags": ["movement", "defense", "self", "reaction"]
+  },
+  "beguiling_defences": {
+    "name": "Beguiling Defences",
+    "type": "class_feature",
+    "tags": ["defense", "debuff", "reaction", "psychic"]
+  },
+  "dark_ones_blessing": {
+    "name": "Dark One's Blessing",
+    "type": "class_feature",
+    "tags": ["temporary_life", "defense", "self"]
+  },
+  "dark_ones_own_luck": {
+    "name": "Dark One's Own Luck",
+    "type": "class_feature",
+    "tags": ["buff", "self", "save_throw"]
+  },
+  "fiendish_resilience": {
+    "name": "Fiendish Resilience",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction"]
+  },
+  "mortal_reminder": {
+    "name": "Mortal Reminder",
+    "type": "class_feature",
+    "tags": ["debuff", "control", "area"]
+  },
+  "entropic_ward": {
+    "name": "Entropic Ward",
+    "type": "class_feature",
+    "tags": ["defense", "debuff", "reaction"]
+  },
+  "thought_shield_psychic_resistance": {
+    "name": "Thought Shield: Psychic Resistance",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "psychic"]
+  },
+  "thought_shield_psychic_reflection": {
+    "name": "Thought Shield: Psychic Reflection",
+    "type": "class_feature",
+    "tags": ["damage", "psychic", "reaction"]
+  },
+  "hex_warrior": {
+    "name": "Hex Warrior",
+    "type": "class_feature",
+    "tags": ["damage", "buff", "weapons"]
+  },
+  "bind_hexed_weapon": {
+    "name": "Bind Hexed Weapon",
+    "type": "class_feature",
+    "tags": ["buff", "weapons"]
+  },
+  "hexblades_curse": {
+    "name": "Hexblade's Curse",
+    "type": "class_feature",
+    "tags": ["debuff", "damage", "critical", "single_target"]
+  },
+  "accursed_spectre": {
+    "name": "Accursed Spectre",
+    "type": "class_feature",
+    "tags": ["summon"]
+  },
+  "armour_of_hexes": {
+    "name": "Armour of Hexes",
+    "type": "class_feature",
+    "tags": ["defense", "single_target"]
+  },
+  "arcane_ward": {
+    "name": "Arcane Ward",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "self", "temporary_life"]
+  },
+  "projected_ward": {
+    "name": "Projected Ward",
+    "type": "class_feature",
+    "tags": ["defense", "ally", "damage_reduction", "reaction"]
+  },
+  "improved_abjuration": {
+    "name": "Improved Abjuration",
+    "type": "class_feature",
+    "tags": ["buff", "support"]
+  },
+  "bladesong": {
+    "name": "Bladesong",
+    "type": "class_feature",
+    "tags": ["buff", "ac_bonus", "self", "defense", "concentration"]
+  },
+  "training_in_war_and_song": {
+    "name": "Training in War and Song",
+    "type": "class_feature",
+    "tags": ["weapons", "armor", "equipment"]
+  },
+  "song_of_defence": {
+    "name": "Song of Defence",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "reaction"]
+  },
+  "minor_conjuration_create_water": {
+    "name": "Minor Conjuration: Create Water",
+    "type": "class_feature",
+    "tags": ["utility", "area"]
+  },
+  "benign_transposition_teleport": {
+    "name": "Benign Transposition: Teleport",
+    "type": "class_feature",
+    "tags": ["movement", "ally", "action_economy", "self"]
+  },
+  "focused_conjuration": {
+    "name": "Focused Conjuration",
+    "type": "class_feature",
+    "tags": ["buff", "concentration"]
+  },
+  "portent": {
+    "name": "Portent",
+    "type": "class_feature",
+    "tags": ["utility", "support", "debuff"]
+  },
+  "expert_divination": {
+    "name": "Expert Divination",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "third_eye_darkvision": {
+    "name": "Third Eye: Darkvision",
+    "type": "class_feature",
+    "tags": ["utility", "self"]
+  },
+  "third_eye_see_invisibility": {
+    "name": "Third Eye: See Invisibility",
+    "type": "class_feature",
+    "tags": ["utility", "self"]
+  },
+  "hypnotic_gaze": {
+    "name": "Hypnotic Gaze",
+    "type": "class_feature",
+    "tags": ["control", "concentration", "single_target"]
+  },
+  "instinctive_charm": {
+    "name": "Instinctive Charm",
+    "type": "class_feature",
+    "tags": ["control", "debuff", "reaction"]
+  },
+  "split_enchantment": {
+    "name": "Split Enchantment",
+    "type": "class_feature",
+    "tags": ["buff", "single_target"]
+  },
+  "sculpt_spells": {
+    "name": "Sculpt Spells",
+    "type": "class_feature",
+    "tags": ["support", "ally"]
+  },
+  "potent_cantrip": {
+    "name": "Potent Cantrip",
+    "type": "class_feature",
+    "tags": ["damage", "buff"]
+  },
+  "empowered_evocation": {
+    "name": "Empowered Evocation",
+    "type": "class_feature",
+    "tags": ["damage", "buff"]
+  },
+  "improved_minor_illusion": {
+    "name": "Improved Minor Illusion",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "illusory_self": {
+    "name": "Illusory Self",
+    "type": "class_feature",
+    "tags": ["defense", "reaction", "self"]
+  },
+  "grim_harvest": {
+    "name": "Grim Harvest",
+    "type": "class_feature",
+    "tags": ["healing", "self"]
+  },
+  "undead_thralls_animate_dead": {
+    "name": "Undead Thralls: Animate Dead",
+    "type": "class_feature",
+    "tags": ["summon"]
+  },
+  "undead_thralls_additional_undead": {
+    "name": "Undead Thralls: Additional Undead",
+    "type": "class_feature",
+    "tags": ["summon", "buff"]
+  },
+  "undead_thralls_better_summons": {
+    "name": "Undead Thralls: Better Summons",
+    "type": "class_feature",
+    "tags": ["summon", "buff"]
+  },
+  "inured_to_undeath": {
+    "name": "Inured to Undeath",
+    "type": "class_feature",
+    "tags": ["defense", "max_health", "damage_reduction", "necrotic"]
+  },
+  "experimental_alchemy": {
+    "name": "Experimental Alchemy",
+    "type": "class_feature",
+    "tags": ["utility"]
+  },
+  "transmuters_stone": {
+    "name": "Transmuter's Stone",
+    "type": "class_feature",
+    "tags": ["buff", "ally"]
+  },
+  "transmuters_stone_constitution": {
+    "name": "Transmuter's Stone: Constitution",
+    "type": "class_feature",
+    "tags": ["max_health", "buff"]
+  },
+  "transmuters_stone_darkvision": {
+    "name": "Transmuter's Stone: Darkvision",
+    "type": "class_feature",
+    "tags": ["utility", "buff"]
+  },
+  "transmuters_stone_speed": {
+    "name": "Transmuter's Stone: Speed",
+    "type": "class_feature",
+    "tags": ["movement", "buff"]
+  },
+  "transmuters_stone_acid_resistance": {
+    "name": "Transmuter's Stone: Acid Resistance",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "acid", "buff"]
+  },
+  "transmuters_stone_cold_resistance": {
+    "name": "Transmuter's Stone: Cold Resistance",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "cold", "buff"]
+  },
+  "transmuters_stone_fire_resistance": {
+    "name": "Transmuter's Stone: Fire Resistance",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "fire", "buff"]
+  },
+  "transmuters_stone_lightning_resistance": {
+    "name": "Transmuter's Stone: Lightning Resistance",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "lightning", "buff"]
+  },
+  "transmuters_stone_thunder_resistance": {
+    "name": "Transmuter's Stone: Thunder Resistance",
+    "type": "class_feature",
+    "tags": ["defense", "damage_reduction", "thunder", "buff"]
+  },
+  "shapechanger": {
+    "name": "Shapechanger",
+    "type": "class_feature",
+    "tags": ["utility", "movement", "self"]
+  },
+  "expertise": {
+    "name": "Expertise",
+    "type": "class_feature",
+    "tags": ["expertise", "skill_buff", "utility"]
+  },
+  "saving_throw_strength": {
+    "name": "Strength Saving Throw Proficiency",
+    "type": "proficiency",
+    "tags": ["defense", "save_throw"]
+  },
+  "saving_throw_dexterity": {
+    "name": "Dexterity Saving Throw Proficiency",
+    "type": "proficiency",
+    "tags": ["defense", "save_throw"]
+  },
+  "saving_throw_constitution": {
+    "name": "Constitution Saving Throw Proficiency",
+    "type": "proficiency",
+    "tags": ["defense", "save_throw", "concentration"]
+  },
+  "saving_throw_intelligence": {
+    "name": "Intelligence Saving Throw Proficiency",
+    "type": "proficiency",
+    "tags": ["defense", "save_throw"]
+  },
+  "saving_throw_wisdom": {
+    "name": "Wisdom Saving Throw Proficiency",
+    "type": "proficiency",
+    "tags": ["defense", "save_throw"]
+  },
+  "saving_throw_charisma": {
+    "name": "Charisma Saving Throw Proficiency",
+    "type": "proficiency",
+    "tags": ["defense", "save_throw"]
+  },
+  "light_armor_proficiency": {
+    "name": "Light Armor Proficiency",
+    "type": "proficiency",
+    "tags": ["defense", "armor", "equipment"]
+  },
+  "medium_armor_proficiency": {
+    "name": "Medium Armor Proficiency",
+    "type": "proficiency",
+    "tags": ["defense", "armor", "equipment"]
+  },
+  "heavy_armor_proficiency": {
+    "name": "Heavy Armor Proficiency",
+    "type": "proficiency",
+    "tags": ["defense", "armor", "equipment"]
+  },
+  "shield_proficiency": {
+    "name": "Shield Proficiency",
+    "type": "proficiency",
+    "tags": ["defense", "shield", "equipment"]
+  },
+  "simple_weapons_proficiency": {
+    "name": "Simple Weapons Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment"]
+  },
+  "martial_weapons_proficiency": {
+    "name": "Martial Weapons Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "damage"]
+  },
+  "light_crossbows_proficiency": {
+    "name": "Light Crossbows Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "ranged"]
+  },
+  "hand_crossbows_proficiency": {
+    "name": "Hand Crossbows Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "ranged"]
+  },
+  "rapiers_proficiency": {
+    "name": "Rapiers Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "melee"]
+  },
+  "long_sword_proficiency": {
+    "name": "Long Sword Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "melee"]
+  },
+  "short_sword_proficiency": {
+    "name": "Short Sword Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "melee"]
+  },
+  "flails_proficiency": {
+    "name": "Flails Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "melee"]
+  },
+  "morningstars_proficiency": {
+    "name": "Morningstars Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "melee"]
+  },
+  "clubs_proficiency": {
+    "name": "Clubs Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "melee"]
+  },
+  "daggers_proficiency": {
+    "name": "Daggers Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "melee"]
+  },
+  "javelins_proficiency": {
+    "name": "Javelins Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "ranged"]
+  },
+  "maces_proficiency": {
+    "name": "Maces Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "melee"]
+  },
+  "quarterstaves_proficiency": {
+    "name": "Quarterstaves Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "melee"]
+  },
+  "scimitars_proficiency": {
+    "name": "Scimitars Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "melee"]
+  },
+  "sickles_proficiency": {
+    "name": "Sickles Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "melee"]
+  },
+  "spears_proficiency": {
+    "name": "Spears Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "melee"]
+  },
+  "longswords_proficiency": {
+    "name": "Longswords Proficiency",
+    "type": "proficiency",
+    "tags": ["weapons", "equipment", "melee"]
+  },
+  "musical_instrument_proficiency": {
+    "name": "Musical Instrument Proficiency",
+    "type": "proficiency",
+    "tags": ["utility", "dialogue"]
+  },
+  "athletics_proficiency": {
+    "name": "Athletics Proficiency",
+    "type": "proficiency",
+    "tags": ["utility", "movement"]
+  },
+  "acrobatics_proficiency": {
+    "name": "Acrobatics Proficiency",
+    "type": "proficiency",
+    "tags": ["defense", "movement", "utility"]
+  },
+  "sleight_of_hand_proficiency": {
+    "name": "Sleight of Hand Proficiency",
+    "type": "proficiency",
+    "tags": ["utility"]
+  },
+  "stealth_proficiency": {
+    "name": "Stealth Proficiency",
+    "type": "proficiency",
+    "tags": ["movement", "utility"]
+  },
+  "arcana_proficiency": {
+    "name": "Arcana Proficiency",
+    "type": "proficiency",
+    "tags": ["dialogue", "utility"]
+  },
+  "history_proficiency": {
+    "name": "History Proficiency",
+    "type": "proficiency",
+    "tags": ["dialogue", "utility"]
+  },
+  "investigation_proficiency": {
+    "name": "Investigation Proficiency",
+    "type": "proficiency",
+    "tags": ["dialogue", "utility"]
+  },
+  "nature_proficiency": {
+    "name": "Nature Proficiency",
+    "type": "proficiency",
+    "tags": ["dialogue", "utility"]
+  },
+  "religion_proficiency": {
+    "name": "Religion Proficiency",
+    "type": "proficiency",
+    "tags": ["dialogue", "utility"]
+  },
+  "animal_handling_proficiency": {
+    "name": "Animal Handling Proficiency",
+    "type": "proficiency",
+    "tags": ["dialogue", "utility"]
+  },
+  "insight_proficiency": {
+    "name": "Insight Proficiency",
+    "type": "proficiency",
+    "tags": ["dialogue", "utility"]
+  },
+  "medicine_proficiency": {
+    "name": "Medicine Proficiency",
+    "type": "proficiency",
+    "tags": ["dialogue", "utility", "healing"]
+  },
+  "perception_proficiency": {
+    "name": "Perception Proficiency",
+    "type": "proficiency",
+    "tags": ["utility", "initiative"]
+  },
+  "survival_proficiency": {
+    "name": "Survival Proficiency",
+    "type": "proficiency",
+    "tags": ["dialogue", "utility"]
+  },
+  "deception_proficiency": {
+    "name": "Deception Proficiency",
+    "type": "proficiency",
+    "tags": ["dialogue", "utility"]
+  },
+  "intimidation_proficiency": {
+    "name": "Intimidation Proficiency",
+    "type": "proficiency",
+    "tags": ["dialogue", "utility"]
+  },
+  "performance_proficiency": {
+    "name": "Performance Proficiency",
+    "type": "proficiency",
+    "tags": ["dialogue", "utility"]
+  },
+  "persuasion_proficiency": {
+    "name": "Persuasion Proficiency",
+    "type": "proficiency",
+    "tags": ["dialogue", "utility"]
+  },
+  "ability_improvement": {
+    "name": "Ability Improvement",
+    "type": "feat",
+    "tags": ["buff", "damage", "defense", "max_health"]
+  },
+  "actor": {
+    "name": "Actor",
+    "type": "feat",
+    "tags": ["dialogue", "utility"]
+  },
+  "alert": {
+    "name": "Alert",
+    "type": "feat",
+    "tags": ["defense", "initiative"]
+  },
+  "athlete": {
+    "name": "Athlete",
+    "type": "feat",
+    "tags": ["movement"]
+  },
+  "charger": {
+    "name": "Charger",
+    "type": "feat",
+    "tags": ["movement", "damage"]
+  },
+  "crossbow_expert": {
+    "name": "Crossbow Expert",
+    "type": "feat",
+    "tags": ["damage", "ranged", "action_economy"]
+  },
+  "defensive_duelist": {
+    "name": "Defensive Duelist",
+    "type": "feat",
+    "tags": ["defense", "ac_bonus", "reaction"]
+  },
+  "dual_wielder": {
+    "name": "Dual Wielder",
+    "type": "feat",
+    "tags": ["damage", "dual_wielding", "ac_bonus"]
+  },
+  "dungeon_delver": {
+    "name": "Dungeon Delver",
+    "type": "feat",
+    "tags": ["utility"]
+  },
+  "durable": {
+    "name": "Durable",
+    "type": "feat",
+    "tags": ["defense", "max_health", "healing"]
+  },
+  "elemental_adept": {
+    "name": "Elemental Adept",
+    "type": "feat",
+    "tags": ["damage", "acid", "cold", "lightning", "fire", "thunder"]
+  },
+  "great_weapon_master": {
+    "name": "Great Weapon Master",
+    "type": "feat",
+    "tags": ["damage", "action_economy", "two_handed"]
+  },
+  "heavily_armoured": {
+    "name": "Heavily Armoured",
+    "type": "feat",
+    "tags": ["defense", "armor", "equipment"]
+  },
+  "heavy_armour_master": {
+    "name": "Heavy Armour Master",
+    "type": "feat",
+    "tags": ["defense", "damage_reduction", "armor"]
+  },
+  "lightly_armoured": {
+    "name": "Lightly Armoured",
+    "type": "feat",
+    "tags": ["defense", "armor", "equipment"]
+  },
+  "lucky": {
+    "name": "Lucky",
+    "type": "feat",
+    "tags": ["utility", "defense"]
+  },
+  "mage_slayer": {
+    "name": "Mage Slayer",
+    "type": "feat",
+    "tags": ["defense", "debuff"]
+  },
+  "magic_initiate_bard": {
+    "name": "Magic Initiate: Bard",
+    "type": "feat",
+    "tags": ["utility"]
+  },
+  "magic_initiate_cleric": {
+    "name": "Magic Initiate: Cleric",
+    "type": "feat",
+    "tags": ["utility"]
+  },
+  "magic_initiate_druid": {
+    "name": "Magic Initiate: Druid",
+    "type": "feat",
+    "tags": ["utility"]
+  },
+  "magic_initiate_sorcerer": {
+    "name": "Magic Initiate: Sorcerer",
+    "type": "feat",
+    "tags": ["utility"]
+  },
+  "magic_initiate_warlock": {
+    "name": "Magic Initiate: Warlock",
+    "type": "feat",
+    "tags": ["utility"]
+  },
+  "magic_initiate_wizard": {
+    "name": "Magic Initiate: Wizard",
+    "type": "feat",
+    "tags": ["utility"]
+  },
+  "martial_adept": {
+    "name": "Martial Adept",
+    "type": "feat",
+    "tags": ["damage", "utility"]
+  },
+  "medium_armor_master": {
+    "name": "Medium Armor Master",
+    "type": "feat",
+    "tags": ["defense", "ac_bonus", "armor"]
+  },
+  "mobile": {
+    "name": "Mobile",
+    "type": "feat",
+    "tags": ["movement"]
+  },
+  "moderately_armoured": {
+    "name": "Moderately Armoured",
+    "type": "feat",
+    "tags": ["defense", "armor", "equipment"]
+  },
+  "performer": {
+    "name": "Performer",
+    "type": "feat",
+    "tags": ["dialogue", "utility"]
+  },
+  "polearm_master": {
+    "name": "Polearm Master",
+    "type": "feat",
+    "tags": ["damage", "action_economy"]
+  },
+  "resilient": {
+    "name": "Resilient",
+    "type": "feat",
+    "tags": ["defense", "save_throw"]
+  },
+  "ritual_caster": {
+    "name": "Ritual Caster",
+    "type": "feat",
+    "tags": ["utility", "ritual"]
+  },
+  "savage_attacker": {
+    "name": "Savage Attacker",
+    "type": "feat",
+    "tags": ["damage"]
+  },
+  "sentinel": {
+    "name": "Sentinel",
+    "type": "feat",
+    "tags": ["control", "support", "defense", "reaction"]
+  },
+  "sharpshooter": {
+    "name": "Sharpshooter",
+    "type": "feat",
+    "tags": ["damage", "ranged"]
+  },
+  "shield_master": {
+    "name": "Shield Master",
+    "type": "feat",
+    "tags": ["defense", "shield"]
+  },
+  "skilled": {
+    "name": "Skilled",
+    "type": "feat",
+    "tags": ["utility"]
+  },
+  "spell_sniper": {
+    "name": "Spell Sniper",
+    "type": "feat",
+    "tags": ["damage", "ranged"]
+  },
+  "tavern_brawler": {
+    "name": "Tavern Brawler",
+    "type": "feat",
+    "tags": ["damage", "max_health", "melee"]
+  },
+  "tough": {
+    "name": "Tough",
+    "type": "feat",
+    "tags": ["max_health", "defense"]
+  },
+  "war_caster": {
+    "name": "War Caster",
+    "type": "feat",
+    "tags": ["defense", "concentration", "reaction"]
+  },
+  "weapon_master": {
+    "name": "Weapon Master",
+    "type": "feat",
+    "tags": ["weapons", "equipment", "damage"]
+  },
+  "fighting_style_archery": {
+    "name": "Archery",
+    "type": "fighting_style",
+    "tags": ["damage", "ranged"]
+  },
+  "fighting_style_defense": {
+    "name": "Defense",
+    "type": "fighting_style",
+    "tags": ["ac_bonus", "defense"]
+  },
+  "fighting_style_dueling": {
+    "name": "Dueling",
+    "type": "fighting_style",
+    "tags": ["damage", "melee"]
+  },
+  "fighting_style_great_weapon_fighting": {
+    "name": "Great Weapon Fighting",
+    "type": "fighting_style",
+    "tags": ["damage", "melee", "two_handed"]
+  },
+  "fighting_style_protection": {
+    "name": "Protection",
+    "type": "fighting_style",
+    "tags": ["defense", "ally", "shield", "reaction"]
+  },
+  "fighting_style_two_weapon_fighting": {
+    "name": "Two-Weapon Fighting",
+    "type": "fighting_style",
+    "tags": ["damage", "melee", "dual_wielding"]
+  }
+}
