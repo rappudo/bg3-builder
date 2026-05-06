@@ -1714,6 +1714,16 @@
     "tags": ["summon"],
     "classes": ["cleric", "warlock", "wizard"]
   },
+  "create_spell_slot": {
+    "name": "Create Spell Slot",
+    "type": "class_feature",
+    "tags": ["resource", "utility", "self"]
+  },
+  "create_sorcery_points": {
+    "name": "Create Sorcery Points",
+    "type": "class_feature",
+    "tags": ["resource", "utility", "self"]
+  },
   "disintegrate": {
     "name": "Disintegrate",
     "type": "spell",
@@ -1838,11 +1848,6 @@
     "type": "class_feature",
     "tags": ["damage", "defense", "buff", "self", "damage_reduction"]
   },
-  "unarmored_defense": {
-    "name": "Unarmored Defense",
-    "type": "class_feature",
-    "tags": ["defense", "ac_bonus"]
-  },
   "reckless_attack": {
     "name": "Reckless Attack",
     "type": "class_feature",
@@ -1938,10 +1943,20 @@
     "type": "class_feature",
     "tags": ["damage", "buff"]
   },
-  "martial_arts_deft_strikes": {
-    "name": "Martial Arts: Deft Strikes",
+  "martial_arts_deft_strikes_d4": {
+    "name": "Martial Arts: Deft Strikes (1d4)",
     "type": "class_feature",
-    "tags": ["damage"]
+    "tags": ["damage", "melee", "bludgeoning", "martial"]
+  },
+  "martial_arts_deft_strikes_d6": {
+    "name": "Martial Arts: Deft Strikes (1d6)",
+    "type": "class_feature",
+    "tags": ["damage", "melee", "bludgeoning", "martial"]
+  },
+  "martial_arts_deft_strikes_d8": {
+    "name": "Martial Arts: Deft Strikes (1d8)",
+    "type": "class_feature",
+    "tags": ["damage", "melee", "bludgeoning", "martial"]
   },
   "martial_arts_bonus_unarmed_strike": {
     "name": "Martial Arts: Bonus Unarmed Strike",
@@ -1959,9 +1974,24 @@
     "tags": ["damage", "action_economy"]
   },
   "unarmoured_movement": {
-    "name": "Unarmoured Movement",
+    "name": "Unarmoured Movement (+3m)",
     "type": "class_feature",
-    "tags": ["movement"]
+    "tags": ["movement", "self"]
+  },
+  "improved_unarmoured_movement_4_5m": {
+    "name": "Improved Unarmoured Movement (+4.5m)",
+    "type": "class_feature",
+    "tags": ["movement", "self"]
+  },
+  "improved_unarmoured_movement_6m": {
+    "name": "Improved Unarmoured Movement (+6m)",
+    "type": "class_feature",
+    "tags": ["movement", "self"]
+  },
+  "advanced_unarmoured_movement": {
+    "name": "Advanced Unarmoured Movement",
+    "type": "class_feature",
+    "tags": ["movement", "self", "utility"]
   },
   "patient_defence": {
     "name": "Patient Defence",
@@ -1998,11 +2028,6 @@
     "type": "class_feature",
     "tags": ["damage", "control"]
   },
-  "improved_unarmoured_movement": {
-    "name": "Improved Unarmoured Movement",
-    "type": "class_feature",
-    "tags": ["movement"]
-  },
   "ki_empowered_strikes": {
     "name": "Ki Empowered Strikes",
     "type": "class_feature",
@@ -2017,11 +2042,6 @@
     "name": "Stillness of Mind",
     "type": "class_feature",
     "tags": ["defense", "support", "self"]
-  },
-  "advanced_unarmoured_movement": {
-    "name": "Advanced Unarmoured Movement",
-    "type": "class_feature",
-    "tags": ["movement"]
   },
   "purity_of_body": {
     "name": "Purity of Body",
@@ -2263,8 +2283,13 @@
     "type": "class_feature",
     "tags": ["utility"]
   },
-  "sign_of_the_ill_omen": {
-    "name": "Sign of the Ill Omen",
+  "mystic_arcanum": {
+    "name": "Mystic Arcanum",
+    "type": "class_feature",
+    "tags": ["resource", "utility", "self"]
+  },
+  "sign_of_ill_omen": {
+    "name": "Sign of Ill Omen",
     "type": "class_feature",
     "tags": ["debuff", "concentration"]
   },
@@ -2273,10 +2298,23 @@
     "type": "class_feature",
     "tags": ["control", "debuff", "concentration", "area"]
   },
-  "deepened_pact": {
-    "name": "Deepened Pact",
+  "deepened_pact_blade_extra_attack": {
+    "name": "Deepened Pact: Pact of the Blade — Extra Attack",
     "type": "class_feature",
-    "tags": ["buff"]
+    "tags": ["damage", "action_economy", "martial"],
+    "requires": "pact_of_the_blade"
+  },
+  "deepened_pact_chain_familiar_extra_attack": {
+    "name": "Deepened Pact: Pact of the Chain — Familiar Extra Attack",
+    "type": "class_feature",
+    "tags": ["summon", "damage", "ally"],
+    "requires": "pact_of_the_chain"
+  },
+  "deepened_pact_tome_spells": {
+    "name": "Deepened Pact: Pact of the Tome — Bonus Spells",
+    "type": "class_feature",
+    "tags": ["utility", "support", "spells"],
+    "requires": "pact_of_the_tome"
   },
   "book_of_ancient_secrets": {
     "name": "Book of Ancient Secrets",
@@ -2588,6 +2626,11 @@
     "type": "class_feature",
     "tags": ["control", "single_target"]
   },
+  "bardic_inspiration_d6": {
+    "name": "Bardic Inspiration (d6)",
+    "type": "class_feature",
+    "tags": ["support", "ally", "buff"]
+  },
   "cutting_words": {
     "name": "Cutting Words",
     "type": "class_feature",
@@ -2615,6 +2658,16 @@
   },
   "combat_inspiration": {
     "name": "Combat Inspiration",
+    "type": "class_feature",
+    "tags": ["support", "ally", "buff"]
+  },
+  "improved_bardic_inspiration_d8": {
+    "name": "Improved Bardic Inspiration (d8)",
+    "type": "class_feature",
+    "tags": ["support", "ally", "buff"]
+  },
+  "improved_bardic_inspiration_d10": {
+    "name": "Improved Bardic Inspiration (d10)",
     "type": "class_feature",
     "tags": ["support", "ally", "buff"]
   },
@@ -2847,6 +2900,11 @@
     "name": "Lunar Mend",
     "type": "class_feature",
     "tags": ["healing", "self"]
+  },
+  "wild_shape": {
+    "name": "Wild Shape",
+    "type": "class_feature",
+    "tags": ["self", "buff", "utility", "movement"]
   },
   "combat_wild_shape": {
     "name": "Combat Wild Shape",
@@ -4343,83 +4401,78 @@
     "type": "proficiency",
     "tags": ["weapons", "equipment", "damage"]
   },
-  "light_crossbows_proficiency": {
-    "name": "Light Crossbows Proficiency",
+  "light_crossbow_proficiency": {
+    "name": "Light Crossbow Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "ranged"]
   },
-  "hand_crossbows_proficiency": {
-    "name": "Hand Crossbows Proficiency",
+  "hand_crossbow_proficiency": {
+    "name": "Hand Crossbow Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "ranged"]
   },
-  "rapiers_proficiency": {
-    "name": "Rapiers Proficiency",
+  "rapier_proficiency": {
+    "name": "Rapier Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "melee"]
   },
-  "long_sword_proficiency": {
-    "name": "Long Sword Proficiency",
+  "longsword_proficiency": {
+    "name": "Longsword Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "melee"]
   },
-  "short_sword_proficiency": {
-    "name": "Short Sword Proficiency",
+  "shortsword_proficiency": {
+    "name": "Shortsword Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "melee"]
   },
-  "flails_proficiency": {
-    "name": "Flails Proficiency",
+  "flail_proficiency": {
+    "name": "Flail Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "melee"]
   },
-  "morningstars_proficiency": {
-    "name": "Morningstars Proficiency",
+  "morningstar_proficiency": {
+    "name": "Morningstar Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "melee"]
   },
-  "clubs_proficiency": {
-    "name": "Clubs Proficiency",
+  "club_proficiency": {
+    "name": "Club Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "melee"]
   },
-  "daggers_proficiency": {
-    "name": "Daggers Proficiency",
+  "dagger_proficiency": {
+    "name": "Dagger Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "melee"]
   },
-  "javelins_proficiency": {
-    "name": "Javelins Proficiency",
+  "javelin_proficiency": {
+    "name": "Javelin Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "ranged"]
   },
-  "maces_proficiency": {
-    "name": "Maces Proficiency",
+  "mace_proficiency": {
+    "name": "Mace Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "melee"]
   },
-  "quarterstaves_proficiency": {
-    "name": "Quarterstaves Proficiency",
+  "quarterstave_proficiency": {
+    "name": "Quarterstave Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "melee"]
   },
-  "scimitars_proficiency": {
-    "name": "Scimitars Proficiency",
+  "scimitar_proficiency": {
+    "name": "Scimitar Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "melee"]
   },
-  "sickles_proficiency": {
-    "name": "Sickles Proficiency",
+  "sickle_proficiency": {
+    "name": "Sickle Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "melee"]
   },
-  "spears_proficiency": {
-    "name": "Spears Proficiency",
-    "type": "proficiency",
-    "tags": ["weapons", "equipment", "melee"]
-  },
-  "longswords_proficiency": {
-    "name": "Longswords Proficiency",
+  "spear_proficiency": {
+    "name": "Spear Proficiency",
     "type": "proficiency",
     "tags": ["weapons", "equipment", "melee"]
   },

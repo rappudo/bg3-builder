@@ -44,7 +44,35 @@
     "war_caster",
     "weapon_master"
   ],
-  "fighting_styles": [
+  "fighter_fighting_styles": [
+    "fighting_style_archery",
+    "fighting_style_defense",
+    "fighting_style_dueling",
+    "fighting_style_great_weapon_fighting",
+    "fighting_style_protection",
+    "fighting_style_two_weapon_fighting"
+  ],
+
+  "paladin_fighting_styles": [
+    "fighting_style_defense",
+    "fighting_style_dueling",
+    "fighting_style_great_weapon_fighting",
+    "fighting_style_protection"
+  ],
+
+  "ranger_fighting_styles": [
+    "fighting_style_archery",
+    "fighting_style_defense",
+    "fighting_style_dueling",
+    "fighting_style_two_weapon_fighting"
+  ],
+
+  "college_of_swords_fighting_styles": [
+    "fighting_style_dueling",
+    "fighting_style_two_weapon_fighting"
+  ],
+
+  "champion_fighting_styles": [
     "fighting_style_archery",
     "fighting_style_defense",
     "fighting_style_dueling",
@@ -949,5 +977,94 @@
     "investigation_proficiency",
     "medicine_proficiency",
     "religion_proficiency"
+  ],
+  "eldritch_invocations_level_2": [
+    "agonising_blast",
+    "armour_of_shadows",
+    "beast_speech",
+    "beguiling_influence",
+    "devils_sight",
+    "fiendish_vigour",
+    "mask_of_many_faces",
+    "one_with_shadows",
+    "repelling_blast",
+    "thief_of_five_fates"
+  ],
+  "pact_boon": [
+    "pact_of_the_blade",
+    "pact_of_the_chain",
+    "pact_of_the_tome"
+  ],
+  "eldritch_invocations_level_5": [
+    "agonising_blast",
+    "armour_of_shadows",
+    "beast_speech",
+    "beguiling_influence",
+    "devils_sight",
+    "fiendish_vigour",
+    "mask_of_many_faces",
+    "one_with_shadows",
+    "repelling_blast",
+    "thief_of_five_fates",
+    "sign_of_ill_omen",
+    "mire_the_mind"
+  ],
+  "eldritch_invocations_level_7": [
+    "agonising_blast",
+    "armour_of_shadows",
+    "beast_speech",
+    "beguiling_influence",
+    "devils_sight",
+    "fiendish_vigour",
+    "mask_of_many_faces",
+    "one_with_shadows",
+    "repelling_blast",
+    "thief_of_five_fates",
+    "sign_of_ill_omen",
+    "mire_the_mind",
+    "book_of_ancient_secrets",
+    "dreadful_word",
+    "sculptor_of_flesh"
+  ],
+  "eldritch_invocations_level_9": [
+    "agonising_blast",
+    "armour_of_shadows",
+    "beast_speech",
+    "beguiling_influence",
+    "devils_sight",
+    "fiendish_vigour",
+    "mask_of_many_faces",
+    "one_with_shadows",
+    "repelling_blast",
+    "thief_of_five_fates",
+    "sign_of_ill_omen",
+    "mire_the_mind",
+    "book_of_ancient_secrets",
+    "dreadful_word",
+    "sculptor_of_flesh",
+    "minions_of_chaos",
+    "otherworldly_leap",
+    "whispers_of_the_grave"
+  ],
+  "eldritch_invocations_level_12": [
+    "agonising_blast",
+    "armour_of_shadows",
+    "beast_speech",
+    "beguiling_influence",
+    "devils_sight",
+    "fiendish_vigour",
+    "mask_of_many_faces",
+    "one_with_shadows",
+    "repelling_blast",
+    "thief_of_five_fates",
+    "sign_of_ill_omen",
+    "mire_the_mind",
+    "book_of_ancient_secrets",
+    "dreadful_word",
+    "sculptor_of_flesh",
+    "minions_of_chaos",
+    "otherworldly_leap",
+    "whispers_of_the_grave",
+    "life_drinker"
   ]
 }

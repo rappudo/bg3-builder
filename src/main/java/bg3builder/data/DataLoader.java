@@ -1,5 +1,7 @@
 package bg3builder.data;
 
+import bg3builder.model.ChoiceList;
+import bg3builder.model.ClassProgression;
 import bg3builder.model.Feature;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -7,6 +9,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -18,29 +21,15 @@ public class DataLoader {
 
     private final ObjectMapper mapper = new ObjectMapper();
 
-    /**
-     * Loads features.json. The file is structured as a map of id -> entry,
-     * with entries having no "id" field of their own (the key IS the id).
-     * We read it as a generic map first, then construct Feature records
-     * manually so each gets its id from the map key.
-     */
+    /** features.json: id -> Feature record. */
     public Map<String, Feature> loadFeatures(File path) throws IOException {
-        // Read raw JSON as a fully-generic map. Values can be either Strings
-        // (for _comment entries) or nested Maps (for actual feature entries).
-        Map<String, Object> raw = mapper.readValue(
-                path,
-                new TypeReference<>() {}
-        );
+        Map<String, Object> raw = mapper.readValue(path, new TypeReference<>() {});
 
         Map<String, Feature> result = new HashMap<>();
         for (Map.Entry<String, Object> entry : raw.entrySet()) {
             String id = entry.getKey();
-
-            // Skip comment keys (their values are plain strings, not feature objects)
             if (id.startsWith("_")) continue;
 
-            // Defensive: if a non-underscore key has a non-Map value, something
-            // is wrong with the data. Surface it instead of silently skipping.
             if (!(entry.getValue() instanceof Map<?, ?> attrsRaw)) {
                 throw new IOException("Expected object for feature '" + id
                         + "' but got: " + entry.getValue().getClass().getSimpleName());
@@ -63,8 +52,55 @@ public class DataLoader {
         return result;
     }
 
+    /** choice_lists.json: pool name -> list of feature ids. */
+    public ChoiceList loadChoiceLists(File path) throws IOException {
+        Map<String, Object> raw = mapper.readValue(path, new TypeReference<>() {});
+
+        Map<String, List<String>> pools = new HashMap<>();
+        for (Map.Entry<String, Object> entry : raw.entrySet()) {
+            String id = entry.getKey();
+            if (id.startsWith("_")) continue;
+
+            if (entry.getValue() instanceof List<?> listRaw) {
+                @SuppressWarnings("unchecked")
+                List<String> typed = (List<String>) listRaw;
+                pools.put(id, typed);
+            } else {
+                throw new IOException("Expected array for pool '" + id
+                        + "' but got: " + entry.getValue().getClass().getSimpleName());
+            }
+        }
+        return new ChoiceList(pools);
+    }
+
+    /**
+     * classes.json: class id -> ClassProgression.
+     * Round-trips each entry through Jackson to leverage record binding for
+     * the nested LevelEntry / Choice / PoolReference structure, then attaches
+     * the id from the surrounding map key.
+     */
+    public Map<String, ClassProgression> loadClasses(File path) throws IOException {
+        Map<String, Object> raw = mapper.readValue(path, new TypeReference<>() {});
+
+        Map<String, ClassProgression> result = new HashMap<>();
+        for (Map.Entry<String, Object> entry : raw.entrySet()) {
+            String id = entry.getKey();
+            if (id.startsWith("_")) continue;
+
+            if (!(entry.getValue() instanceof Map<?, ?>)) {
+                throw new IOException("Expected object for class '" + id
+                        + "' but got: " + entry.getValue().getClass().getSimpleName());
+            }
+
+            String json = mapper.writeValueAsString(entry.getValue());
+            ClassProgression.Dto dto = mapper.readValue(json, ClassProgression.Dto.class);
+            result.put(id, dto.toModel(id));
+        }
+        return result;
+    }
+
     @SuppressWarnings("unchecked")
-    private static java.util.List<String> castList(Object o) {
-        return (java.util.List<String>) o;
+    private static List<String> castList(Object o) {
+        return (List<String>) o;
     }
 }
