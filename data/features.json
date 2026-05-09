@@ -2564,52 +2564,52 @@
   "bear": {
     "name": "Bear",
     "type": "class_feature",
-    "tags": ["summon", "ally"]
+    "tags": ["buff", "self", "passive"]
   },
   "chimpanzee": {
     "name": "Chimpanzee",
     "type": "class_feature",
-    "tags": ["summon", "ally"]
+    "tags": ["buff", "self", "passive"]
   },
   "crocodile": {
     "name": "Crocodile",
     "type": "class_feature",
-    "tags": ["summon", "ally"]
+    "tags": ["buff", "self", "passive"]
   },
   "eagle": {
     "name": "Eagle",
     "type": "class_feature",
-    "tags": ["summon", "ally"]
+    "tags": ["buff", "self", "passive"]
   },
   "elk": {
     "name": "Elk",
     "type": "class_feature",
-    "tags": ["summon", "ally"]
+    "tags": ["buff", "self", "passive"]
   },
   "honey_badger": {
     "name": "Honey Badger",
     "type": "class_feature",
-    "tags": ["summon", "ally"]
+    "tags": ["buff", "self", "passive"]
   },
   "stallion": {
     "name": "Stallion",
     "type": "class_feature",
-    "tags": ["summon", "ally"]
+    "tags": ["buff", "self", "passive"]
   },
   "tiger": {
     "name": "Tiger",
     "type": "class_feature",
-    "tags": ["summon", "ally"]
+    "tags": ["buff", "self", "passive"]
   },
   "wolf": {
     "name": "Wolf",
     "type": "class_feature",
-    "tags": ["summon", "ally"]
+    "tags": ["buff", "self", "passive"]
   },
   "wolverine": {
     "name": "Wolverine",
     "type": "class_feature",
-    "tags": ["summon", "ally"]
+    "tags": ["buff", "self", "passive"]
   },
   "lands_stride_advantage": {
     "name": "Land's Stride Advantage",

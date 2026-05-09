@@ -723,10 +723,17 @@
     "death_domain"
   ],
   "druid_subclasses": [
-    "circle_of_the_land",
+    "circle_of_the_land_arctic",
+    "circle_of_the_land_coast",
+    "circle_of_the_land_desert",
+    "circle_of_the_land_forest",
+    "circle_of_the_land_grassland",
+    "circle_of_the_land_mountain",
+    "circle_of_the_land_swamp",
+    "circle_of_the_land_underdark",
     "circle_of_the_moon",
-    "circle_of_spores",
-    "circle_of_stars"
+    "circle_of_the_spores",
+    "circle_of_the_stars"
   ],
   "fighter_subclasses": [
     "battle_master",
@@ -1066,5 +1073,158 @@
     "otherworldly_leap",
     "whispers_of_the_grave",
     "life_drinker"
+  ],
+  "aspects_of_the_beast": [
+    "bear",
+    "chimpanzee",
+    "crocodile",
+    "eagle",
+    "elk",
+    "honey_badger",
+    "stallion",
+    "tiger",
+    "wolf",
+    "wolverine"
+  ],
+  "death_domain_cantrips": [
+    "bone_chill",
+    "bursting_sinew",
+    "toll_the_dead"
+  ],
+  "knowledge_domain_expertise_skills": [
+    "arcana_proficiency",
+    "history_proficiency",
+    "nature_proficiency",
+    "religion_proficiency"
+  ],
+  "nature_domain_cantrips": [
+    "poison_spray",
+    "produce_flame",
+    "shillelagh",
+    "thorn_whip"
+  ],
+  "nature_domain_skill_proficiencies": [
+    "animal_handling_proficiency",
+    "nature_proficiency",
+    "survival_proficiency"
+  ],
+  "circle_of_the_land_cantrips": [
+    "guidance",
+    "poison_spray",
+    "produce_flame",
+    "resistance",
+    "shillelagh",
+    "thorn_whip"
+  ],
+  "arcane_archer_cantrips": [
+    "guidance",
+    "light",
+    "true_strike"
+  ],
+  "hunters_prey": [
+    "colossus_slayer",
+    "giant_killer",
+    "horde_breaker"
+  ],
+  "defensive_tactics": [
+    "escape_the_horde",
+    "steel_will",
+    "multiattack_defense"
+  ],
+  "elemental_disciplines_tier_1": [
+    "blade_of_rime",
+    "chill_of_the_mountain",
+    "fangs_of_the_fire_snake",
+    "fist_of_four_elements",
+    "fist_of_unbroken_air",
+    "rush_of_the_gale_spirits",
+    "shaping_of_the_ice",
+    "sphere_of_elementaL_balance",
+    "sweeping_cinder_strike",
+    "touch_of_the_storm",
+    "water_whip"
+  ],
+  "elemental_disciplines_tier_2": [
+    "blade_of_rime",
+    "chill_of_the_mountain",
+    "fangs_of_the_fire_snake",
+    "fist_of_four_elements",
+    "fist_of_unbroken_air",
+    "rush_of_the_gale_spirits",
+    "shaping_of_the_ice",
+    "sphere_of_elementaL_balance",
+    "sweeping_cinder_strike",
+    "touch_of_the_storm",
+    "water_whip",
+    "clench_of_the_north_wind",
+    "embrace_of_the_inferno",
+    "gong_og_summit"
+  ],
+  "elemental_disciplines_tier_3": [
+    "blade_of_rime",
+    "chill_of_the_mountain",
+    "fangs_of_the_fire_snake",
+    "fist_of_four_elements",
+    "fist_of_unbroken_air",
+    "rush_of_the_gale_spirits",
+    "shaping_of_the_ice",
+    "sphere_of_elementaL_balance",
+    "sweeping_cinder_strike",
+    "touch_of_the_storm",
+    "water_whip",
+    "clench_of_the_north_wind",
+    "embrace_of_the_inferno",
+    "gong_og_summit",
+    "flames_of_the_phoenix",
+    "mist_stance",
+    "ride_the_wind"
+  ],
+  "spells_warlock": [
+    "arcane_gate",
+    "armour_of_agathys",
+    "arms_of_hadar",
+    "banishment",
+    "blade_ward",
+    "blight",
+    "bone_chill",
+    "booming_blade",
+    "charm_person",
+    "circle_of_death",
+    "cloud_of_daggers",
+    "counterspell",
+    "create_undead",
+    "crown_of_madness",
+    "darkness",
+    "dimension_door",
+    "eldritch_blast",
+    "enthrall",
+    "expeditious_retreat",
+    "eyebite",
+    "fear",
+    "flesh_to_stone",
+    "friends",
+    "gaseous_form",
+    "grant_flight",
+    "hellish_rebuke",
+    "hex",
+    "hold_monster",
+    "hold_person",
+    "hunger_of_hadar",
+    "hypnotic_pattern",
+    "invisibility",
+    "mage_hand",
+    "minor_illusion",
+    "mirror_image",
+    "misty_step",
+    "poison_spray",
+    "protection_from_evil_and_good",
+    "ray_of_enfeeblement",
+    "remove_curse",
+    "shadow_blade",
+    "shatter",
+    "toll_the_dead",
+    "true_strike",
+    "vampiric_touch",
+    "witch_bolt"
   ]
 }

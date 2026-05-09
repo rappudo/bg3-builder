@@ -1,1 +1,2948 @@
-{}
+{
+  "berserker": {
+    "name": "Berserker",
+    "parent_class": "barbarian",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "rage_becomes_frenzy",
+          "frenzy",
+          "frenzied_strike",
+          "enraged_throw"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "mindless_rage"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "intimidating_presence"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "giant": {
+    "name": "Path of the Giant",
+    "parent_class": "barbarian",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "giants_rage",
+          "vapraks_greed",
+          "thaumaturgy"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "boot_of_the_giants"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "elemental_cleaver"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "mighty_impel"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "wild_magic": {
+    "name": "Wild Magic",
+    "parent_class": "barbarian",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "rage_wild_magic",
+          "weapon_infusion",
+          "magic_retribution",
+          "protective_lights",
+          "intangible_spirit",
+          "bolt_of_light",
+          "vine_growth",
+          "teleport",
+          "dark_tendrils",
+          "magic_awareness"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "bolstering_magic_boon",
+          "bolstering_magic_level_1_spell_slot",
+          "bolstering_magic_level_2_spell_slot"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "bolstering_magic_level_3_spell_slot"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "unstable_backlash"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "wildheart": {
+    "name": "Wildheart",
+    "parent_class": "barbarian",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "speak_with_animals"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "wild_heart_totems"
+          }
+        ]
+      },
+      "6": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "aspects_of_the_beast"
+          }
+        ]
+      },
+      "8": {
+        "grants": [
+          "lands_stride_difficult_terrain",
+          "lands_stride_advantage",
+          "lands_stride_plants"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "aspects_of_the_beast"
+          }
+        ]
+      }
+    }
+  },
+  "college_of_glamour": {
+    "name": "College of Glamour",
+    "parent_class": "bard",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "mantle_of_inspiration"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "mantle_of_majesty_command"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [],
+        "choices": []
+      }
+    }
+  },
+  "college_of_lore": {
+    "name": "College of Lore",
+    "parent_class": "bard",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "cutting_words"
+        ],
+        "choices": [
+          {
+            "pick": 3,
+            "from_list": "bard_skill_options"
+          }
+        ]
+      },
+      "6": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 2,
+            "from_list": "magical_secrets_spells",
+            "filter": {
+              "spell_level_max": 3
+            }
+          }
+        ]
+      }
+    }
+  },
+  "college_of_swords": {
+    "name": "College of Swords",
+    "parent_class": "bard",
+    "available_at_level": 3,
+    "_note": "Each blade flourish is one feature (melee/ranged variants collapsed). Pick 1 fighting style from college_of_swords_fighting_styles (Duelling or Two-Weapon Fighting only).",
+    "levels": {
+      "3": {
+        "grants": [
+          "medium_armor_proficiency",
+          "scimitar_proficiency",
+          "defensive_flourish",
+          "slashing_flourish",
+          "mobile_flourish"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "college_of_swords_fighting_styles"
+          }
+        ]
+      },
+      "6": {
+        "grants": [
+          "extra_attack"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "college_of_valour": {
+    "name": "College of Valour",
+    "parent_class": "bard",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "medium_armor_proficiency",
+          "shield_proficiency",
+          "martial_weapons_proficiency",
+          "combat_inspiration"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "extra_attack"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "death_domain": {
+    "name": "Death Domain",
+    "parent_class": "cleric",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "martial_weapons_proficiency",
+          "reaper",
+          "false_life",
+          "ray_of_sickness"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "death_domain_cantrips"
+          }
+        ]
+      },
+      "2": {
+        "grants": [
+          "touch_of_death"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "blindness",
+          "ray_of_enfeeblement"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "animate_dead",
+          "vampiric_touch"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "inescapable_destruction"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "blight",
+          "death_ward"
+        ],
+        "choices": []
+      },
+      "8": {
+        "grants": [
+          "divine_strike_necrotic"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "cloudkill",
+          "contagion"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "knowledge_domain": {
+    "name": "Knowledge Domain",
+    "parent_class": "cleric",
+    "available_at_level": 1,
+    "_note": "L1 Blessing of Knowledge: gain expertise in 2 of {Arcana, History, Nature, Religion}. L5/6/7/8/9 unverified — fetch was truncated.",
+    "levels": {
+      "1": {
+        "grants": [
+          "blessing_of_knowledge",
+          "command",
+          "sleep"
+        ],
+        "choices": [
+          {
+            "pick": 2,
+            "from_list": "knowledge_domain_expertise_skills"
+          }
+        ]
+      },
+      "2": {
+        "grants": [
+          "knowledge_of_the_ages"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "calm_emotions",
+          "hold_person"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "slow",
+          "speak_with_dead"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "read_thoughts",
+          "speak_with_animals"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "confusion",
+          "otilukes_resilient_sphere"
+        ],
+        "choices": []
+      },
+      "8": {
+        "grants": [
+          "potent_spellcasting"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "dominate_person",
+          "telekinesis"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "life_domain": {
+    "name": "Life Domain",
+    "parent_class": "cleric",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "heavy_armor_proficiency",
+          "disciple_of_life",
+          "bless",
+          "cure_wounds"
+        ],
+        "choices": []
+      },
+      "2": {
+        "grants": [
+          "preserve_life"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "aid",
+          "lesser_restoration"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "revivify",
+          "beacon_of_hope"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "blessed_healer"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "guardian_of_faith",
+          "death_ward"
+        ],
+        "choices": []
+      },
+      "8": {
+        "grants": [
+          "divine_strike_radiant"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "greater_restoration",
+          "mass_cure_wounds"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "light_domain": {
+    "name": "Light Domain",
+    "parent_class": "cleric",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "warding_flare",
+          "light",
+          "burning_hands",
+          "faerie_fire"
+        ],
+        "choices": []
+      },
+      "2": {
+        "grants": [
+          "radiance_of_the_dawn"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "flaming_sphere",
+          "scorching_ray"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "daylight",
+          "fireball"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "improved_warding_flare"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "guardian_of_faith",
+          "wall_of_fire"
+        ],
+        "choices": []
+      },
+      "8": {
+        "grants": [
+          "potent_spellcasting"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "destructive_wave",
+          "flame_strike"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "nature_domain": {
+    "name": "Nature Domain",
+    "parent_class": "cleric",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "heavy_armor_proficiency",
+          "speak_with_animals",
+          "animal_friendship"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "nature_domain_cantrips"
+          },
+          {
+            "pick": 1,
+            "from_list": "nature_domain_skill_proficiencies"
+          }
+        ]
+      },
+      "2": {
+        "grants": [
+          "charm_animals_and_plants"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "barkskin",
+          "spike_growth"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "plant_growth",
+          "sleet_storm"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "dampen_elements"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "dominate_beast",
+          "grasping_vine"
+        ],
+        "choices": []
+      },
+      "8": {
+        "grants": [
+          "divine_strike_elemental_fury"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "insect_plague",
+          "wall_of_stone"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "tempest_domain": {
+    "name": "Tempest Domain",
+    "parent_class": "cleric",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "heavy_armor_proficiency",
+          "martial_weapons_proficiency",
+          "wrath_of_the_storm_lightning",
+          "wrath_of_the_storm_thunder",
+          "thunderwave",
+          "fog_cloud"
+        ],
+        "choices": []
+      },
+      "2": {
+        "grants": [
+          "destructive_wrath"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "gust_of_wind",
+          "shatter"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "call_lightning",
+          "sleet_storm"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "thunderbolt_strike"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "freedom_of_movement",
+          "ice_storm"
+        ],
+        "choices": []
+      },
+      "8": {
+        "grants": [
+          "divine_strike_thunder"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "destructive_wave",
+          "insect_plague"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "trickery_domain": {
+    "name": "Trickery Domain",
+    "parent_class": "cleric",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "blessing_of_the_trickster",
+          "charm_person",
+          "disguise_self"
+        ],
+        "choices": []
+      },
+      "2": {
+        "grants": [
+          "invoke_duplicity"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "mirror_image",
+          "pass_without_trace"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "bestow_curse",
+          "fear"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "channel_divinity_cloak_of_shadows"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "dimension_door",
+          "polymorph"
+        ],
+        "choices": []
+      },
+      "8": {
+        "grants": [
+          "divine_strike_poison"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "dominate_person",
+          "seeming"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "war_domain": {
+    "name": "War Domain",
+    "parent_class": "cleric",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "heavy_armor_proficiency",
+          "martial_weapons_proficiency",
+          "war_priest",
+          "divine_favour",
+          "shield_of_faith"
+        ],
+        "choices": []
+      },
+      "2": {
+        "grants": [
+          "guided_strike"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "magic_weapon",
+          "spiritual_weapon"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "spirit_guardians",
+          "crusaders_mantle"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "war_gods_blessing"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "freedom_of_movement",
+          "stoneskin"
+        ],
+        "choices": []
+      },
+      "8": {
+        "grants": [
+          "divine_strike_weapon"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "flame_strike",
+          "hold_monster"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "circle_of_the_land_arctic": {
+    "name": "Circle of the Land (Arctic)",
+    "parent_class": "druid",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "natural_recovery"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "nature_domain_cantrips"
+          }
+        ]
+      },
+      "3": {
+        "grants": [
+          "hold_person",
+          "spike_growth"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "sleet_storm",
+          "haste"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "lands_stride_difficult_terrain",
+          "lands_stride_advantage",
+          "lands_stride_plants"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "conjure_minor_elemental",
+          "ice_storm"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "cone_of_cold",
+          "contagion"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "natures_ward"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "circle_of_the_land_coast": {
+    "name": "Circle of the Land (Coast)",
+    "parent_class": "druid",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "natural_recovery"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "nature_domain_cantrips"
+          }
+        ]
+      },
+      "3": {
+        "grants": [
+          "mirror_image",
+          "misty_step"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "sleet_storm",
+          "call_lightning"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "lands_stride_difficult_terrain",
+          "lands_stride_advantage",
+          "lands_stride_plants"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "freedom_of_movement",
+          "confusion"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "conjure_elemental",
+          "greater_restoration"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "natures_ward"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "circle_of_the_land_desert": {
+    "name": "Circle of the Land (Desert)",
+    "parent_class": "druid",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "natural_recovery"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "nature_domain_cantrips"
+          }
+        ]
+      },
+      "3": {
+        "grants": [
+          "hold_person",
+          "spike_growth"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "potection_from_energy",
+          "hypnotic_pattern"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "lands_stride_difficult_terrain",
+          "lands_stride_advantage",
+          "lands_stride_plants"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "blight",
+          "wall_of_fire"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "wall_of_stone",
+          "insect_plague"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "natures_ward"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "circle_of_the_land_forest": {
+    "name": "Circle of the Land (Forest)",
+    "parent_class": "druid",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "natural_recovery"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "nature_domain_cantrips"
+          }
+        ]
+      },
+      "3": {
+        "grants": [
+          "barkskin",
+          "hold_person"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "call_lightning",
+          "plant_growth"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "lands_stride_difficult_terrain",
+          "lands_stride_advantage",
+          "lands_stride_plants"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "conjure_minor_elemental",
+          "grasping_vine"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "mass_cure_wounds",
+          "contagion"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "natures_ward"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "circle_of_the_land_grassland": {
+    "name": "Circle of the Land (Grassland)",
+    "parent_class": "druid",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "natural_recovery"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "nature_domain_cantrips"
+          }
+        ]
+      },
+      "3": {
+        "grants": [
+          "pass_without_trace",
+          "invisibility"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "daylight",
+          "haste"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "lands_stride_difficult_terrain",
+          "lands_stride_advantage",
+          "lands_stride_plants"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "freedom_of_movement",
+          "polymorph"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "wall_of_stone",
+          "insect_plague"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "natures_ward"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "circle_of_the_land_mountain": {
+    "name": "Circle of the Land (Mountain)",
+    "parent_class": "druid",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "natural_recovery"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "nature_domain_cantrips"
+          }
+        ]
+      },
+      "3": {
+        "grants": [
+          "mirror_image",
+          "spike_growth"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "lightning_bolt",
+          "grant_flight"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "lands_stride_difficult_terrain",
+          "lands_stride_advantage",
+          "lands_stride_plants"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "stoneskin",
+          "dominate_beast"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "wall_of_stone",
+          "conjure_elemental"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "natures_ward"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "circle_of_the_land_swamp": {
+    "name": "Circle of the Land (Swamp)",
+    "parent_class": "druid",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "natural_recovery"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "nature_domain_cantrips"
+          }
+        ]
+      },
+      "3": {
+        "grants": [
+          "melfs_acid_arrow",
+          "darkness"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "stinking_cloud",
+          "vampiric_touch"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "lands_stride_difficult_terrain",
+          "lands_stride_advantage",
+          "lands_stride_plants"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "blight",
+          "grasping_vine"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "insect_plague",
+          "cloudkill"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "natures_ward"
+        ],
+        "choices": []
+      }
+    }
+  },
+  "circle_of_the_land_underdark": {
+    "name": "Circle of the Land (Underdark)",
+    "parent_class": "druid",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "natural_recovery"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "nature_domain_cantrips"
+          }
+        ]
+      },
+      "3": {
+        "grants": [
+          "web",
+          "misty_step"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "gaseous_form",
+          "stinking_cloud"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "lands_stride_difficult_terrain",
+          "lands_stride_advantage",
+          "lands_stride_plants"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "greater_invisibility",
+          "dominate_beast"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "contagion",
+          "clowdkill"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "natures_ward"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "circle_of_the_moon": {
+    "name": "Circle Of The Moon",
+    "parent_class": "druid",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "lunar_mend",
+          "combat_wild_shape",
+          "wild_shape_bear"
+        ],
+        "choices": []
+      },
+      "4": {
+        "grants": [
+          "wild_shape_dire_raven"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "primal_strike"
+        ],
+        "choices": []
+      },
+      "8": {
+        "grants": [
+          "wild_shape_sabre_toothed_tiger"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "wild_shape_air_myrmidon",
+          "wild_shape_earth_myrmidon",
+          "wild_shape_fire_myrmidon",
+          "wild_shape_water_myrmidon"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "circle_of_the_spores": {
+    "name": "Circle Of The Spores",
+    "parent_class": "druid",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "bone_chill",
+          "halo_of_spores",
+          "symbiotic_entity"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "blindness",
+          "detect_thoughts"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "animate_dead",
+          "gaseous_form"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "fungal_infestation"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "blight",
+          "confusion"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "cloudkill",
+          "contagion"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "spreading_spores"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "circle_of_the_stars": {
+    "name": "Circle Of The Stars",
+    "parent_class": "druid",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "guidance",
+          "starry_form",
+          "starry_form_archer",
+          "starry_form_chalice",
+          "starry_form_dragon",
+          "guiding_bolt",
+          "star_map_guiding_bolt",
+          "luminous_arrow",
+          "chalice_healing",
+          "dazzling_breath"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "cosmic_omen"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "twinkling_constellations"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "arcane_archer": {
+    "name": "Arcane Archer",
+    "parent_class": "fighter",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "arcana_proficiency",
+          "nature_proficiency"
+        ],
+        "choices": [
+          {
+            "pick": 3,
+            "from_list": "fighter_arcane_shots"
+          },
+          {
+            "pick": 1,
+            "from_list": "arcane_archer_cantrips"
+          }
+        ]
+      },
+      "7": {
+        "grants": [
+          "curving_shot",
+          "magic_arrow"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "fighter_arcane_shots"
+          }
+        ]
+      },
+      "10": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "fighter_arcane_shots"
+          }
+        ]
+      }
+    }
+  },
+
+  "battle_master": {
+    "name": "Battle Master",
+    "parent_class": "fighter",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 3,
+            "from_list": "fighter_battle_master_maneuvers"
+          }
+        ]
+      },
+      "7": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 2,
+            "from_list": "fighter_battle_master_maneuvers"
+          }
+        ]
+      },
+      "10": {
+        "grants": [
+          "improved_combat_superiority"
+        ],
+        "choices": [
+          {
+            "pick": 2,
+            "from_list": "fighter_battle_master_maneuvers"
+          }
+        ]
+      }
+    }
+  },
+
+  "champion": {
+    "name": "Champion",
+    "parent_class": "fighter",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "improved_critical_hit"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "remarkable_athlete_jump",
+          "remarkable_athlete_proficiency"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "champion_fighting_styles"
+          }
+        ]
+      }
+    }
+  },
+
+  "eldritch_knight": {
+    "name": "Eldritch Knight",
+    "parent_class": "fighter",
+    "available_at_level": 3,
+    "_note": "EK uses Wizard spells, restricted to Abjuration + Evocation, plus 1 'free' wizard spell of any school per spell-pick slot. The user's spells_eldritch_knight pool already pre-filters to Abjuration/Evocation L0-L2. The 'free' choice uses spells_wizard. L2 spell slots unlock at L8 in BG3.",
+    "levels": {
+      "3": {
+        "grants": [
+          "weapon_bond"
+        ],
+        "choices": [
+          {
+            "pick": 2,
+            "from_list": "spells_eldritch_knight",
+            "filter": {
+              "spell_level": 0
+            }
+          },
+          {
+            "pick": 2,
+            "from_list": "spells_eldritch_knight",
+            "filter": {
+              "spell_level": 1
+            }
+          },
+          {
+            "pick": 1,
+            "from_list": "spells_wizard",
+            "filter": {
+              "spell_level": 1
+            }
+          }
+        ]
+      },
+      "4": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_eldritch_knight",
+            "filter": {
+              "spell_level": 1
+            }
+          }
+        ]
+      },
+      "7": {
+        "grants": [
+          "war_magic"
+        ],
+        "choices": [
+          {
+            "pick": 2,
+            "from_list": "spells_eldritch_knight",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      },
+      "8": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_eldritch_knight",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      },
+      "10": {
+        "grants": [
+          "eldritch_strike"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_eldritch_knight",
+            "filter": {
+              "spell_level": 0
+            }
+          },
+          {
+            "pick": 1,
+            "from_list": "spells_eldritch_knight",
+            "filter": {
+              "spell_level": 2
+            }
+          },
+          {
+            "pick": 1,
+            "from_list": "spells_wizard",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      },
+      "11": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_eldritch_knight",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      }
+    }
+  },
+
+
+  "way_of_the_drunken_master": {
+    "name": "Way of the Drunken Master",
+    "parent_class": "monk",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "cheeky_tipple",
+          "drunken_performance",
+          "drunken_technique"
+        ],
+        "choices": []
+      },
+      "4": {
+        "grants": [
+          "intoxicating_strike",
+          "life_of_the_party"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "leap_to_your_feet",
+          "redirect_attack"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "sobering_realisation"
+        ],
+        "choices": []
+      },
+      "11": {
+        "grants": [
+          "drunkards_luck"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "way_of_the_four_elements": {
+    "name": "Way of the Four Elements",
+    "parent_class": "monk",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "harmony_of_fire_and_water"
+        ],
+        "choices": [
+          {
+            "pick": 3,
+            "from_list": "elemental_disciplines_tier_1"
+          }
+        ]
+      },
+      "6": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "elemental_disciplines_tier_2"
+          }
+        ]
+      },
+      "9": {
+        "grants": [
+          "improved_elemental_casting"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "elemental_disciplines_tier_2"
+          }
+        ]
+      },
+      "11": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "elemental_disciplines_tier_3"
+          }
+        ]
+      }
+    }
+  },
+
+
+  "way_of_the_open_hand": {
+    "name": "Way of the Open Hand",
+    "parent_class": "monk",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "flurry_of_blows_topple",
+          "flurry_of_blows_stagger",
+          "flurry_of_blows_push"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "manifestation_of_body",
+          "manifestation_of_mind",
+          "manifestation_of_soul",
+          "wholeness_of_body"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "ki_resonation_punch",
+          "ki_resonation_punch_bonus_action",
+          "ki_resonation_blast"
+        ],
+        "choices": []
+      },
+      "11": {
+        "grants": [
+          "tranquility"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "way_of_shadow": {
+    "name": "Way of Shadow",
+    "parent_class": "monk",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "minor_illusion",
+          "shadow_arts_hide",
+          "shadow_arts_pass_without_trace",
+          "shadow_arts_darkness",
+          "shadow_arts_darkvision",
+          "shadow_arts_silence"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "cloak_of_shadows"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "shadow_step"
+        ],
+        "choices": []
+      },
+      "11": {
+        "grants": [
+          "shadow_strike",
+          "shadow_strike_unarmed"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "oath_of_devotion": {
+    "name": "Oath of Devotion",
+    "parent_class": "Paladin",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "oath_of_devotion_tenets",
+          "holy_rebuke"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "sacred_weapon",
+          "turn_the_unholy",
+          "protection_from_evil_and_good",
+          "sanctuary"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "lesser_restoration",
+          "silence"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "aura_of_devotion"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "remove_curse",
+          "beacon_of_hope"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "oath_of_the_ancients": {
+    "name": "Oath of the Ancients",
+    "parent_class": "Paladin",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "oath_of_the_ancients_tenets",
+          "healing_radiance"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "natures_wrath",
+          "turn_the_faithless",
+          "speak_with_animals",
+          "ensnaring_strike"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "misty_step",
+          "moonbeam"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "aura_of_warding"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "protection_from_energy",
+          "plant_growth"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "oath_of_the_crown": {
+    "name": "Oath of the Crown",
+    "parent_class": "Paladin",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "oath_of_the_crown_tenets",
+          "righteous_clarity"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "champion_challenge",
+          "turn_the_tide",
+          "command",
+          "compelled_duel"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "warding_bond",
+          "spiritual_weapon"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "divine_allegiance"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "spirit_guardians",
+          "crusaders_mantle"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "oath_of_vengeance": {
+    "name": "Oath of Vengeance",
+    "parent_class": "Paladin",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "oath_of_vengeance_tenets",
+          "inquisitors_might"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "abjure_enemy",
+          "vow_of_enmity",
+          "bane",
+          "hunters_mark"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "misty_step",
+          "hold_person"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "relentless_avenger"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "haste",
+          "protection_from_energy"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "oathbreaker": {
+    "name": "Oathbreaker",
+    "parent_class": "Paladin",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "spiteful_suffering"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "control_undead",
+          "dreadful_aspect",
+          "hellish_rebuke",
+          "inflict_wounds"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "crown_of_madness",
+          "darkness"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "aura_of_hate"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "bestow_curse",
+          "animate_dead"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "beast_master": {
+    "name": "Beast Master",
+    "parent_class": "ranger",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "rangers_companion",
+          "bear_companion",
+          "boar_companion",
+          "dire_raven_companion",
+          "wolf_companion",
+          "wolf_spider_companion"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "companions_bond"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "exceptional_training"
+        ],
+        "choices": []
+      },
+      "11": {
+        "grants": [
+          "bestial_fury"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "gloom_stalker": {
+    "name": "Gloom Stalker",
+    "parent_class": "ranger",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "disguise_self",
+          "umbral_shroud",
+          "superior_darkvision",
+          "dread_ambusher",
+          "dread_ambusher_melee",
+          "dread_ambusher_ranged",
+          "dread_ambusher_hide"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "misty_step"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "iron_mind"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "fear"
+        ],
+        "choices": []
+      },
+      "11": {
+        "grants": [
+          "stalkers_flurry"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "hunter": {
+    "name": "Hunter",
+    "parent_class": "ranger",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "hunters_prey"
+          }
+        ]
+      },
+      "7": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "defensive_tactics"
+          }
+        ]
+      },
+      "11": {
+        "grants": [
+          "volley",
+          "whirlwind_attack"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "swarm_keeper": {
+    "name": "Swarm Keeper",
+    "parent_class": "ranger",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "preys_scent",
+          "cloud_of_jellyfish",
+          "flurry_of_moths",
+          "legion_of_bees",
+          "mage_hand",
+          "faerie_fire"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "web"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "writhing_tide"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "gaseous_form"
+        ],
+        "choices": []
+      },
+      "11": {
+        "grants": [
+          "mighty_swarm"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "arcane_trickster": {
+    "name": "Arcane Trickster",
+    "parent_class": "rogue",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "mage_hand_legerdemain",
+          "mage_hand"
+        ],
+        "choices": [
+          {
+            "pick": 2,
+            "from_list": "spells_arcane_trickster",
+            "filter": {
+              "spell_level": 0
+            }
+          },
+          {
+            "pick": 2,
+            "from_list": "spells_arcane_trickster",
+            "filter": {
+              "spell_level": 1
+            }
+          },
+          {
+            "pick": 1,
+            "from_list": "spells_wizard",
+            "filter": {
+              "spell_level": 1
+            }
+          }
+        ]
+      },
+      "4": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_arcane_trickster",
+            "filter": {
+              "spell_level": 1
+            }
+          }
+        ]
+      },
+      "7": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_arcane_trickster",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      },
+      "8": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_wizard",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      },
+      "9": {
+        "grants": [
+          "magical_ambush"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_arcane_trickster",
+            "filter": {
+              "spell_level": 0
+            }
+          },
+          {
+            "pick": 1,
+            "from_list": "spells_arcane_trickster",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      },
+      "11": {
+        "grants": [],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "spells_arcane_trickster",
+            "filter": {
+              "spell_level": 2
+            }
+          }
+        ]
+      }
+    }
+  },
+
+
+  "assassin": {
+    "name": "Assassin",
+    "parent_class": "rogue",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "assassins_alacrity",
+          "assassinate_ambush",
+          "assassinate_initiative"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "infiltration_expertise"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "swashbuckler": {
+    "name": "Swashbuckler",
+    "parent_class": "rogue",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "fancy_footwork",
+          "rakish_audacity",
+          "rakish_sneak_attack"
+        ],
+        "choices": []
+      },
+      "4": {
+        "grants": [
+          "dirty_trick_flick_o_the_wrist",
+          "dirty_trick_sand_toss",
+          "dirty_trick_vicious_mockery"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "panache"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "thief": {
+    "name": "thief",
+    "parent_class": "rogue",
+    "available_at_level": 3,
+    "levels": {
+      "3": {
+        "grants": [
+          "fast_hands",
+          "second_story_work"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "supreme_sneak"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "draconic_bloodline": {
+    "name": "Draconic Bloodline",
+    "parent_class": "sorcerer",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "draconic_resilience"
+        ],
+        "choices": [
+          {
+            "pick": 1,
+            "from_list": "sorcerer_draconic_ancestry"
+          }
+        ]
+      },
+      "6": {
+        "grants": [
+          "elemental_affinity_damage",
+          "elemental_affinity_resistance"
+        ],
+        "choices": []
+      },
+      "11": {
+        "grants": [
+          "fly"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "shadow_magic": {
+    "name": "Shadow Magic",
+    "parent_class": "sorcerer",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "eyes_of_the_dark",
+          "strength_of_the_grave"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "darkness",
+          "eyes_of_the_dark_darkness"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "hound_of_ill_omen"
+        ],
+        "choices": []
+      },
+      "11": {
+        "grants": [
+          "shadow_walk"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "storm_sorcery": {
+    "name": "Storm Sorcery",
+    "parent_class": "sorcerer",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "tempestuous_magic"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "heart_of_the_storm",
+          "heart_of_the_storm_lightning",
+          "heart_of_the_storm_thunder",
+          "heart_of_the_storm_resistance",
+          "thunderwave",
+          "create_or_destroy_water",
+          "gust_of_wind",
+          "sleet_storm",
+          "call_lightning"
+        ],
+        "choices": []
+      },
+      "11": {
+        "grants": [
+          "storms_fury"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "wild_magic_sorcerer": {
+    "name": "Wild Magic",
+    "parent_class": "sorcerer",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "wild_magic",
+          "tides_of_chaos"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "bend_luck"
+        ],
+        "choices": []
+      },
+      "11": {
+        "grants": [
+          "controlled_chaos"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "the_archfey": {
+    "name": "The Archfey",
+    "parent_class": "warlock",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "fey_presence",
+          "faerie_fire",
+          "sleep"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "calm_emotions",
+          "phantasmal_force"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "blink",
+          "plant_growth"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "misty_escape"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "dominate_beast",
+          "greater_invisibility"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "dominate_person",
+          "seeming"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "beguiling_defences"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+
+  "the_fiend": {
+    "name": "The Fiend",
+    "parent_class": "warlock",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "dark_ones_blessing",
+          "burning_hands",
+          "command"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "blindness",
+          "scorching_ray"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "fireball",
+          "stinking_cloud"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "dark_ones_own_luck"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "wall_of_fire",
+          "fire_shield"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "cone_of_cold",
+          "flame_strike"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "fiendish_resilience"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "the_great_old_one": {
+    "name": "The Great Old One",
+    "parent_class": "warlock",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "mortal_reminder",
+          "dissonant_whispers",
+          "tashas_hideous_laughter"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "detect_thoughts",
+          "phantasmal_force"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "bestow_curse",
+          "slow"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "entropic_ward"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "dominate_beast",
+          "evards_black_tentacles"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "dominate_person",
+          "telekinesis"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "thought_shield_psychic_resistance",
+          "thought_shield_psychic_reflection"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+
+  "the_hexblade": {
+    "name": "The Hexblade",
+    "parent_class": "warlock",
+    "available_at_level": 1,
+    "levels": {
+      "1": {
+        "grants": [
+          "hex_warrior",
+          "medium_armor_proficiency",
+          "shield_proficiency",
+          "martial_weapons_proficiency",
+          "bind_hexed_weapon",
+          "hexblades_curse",
+          "shield",
+          "wrathful_smite"
+        ],
+        "choices": []
+      },
+      "3": {
+        "grants": [
+          "blur",
+          "branding_smite"
+        ],
+        "choices": []
+      },
+      "5": {
+        "grants": [
+          "blink",
+          "elemental_weapon"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "accursed_spectre"
+        ],
+        "choices": []
+      },
+      "7": {
+        "grants": [
+          "phantasmal_killer",
+          "staggering_smite",
+          "dominate_beast",
+          "greater_invisibility"
+        ],
+        "choices": []
+      },
+      "9": {
+        "grants": [
+          "banishing_smite",
+          "cone_of_cold"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "armour_of_hexes"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "abjuration_school": {
+    "name": "Abjuration School",
+    "parent_class": "wizard",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "arcane_ward"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "projected_ward"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "improved_abjuration"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "bladesinger": {
+    "name": "Bladesinger",
+    "parent_class": "wizard",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "bladesong",
+          "training_in_war_and_song"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "extra_attack"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "song_of_defence"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "conjuration_school": {
+    "name": "Conjuration School",
+    "parent_class": "wizard",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "minor_conjuration_create_water"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "benign_transposition_teleport"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "focused_conjuration"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "divination_school": {
+    "name": "Divination School",
+    "parent_class": "wizard",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "portent"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "expert_divination"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "third_eye_darkvision",
+          "third_eye_see_invisibility"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "enchantment_school": {
+    "name": "Enchantment School",
+    "parent_class": "wizard",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "hypnotic_gaze"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "instinctive_charm"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "split_enchantment"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "evocation_school": {
+    "name": "Evocation School",
+    "parent_class": "wizard",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "sculpt_spells"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "potent_cantrip"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "empowered_evocation"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "illusion_school": {
+    "name": "Illusion School",
+    "parent_class": "wizard",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "improved_minor_illusion"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "see_invisibility"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "illusory_self"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "necromancy_school": {
+    "name": "Necromancy School",
+    "parent_class": "wizard",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "grim_harvest"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "undead_thralls_animate_dead",
+          "undead_thralls_additional_undead",
+          "undead_thralls_better_summons"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "inured_to_undeath"
+        ],
+        "choices": []
+      }
+    }
+  },
+
+  "transmutation_school": {
+    "name": "Transmutation School",
+    "parent_class": "wizard",
+    "available_at_level": 2,
+    "levels": {
+      "2": {
+        "grants": [
+          "experimental_alchemy"
+        ],
+        "choices": []
+      },
+      "6": {
+        "grants": [
+          "transmuters_stone",
+          "transmuters_stone_constitution",
+          "transmuters_stone_darkvision",
+          "transmuters_stone_speed",
+          "transmuters_stone_acid_resistance",
+          "transmuters_stone_cold_resistance",
+          "transmuters_stone_fire_resistance",
+          "transmuters_stone_lightning_resistance",
+          "transmuters_stone_thunder_resistance"
+        ],
+        "choices": []
+      },
+      "10": {
+        "grants": [
+          "shapechanger"
+        ],
+        "choices": []
+      }
+    }
+  }
+}

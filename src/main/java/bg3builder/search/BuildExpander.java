@@ -7,7 +7,9 @@ import bg3builder.model.ClassProgression.Choice;
 import bg3builder.model.ClassProgression.LevelEntry;
 import bg3builder.model.ClassProgression.PoolReference;
 import bg3builder.model.Feature;
+import bg3builder.model.SubclassProgression;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -18,36 +20,44 @@ import java.util.Set;
  *
  * <p>"Reachable" = the build either gets the feature automatically (grants),
  * gets every member of a pool (grants_pool), or could pick the feature from
- * one of its choice slots (choices). Capability-based: we don't track which
- * spells/feats the build "actually picked" — every choosable option counts
- * as reachable, because the algorithm answers "could this build acquire X?"
- * not "did this build acquire X?".
+ * one of its choice slots (choices). Capability semantics applies — every
+ * member of a choice pool counts as reachable.
  *
- * <p>Reference data (features map, classes, subclasses, choice lists) is
- * loaded once at startup; an instance is reusable across many build queries.
+ * <p>Subclass features: for each base class in the build, ALL subclasses with
+ * that parent class contribute their level entries (up to the build's level
+ * in that class). This is the "capability across subclasses" choice — the
+ * build's reachable set includes features from every possible subclass pick.
+ * Materialization later resolves which subclass to actually name in output.
  */
 public class BuildExpander {
 
     private final Map<String, Feature> features;
     private final Map<String, ClassProgression> classes;
-    // Subclasses are not yet implemented — placeholder for the real data later.
-    private final Map<String, ?> subclasses;
+    private final Map<String, List<SubclassProgression>> subclassesByParent;
     private final ChoiceList pools;
 
     public BuildExpander(
             Map<String, Feature> features,
             Map<String, ClassProgression> classes,
-            Map<String, ?> subclasses,
+            Map<String, SubclassProgression> subclasses,
             ChoiceList pools
     ) {
         this.features = features;
         this.classes = classes;
-        this.subclasses = subclasses;
         this.pools = pools;
+
+        // Group subclasses by parent class for fast lookup during expansion
+        this.subclassesByParent = new java.util.HashMap<>();
+        for (SubclassProgression sub : subclasses.values()) {
+            subclassesByParent
+                    .computeIfAbsent(sub.parentClass(), k -> new ArrayList<>())
+                    .add(sub);
+        }
     }
 
     /**
-     * Computes the full set of features reachable by this build.
+     * Computes the full set of features reachable by this build, walking both
+     * base class progressions and all subclass progressions for each class.
      */
     public Set<String> reachableFeatures(Build build) {
         Set<String> reachable = new HashSet<>();
@@ -58,79 +68,65 @@ public class BuildExpander {
             ClassProgression cls = classes.get(classId);
             if (cls == null) continue;
 
-            // Walk levels 1..taken and accumulate grants/grants_pool/choices.
+            // Walk base class levels
             for (int lvl = 1; lvl <= taken; lvl++) {
                 LevelEntry lev = cls.levelEntry(lvl);
                 if (lev == null) continue;
                 addFromLevelEntry(lev, reachable);
             }
 
-            // If this is the build's starting class, also apply the bonus block.
+            // Apply starting class bonus if applicable
             if (classId.equals(build.startingClass()) && cls.startingClassBonus() != null) {
                 addAll(cls.startingClassBonus().grants(), reachable);
                 addFromChoices(cls.startingClassBonus().choices(), reachable);
             }
-        }
 
-        // Filter out features whose `requires` field isn't satisfied.
-        // (Currently the model has `requires` as an attribute on Feature itself;
-        // implementation will plug in once that field is added to the Feature record.)
-        // For now this is a no-op — we'll implement it when handling deepened_pact.
+            // Walk every subclass with this parent class
+            // (capability semantics — all subclass options are "reachable")
+            List<SubclassProgression> subs = subclassesByParent.getOrDefault(classId, List.of());
+            for (SubclassProgression sub : subs) {
+                if (taken < sub.availableAtLevel()) continue;
+                for (int lvl = 1; lvl <= taken; lvl++) {
+                    LevelEntry lev = sub.levelEntry(lvl);
+                    if (lev == null) continue;
+                    addFromLevelEntry(lev, reachable);
+                }
+            }
+        }
 
         return reachable;
     }
 
-    /** Walks one level-entry and adds everything it makes reachable. */
     private void addFromLevelEntry(LevelEntry lev, Set<String> reachable) {
-        // 1. Direct grants — always added (skip _TODO placeholders just in case).
         for (String id : lev.grants()) {
-            if (!id.startsWith("_TODO")) {
-                reachable.add(id);
-            }
+            if (!id.startsWith("_TODO")) reachable.add(id);
         }
-
-        // 2. grants_pool — every member of the pool, optionally filtered, is added.
         for (PoolReference ref : lev.grantsPool()) {
             for (String id : poolMembers(ref.fromList(), ref.filter())) {
                 reachable.add(id);
             }
         }
-
-        // 3. choices — every member of the pool is reachable (capability semantics).
         addFromChoices(lev.choices(), reachable);
     }
 
-    /** Walks a list of choices and treats every option as reachable. */
     private void addFromChoices(List<Choice> choices, Set<String> reachable) {
         for (Choice c : choices) {
-            if (c.fromList() == null) continue; // _TODO placeholders may have nulls
+            if (c.fromList() == null) continue;
             for (String id : poolMembers(c.fromList(), c.filter())) {
                 reachable.add(id);
             }
         }
     }
 
-    /**
-     * Returns the contents of a pool, narrowed by an optional filter.
-     * Filters supported:
-     *   - {"spell_level": N}     — only spells of exactly this level
-     *   - {"spell_level_max": N} — only spells up to and including this level
-     *   - {"spell_level_min": N} — only spells at or above this level
-     */
     private List<String> poolMembers(String poolName, Map<String, Object> filter) {
         List<String> raw = pools.get(poolName);
-        if (filter == null || filter.isEmpty()) {
-            return raw;
-        }
+        if (filter == null || filter.isEmpty()) return raw;
 
-        // Apply spell_level filters by looking up each member in features.
-        List<String> filtered = new java.util.ArrayList<>();
+        List<String> filtered = new ArrayList<>();
         for (String id : raw) {
             Feature f = features.get(id);
-            if (f == null) continue; // broken pool reference; skip silently for now
-            if (passesFilter(f, filter)) {
-                filtered.add(id);
-            }
+            if (f == null) continue;
+            if (passesFilter(f, filter)) filtered.add(id);
         }
         return filtered;
     }

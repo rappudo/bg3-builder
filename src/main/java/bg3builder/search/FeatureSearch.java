@@ -4,154 +4,166 @@ import bg3builder.data.Indexes;
 import bg3builder.data.Indexes.Source;
 import bg3builder.model.Build;
 
-import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.Deque;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
 import java.util.Set;
 import java.util.TreeMap;
 
 /**
- * Given a set of target feature ids, finds the smallest build (fewest total
- * class levels, ≤ 12) that reaches all of them. If multiple builds tie at
- * the smallest level count, returns one (the first one BFS discovers — see
- * the canonical-form comment below).
+ * Finds the smallest build (≤12 levels) that reaches a set of target features.
  *
- * <h2>Why this is a graph problem</h2>
- * The build space is a graph where nodes are partial builds (multiset of
- * class-levels) and edges are "take one more level of class X." Source: total
- * legal builds with ≤12 levels across 12 classes is bounded but still large
- * (well into the tens of thousands of compositions). We BFS from the empty
- * build outward, level-by-level, returning the first node whose reachable-feature
- * set covers the targets.
- *
- * <h2>Why BFS works for "smallest"</h2>
- * BFS visits nodes in order of distance from the start. Distance here = total
- * class levels. So the first node we find that satisfies the target is by
- * definition the smallest build that satisfies it.
- *
- * <h2>Pruning to make it tractable</h2>
- * Without pruning, BFS over class-level multisets blows up fast. Two pruners:
+ * <h2>Algorithm: A* with admissible heuristic</h2>
+ * The build space is a graph: nodes are partial builds (multiset of class
+ * levels + starting class), edges are "take one more level of class X."
+ * The cost of a node is its total class-level count. We search outward from
+ * the empty build using A* with priority = g(n) + h(n).
  *
  * <ul>
- *   <li><b>Relevant classes only.</b> If the user wants {fireball, extra_attack},
- *       we look up sources for both, collect the set of classes that grant
- *       either of them, and only ever consider expanding into those classes.
- *       This cuts the branching factor from 12 to typically 2-4.</li>
- *   <li><b>Canonical form (visited set).</b> Wizard 1 + Fighter 1 and
- *       Fighter 1 + Wizard 1 are the same build (we don't track acquisition
- *       order, only composition). We canonicalize each build to a sorted
- *       string and skip duplicates. This collapses the search graph
- *       considerably.</li>
+ *   <li><b>g(n)</b> = total class levels in build n.
+ *   <li><b>h(n)</b> = a lower bound on additional levels needed to reach the goal.
+ *       For each unmet target T, we compute the minimum additional levels needed
+ *       in any class that sources T (given the build's current per-class levels).
+ *       The maximum across all unmet targets is our heuristic — admissible
+ *       because each unmet target must at least be paid for individually.
  * </ul>
  *
- * <h2>Starting class wrinkle</h2>
- * Two builds with the same composition but different starting classes can
- * have different reachable features (because of starting_class_bonus). So
- * the canonical form must include the starting class. In practice this
- * doubles or triples the visited set rather than collapsing it, but is
- * essential for correctness — a Fighter 1 / Wizard 5 starting Fighter has
- * heavy_armor_proficiency, starting Wizard does not.
+ * <h2>Pruning</h2>
+ * <ol>
+ *   <li><b>Relevant-classes filter (dynamic)</b>: at each node, we only consider
+ *       expanding into classes that source at least one <em>unmet</em> target.
+ *       Classes whose only contributions are already-satisfied targets aren't
+ *       worth pursuing further.
+ *   <li><b>Canonical form (visited set)</b>: two builds with the same class-level
+ *       multiset and same starting class produce the same reachable set. We
+ *       canonicalize to a sorted string and skip duplicates.
+ *   <li><b>Admissible h-pruning</b>: if g(n) + h(n) > 12 (the BG3 cap), the
+ *       node can never lead to a solution within budget. Skip it entirely.
+ * </ol>
+ *
+ * <p>Returns null if no build of ≤12 total levels reaches the targets.
  */
 public class FeatureSearch {
 
     private final BuildExpander expander;
     private final Indexes indexes;
-
-    /** Hard cap from the BG3 level system. */
     private static final int MAX_TOTAL_LEVELS = 12;
+
+    private long lastNodesExplored = 0;
 
     public FeatureSearch(BuildExpander expander, Indexes indexes) {
         this.expander = expander;
         this.indexes = indexes;
     }
 
+    /** Stats from the last search call. */
+    public long lastNodesExplored() { return lastNodesExplored; }
+
     /**
-     * Searches for the smallest build that reaches all given features.
-     * @return the build, or null if no build of ≤12 levels can reach all targets
+     * Finds the smallest build that reaches every target feature.
+     * @return the build, or null if no such build exists within MAX_TOTAL_LEVELS
      */
     public Build findSmallestBuild(Set<String> targetFeatures) {
-        // Validate: every target must have at least one source, otherwise no build
-        // can ever reach it.
-        for (String target : targetFeatures) {
-            if (indexes.sourcesOf(target).isEmpty()) {
-                System.out.println("  [unreachable] feature '" + target
-                        + "' has no source in any class — cannot build for it.");
-                return null;
-            }
+        lastNodesExplored = 0;
+
+        // Precondition: every target must be sourced by some class
+        for (String t : targetFeatures) {
+            if (indexes.sourcesOf(t).isEmpty()) return null;
         }
 
-        // Collect the set of classes worth considering. Any class that doesn't
-        // appear as a source for ANY target feature is irrelevant — adding levels
-        // of it can never help. (Exception: a starting-class bonus might grant
-        // something, but for current targets this is unlikely; we accept the
-        // small risk to keep pruning sharp.)
-        Set<String> relevantClasses = new HashSet<>();
-        for (String target : targetFeatures) {
-            for (Source s : indexes.sourcesOf(target)) {
-                relevantClasses.add(s.classId());
-            }
+        // Compute the static "ever-relevant" set: classes that source at least
+        // one target. Search will further dynamically narrow this per-node.
+        Set<String> everRelevant = new HashSet<>();
+        for (String t : targetFeatures) {
+            everRelevant.addAll(indexes.classesThatSource(t));
         }
-        System.out.println("  Relevant classes: " + relevantClasses);
 
-        // BFS from the empty build outward.
-        Deque<Build> frontier = new ArrayDeque<>();
-        Set<String> visited = new HashSet<>();
+        // Open list: priority queue ordered by f(n) = g(n) + h(n)
+        PriorityQueue<Node> open = new PriorityQueue<>(
+                Comparator.comparingInt(n -> n.f));
+        Set<String> closed = new HashSet<>();
 
-        // Seed with one empty-1-level-of-class-X build per relevant class,
-        // each one as its own starting class.
-        for (String classId : relevantClasses) {
+        // Seed: one 1-level build per ever-relevant class, each as its starting class
+        for (String classId : everRelevant) {
             Build seed = new Build.Builder().addLevels(classId, 1).build();
-            String key = canonicalForm(seed);
-            if (visited.add(key)) {
-                frontier.add(seed);
-            }
+            int g = 1;
+            int h = heuristic(seed, targetFeatures);
+            int f = g + h;
+            if (f > MAX_TOTAL_LEVELS) continue;
+            open.add(new Node(seed, g, h, f));
         }
 
-        int nodesExplored = 0;
-        while (!frontier.isEmpty()) {
-            Build current = frontier.pollFirst();
-            nodesExplored++;
+        while (!open.isEmpty()) {
+            Node cur = open.poll();
+            String key = canonicalForm(cur.build);
+            if (!closed.add(key)) continue;
+            lastNodesExplored++;
 
-            // Goal test: does this build reach all targets?
-            Set<String> reachable = expander.reachableFeatures(current);
+            // Goal test
+            Set<String> reachable = expander.reachableFeatures(cur.build);
             if (reachable.containsAll(targetFeatures)) {
-                System.out.println("  Found at " + current.totalLevels()
-                        + " levels (" + nodesExplored + " nodes explored).");
-                return current;
+                return cur.build;
             }
 
-            // Expand: for each relevant class, add one more level — if it doesn't
-            // bust the cap.
-            if (current.totalLevels() >= MAX_TOTAL_LEVELS) continue;
-            for (String classId : relevantClasses) {
-                Build next = addLevel(current, classId);
-                String key = canonicalForm(next);
-                if (visited.add(key)) {
-                    frontier.add(next);
-                }
+            if (cur.g >= MAX_TOTAL_LEVELS) continue;
+
+            // Dynamic relevant-classes filter: only expand into classes that source
+            // at least one unmet target
+            Set<String> unmetTargets = new HashSet<>(targetFeatures);
+            unmetTargets.removeAll(reachable);
+            Set<String> dynamicallyRelevant = new HashSet<>();
+            for (String t : unmetTargets) {
+                dynamicallyRelevant.addAll(indexes.classesThatSource(t));
+            }
+
+            for (String classId : dynamicallyRelevant) {
+                Build next = addLevel(cur.build, classId);
+                String nextKey = canonicalForm(next);
+                if (closed.contains(nextKey)) continue;
+
+                int g = cur.g + 1;
+                int h = heuristic(next, targetFeatures);
+                int f = g + h;
+                if (f > MAX_TOTAL_LEVELS) continue;
+
+                open.add(new Node(next, g, h, f));
             }
         }
 
-        System.out.println("  Exhausted " + nodesExplored + " nodes, no build found.");
         return null;
     }
 
-    /** Returns a new Build with one more level in the given class. */
+    /**
+     * Admissible heuristic: max over unmet targets T of the minimum additional
+     * levels needed in any class to satisfy T from the current build state.
+     */
+    private int heuristic(Build build, Set<String> targets) {
+        Set<String> reachable = expander.reachableFeatures(build);
+        int worst = 0;
+        for (String t : targets) {
+            if (reachable.contains(t)) continue;
+            int bestForThisTarget = Integer.MAX_VALUE;
+            for (Source src : indexes.sourcesOf(t)) {
+                int currentInClass = build.classLevels().getOrDefault(src.classId(), 0);
+                int needed = Math.max(0, src.level() - currentInClass);
+                if (needed < bestForThisTarget) bestForThisTarget = needed;
+            }
+            if (bestForThisTarget == Integer.MAX_VALUE) return Integer.MAX_VALUE;
+            if (bestForThisTarget > worst) worst = bestForThisTarget;
+        }
+        return worst;
+    }
+
     private static Build addLevel(Build base, String classId) {
         Map<String, Integer> nextLevels = new HashMap<>(base.classLevels());
         nextLevels.merge(classId, 1, Integer::sum);
         return new Build(nextLevels, base.startingClass(), base.subclasses());
     }
 
-    /**
-     * Canonical string for visited-set deduplication. Two builds with the same
-     * class composition AND the same starting class hash to the same string,
-     * regardless of how their classLevels map happens to be ordered.
-     */
     private static String canonicalForm(Build b) {
         TreeMap<String, Integer> sorted = new TreeMap<>(b.classLevels());
         StringBuilder sb = new StringBuilder();
@@ -162,9 +174,6 @@ public class FeatureSearch {
         return sb.toString();
     }
 
-    /**
-     * Pretty-prints a build for human consumption.
-     */
     public static String describe(Build b) {
         if (b == null) return "(no build found)";
         StringBuilder sb = new StringBuilder();
@@ -175,8 +184,10 @@ public class FeatureSearch {
             parts.add(marker + e.getKey() + " " + e.getValue());
         }
         sb.append(String.join(" / ", parts));
-        sb.append("  (").append(b.totalLevels()).append(" total levels");
-        sb.append(", * = starting class)");
+        sb.append("  (").append(b.totalLevels()).append(" total levels, * = starting)");
         return sb.toString();
     }
+
+    /** A* node: g (cost so far), h (heuristic), f (priority). */
+    private record Node(Build build, int g, int h, int f) {}
 }
