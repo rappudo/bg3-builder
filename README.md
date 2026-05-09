@@ -1,4 +1,4 @@
-# BG3 Build Planner — Documentação
+# BG3 Build Planner
 
 Sistema de busca de _builds_ para Baldur's Gate 3, modelado como um problema de grafo. Permite duas funcionalidades principais:
 
@@ -95,7 +95,7 @@ Mesma forma que `classes.json` mas com `parent_class` e `available_at_level`. Os
 
 ---
 
-## Arquivos de Código — Modelos
+## Modelos
 
 ### `Feature.java`
 
@@ -156,7 +156,7 @@ public record Build(
 
 ---
 
-## Arquivos de Código — Carregamento e Índices
+## Carregamento e Índices
 
 ### `DataLoader.java`
 
@@ -202,7 +202,7 @@ A função `orphanFeatures` é diagnóstica — features órfãs geralmente indi
 
 ---
 
-## Arquivos de Código — Busca
+## Busca
 
 ### `BuildExpander.java`
 
@@ -319,7 +319,7 @@ O Jackson é configurado com `PropertyNamingStrategies.SNAKE_CASE`, então campo
 
 ---
 
-## Interface da API — Formato dos Dados
+## Interface da API
 
 ### Função 1: Busca por Features
 
@@ -519,46 +519,6 @@ O Jackson é configurado com `PropertyNamingStrategies.SNAKE_CASE`, então campo
 | `plan` | obj | Mesmo formato `BuildPlan` da Função 1 |
 
 No `plan`, o array `targets` lista as features tageadas que a build efetivamente alcança (não as tags em si). Isso permite reusar a mesma estrutura de saída entre as duas funções.
-
----
-
-## Como Executar
-
-### Pré-requisitos
-
-- Java 21
-- Maven 3.6+
-- Os 4 arquivos JSON em `data/`
-
-### Compilar e rodar
-
-```bash
-mvn clean compile
-mvn exec:java -Dexec.mainClass="bg3builder.Main"
-```
-
-Ou via IntelliJ: rodar `Main.java` diretamente.
-
-A `Main` carrega os dados, constrói os índices, e demonstra ambas as funcionalidades imprimindo o JSON de entrada e o JSON de resposta para vários casos de teste.
-
----
-
-## Resumo do Fluxo de Execução
-
-1. **Inicialização** (`Main`): `DataLoader` lê os 4 JSONs → `Indexes` precomputa lookups → `BuildExpander`, `FeatureSearch`, `TagSearch`, `BuildMaterializer`, `BuildAPI` são instanciados.
-
-2. **Requisição feature** (`BuildAPI.findBuildForFeatures`):
-    - Parse do JSON de entrada
-    - `FeatureSearch.findSmallestBuild` roda A* até encontrar a menor build
-    - `BuildExpander.reachableFeatures` é chamado para verificar quais alvos foram satisfeitos
-    - `BuildMaterializer.materialize` converte a build em `BuildPlan` detalhado
-    - Jackson serializa o `BuildPlan` em JSON
-
-3. **Requisição tag** (`BuildAPI.findBuildsForTags`):
-    - Parse do JSON
-    - `TagSearch.findBestBuilds` enumera builds top-K e pontua
-    - Para cada uma das top N, `BuildMaterializer.materialize` é chamado
-    - Lista de planos é serializada como `TagSearchResponse`
 
 ---
 
